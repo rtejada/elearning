@@ -29,7 +29,13 @@
 		<td><?php echo h($usuario['Usuario']['telefono']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['login']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['password']); ?>&nbsp;</td>
-		<td><?php echo h($usuario['Usuario']['tipo']); ?>&nbsp;</td>
+		<td><?php
+            if (h($usuario['Usuario']['tipo'])=='1') {
+                echo "Alumno";
+            } elseif(h($usuario['Usuario']['tipo'])=='2') {
+                echo "Profesor";
+            }
+            ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['foto']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['foto_dir']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['created']); ?>&nbsp;</td>

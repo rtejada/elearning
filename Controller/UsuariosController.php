@@ -128,4 +128,5 @@ class UsuariosController extends AppController {
         $mfoto_dir = Sanitize::html($foto_dir);
         $this->DescargasFicheros->descarga('usuario',$mfoto_dir,$mfoto);
     }
+
 }
