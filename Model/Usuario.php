@@ -3,8 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Usuario Model
  *
- * @property asignaturas_alumnos $asignaturas_alumnos
- * @property asignaturas_profesor $asignaturas_profesor
+ * @property alumnos_asignaturas $alumnos_asignaturas
+ * @property asignaturas $asignaturas_profesor
  * @property trabajos $trabajos
  * @property examenes_detalle $examenes_detalle
  */
@@ -44,14 +44,14 @@ class Usuario extends AppModel {
 			),
 		),
 		'fecha_nacimiento' => array(
-			'date' => array(
+			/*'date' => array(
 				'rule' => array('date'),
 				'message' => 'La fecha no está en el formato correcto',
 				'allowEmpty' => false,
 				'required' => true,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
+			),*/
 			'notempty' => array(
 				'rule' => array('notempty'),
                 'message' => 'No se permite fecha de nacimiento en blanco'
@@ -88,6 +88,10 @@ class Usuario extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+            'unico' => array(
+                'rule'    => 'isUnique',
+                'message' => 'El email ya existe en la base de datos.'
+            )
 		),
 		'telefono' => array(
 			'notempty' => array(
@@ -116,6 +120,10 @@ class Usuario extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+            'login' => array(
+                'rule'    => 'isUnique',
+                'message' => 'El nombre de usuario ya existe, debe introducir otro.'
+            )
 		),
 		'password' => array(
 			'notempty' => array(
@@ -145,7 +153,7 @@ class Usuario extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
             'allowedChoice' => array(
-                'rule'    => array('inList', array(1, 2)),
+                'rule'    => array('inList', array('1', '2')),
                 'message' => 'Debe introducir tipo Usuario o Profesor'
             )
 		),
@@ -159,9 +167,10 @@ class Usuario extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'asignaturas_alumnos' => array(
-			'className' => 'asignaturas_alumnos',
-			'foreignKey' => 'id',
+        //Relaciona al usuario de tipo alumno con sus asignaturas
+		'alumnos_asignaturas' => array(
+			'className' => 'alumnos_asignaturas',
+			'foreignKey' => 'alumno_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
@@ -172,8 +181,9 @@ class Usuario extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'asignaturas_profesor' => array(
-			'className' => 'asignaturas_profesor',
+        //Relaciona al usuario de tipo profesor con las asignaturas que imparte
+		'asignaturas' => array(
+			'className' => 'asignaturas',
 			'foreignKey' => 'profesor_id',
 			'dependent' => false,
 			'conditions' => '',
@@ -185,6 +195,7 @@ class Usuario extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
+        //Relaciona al usuario de tipo alumno con los trabajo
 		'trabajos' => array(
 			'className' => 'trabajos',
 			'foreignKey' => 'alumno_id',
@@ -198,7 +209,8 @@ class Usuario extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'examenes_detalle' => array(
+        //Relaciona al usuario de tipo alumno con sus examenes
+		'examenes_detalles' => array(
 			'className' => 'examenes_detalle',
 			'foreignKey' => 'alumno_id',
 			'dependent' => false,
