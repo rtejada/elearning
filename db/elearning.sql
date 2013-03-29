@@ -6,6 +6,7 @@ DROP SCHEMA IF EXISTS `elearning` ;
 CREATE SCHEMA IF NOT EXISTS `elearning` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci ;
 USE `elearning` ;
 
+
 -- -----------------------------------------------------
 -- Table `elearning`.`modulos`
 -- -----------------------------------------------------

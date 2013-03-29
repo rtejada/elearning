@@ -10,6 +10,16 @@ App::uses('AppModel', 'Model');
  */
 class Usuario extends AppModel {
 
+    public $actsAs = array(
+        'Upload.Upload' => array(
+            'foto' => array(
+                'fields' => array(
+                    'dir' => 'foto_dir'
+                )
+            )
+        )
+    );
+
 /**
  * Display field
  *
@@ -157,6 +167,25 @@ class Usuario extends AppModel {
                 'message' => 'Debe introducir tipo Usuario o Profesor'
             )
 		),
+        /*  'foto' => array (
+                 'photo' => array(
+                    'rule' => 'isSuccessfulWrite',
+                    'message' => 'La imagen se ha escrito correctamente en el servidor'
+                ),
+               'photofail' => array(
+                    'rule' => array('isSuccessfulWrite', false),
+                    'message' => 'Ha ocurrido un error al subir la imagen'
+                ),
+                'photodir' => array(
+                    'rule' => array('isValidDir'),
+                    'message' => 'File upload directory does not exist'
+                ),
+                'photowrit' => array(
+                    'rule' => array('isWritable', false),
+                    'message' => 'File upload directory was not writable'
+                ),
+        ),*/
+
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
