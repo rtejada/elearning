@@ -63,6 +63,8 @@ if (!defined('APP_DIR')) {
  * /app/webroot/index.php
  */
 
+
+//cambiar aqui ...
 define('CAKE_CORE_INCLUDE_PATH',  DS . 'opt' . DS . 'lampp' . DS .'cake3.1'.DS.'lib');
 
 /**
