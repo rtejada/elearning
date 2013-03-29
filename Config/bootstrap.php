@@ -24,6 +24,9 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
+define('RUTA_IMAGEN_DIR_FOTO', 'foto');
+define('DIRECTORIO_UPLOADS', 'webroot'.DS.'files');
+
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
 
@@ -88,6 +91,9 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
+
+CakePlugin::load('Upload');
+
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'
@@ -107,3 +113,4 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
