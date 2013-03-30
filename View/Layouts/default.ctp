@@ -1,62 +1,69 @@
-<?php
-/**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-?>
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
+	<title>CakePHP : The PHP Rapid Development Framework :: <?php echo $title_for_layout?></title>
+		<?php echo $this->Html->charset('UTF-8'); ?>
+	<meta name="description" content="Plataforma de estudios a distancia" />
+	<meta name="keywords" content="formacion, modulo, distancia" />
+	<meta name="author" content="François ACTIS-GASTOU" />
+        <?php echo $this->Html->css('cake.forms', 'stylesheet', array("media"=>"all" ));?>
+        <?php echo $this->Html->css('nautica02liquid', 'stylesheet', array("media"=>"all" ));?>
 </head>
+
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+<div id="wrapper-menu-top">
+<div id="menu-top">
+	<ul>
+		<li><a href="http://cakephp.org/" title="Downloads"><span>Link1</span></a></li>
+		<li><a href="http://manual.cakephp.org" title="Gallery"><span>Link2</span></a></li>
+		<li><a href="http://api.cakephp.org/" title="Links"><span>Link3</span></a></li>
+		<li><a href="http://bakery.cakephp.org" title="Links"><span>Link4</span></a></li>
+	</ul>
+</div><!--menu-top-->
+</div><!--wrapper-menu-top-->
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
+<div id="wrapper-header">
+<div id="header">
+<div id="wrapper-header2">
+<div id="wrapper-header3">
+	<h1></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div id="wrapper-content">
+<div id="wrapper-menu-page">
+	<div id="menu-page">
+	<h3>Menu de enlaces</h3>
+	<ul>
+		<li><a href="#"> Link 1</a></li>
+		<li><a href="#"> Link 2</a></li>
+		<li><a href="#"> Link 3</a></li>
+		<li><a href="#"> Link 4</a></li>
+	</ul>
+
+
+</div><!--menu-page-->
+</div>
+<div id="content">
+	
+<h2>Texto</h2>
+
+
+<?php /* if ($this->controller->Session->check('Message.flash')) $this->controller->Session->flash();*/ ?>
+<?php /*echo $content_for_layout  */?>
+</div>
+</div>
+
+<div id="wrapper-footer">
+<div id="footer">
+<p>pie</p>
+</div>
+</div>
+<p>
+ Eformar : &copy; 2013 FrancoisRoxana, Inc.
+</p>
 </body>
 </html>
