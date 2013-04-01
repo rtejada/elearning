@@ -13,6 +13,7 @@
 <body>
 
 <div id="wrapper-menu-top">
+
 <div id="menu-top">
 	<ul>
 		<li><a href="http://cakephp.org/" title="Downloads"><span>Link1</span></a></li>
@@ -20,14 +21,30 @@
 		<li><a href="http://api.cakephp.org/" title="Links"><span>Link3</span></a></li>
 		<li><a href="http://bakery.cakephp.org" title="Links"><span>Link4</span></a></li>
 	</ul>
+	
 </div><!--menu-top-->
+
 </div><!--wrapper-menu-top-->
 
 <div id="wrapper-header">
+
 <div id="header">
+
 <div id="wrapper-header2">
+
 <div id="wrapper-header3">
-	<h1></h1>
+	<h1><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51594bd774876484"></script>
+<!-- AddThis Button END --></h1>
 </div>
 </div>
 </div>

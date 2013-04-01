@@ -1139,3 +1139,2743 @@ Stack Trace:
 #2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
 #3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
 #4 {main}
+2013-03-31 13:39:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-03-31 13:39:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-03-31 14:02:46 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-03-31 14:02:46 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-03-31 14:31:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-03-31 14:31:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-03-31 23:34:32 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-03-31 23:34:32 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 10:50:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 10:50:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:19:53 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:19:53 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:20:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:20:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:21:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:21:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:23:03 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:23:03 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:31:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:31:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:44:43 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:44:43 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:44:47 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:44:47 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:47:11 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:47:11 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:48:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:48:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:49:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:49:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:54:48 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:54:48 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:56:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:56:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:56:22 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:56:22 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:57:53 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:57:53 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:58:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:58:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:58:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:58:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:58:44 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 11:58:44 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:01:01 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:01:01 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:03:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:03:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:03:57 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:03:57 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:04:10 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:04:10 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:04:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:04:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:05:10 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:05:10 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:06:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:06:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:06:54 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:06:54 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:07:30 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 12:07:30 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:09:11 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:09:11 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:10:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:10:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:10:33 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:10:33 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:10:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:10:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:11:14 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:11:14 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:11:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:11:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:12:14 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:12:14 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:12:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:12:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:13:08 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:13:08 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:14:34 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:14:34 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:20:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:20:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:20:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:20:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:23:43 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:23:43 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:25:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:25:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:27:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:27:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:35:23 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:35:23 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:35:49 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:35:49 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:36:19 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:36:19 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:37:33 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:37:33 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:38:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:38:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:38:32 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:38:32 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:39:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:39:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:39:47 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:39:47 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:40:02 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:40:02 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:40:46 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:40:46 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:40:47 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:40:47 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:40:48 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:40:48 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:41:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:41:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:41:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:41:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:41:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:41:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:41:34 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:41:34 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:42:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:42:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:43:32 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:43:32 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:45:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:45:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:47:13 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:47:14 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:48:41 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:48:41 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:49:05 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:49:05 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:49:22 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:49:22 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:51:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:51:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:51:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:51:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:52:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:52:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:52:54 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:52:55 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:53:14 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:53:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:55:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:55:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:55:34 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:55:34 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:56:05 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:56:05 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:56:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:56:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:56:55 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:56:55 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:58:29 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:58:29 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:59:21 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 13:59:21 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:00:10 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:00:10 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:00:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:00:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:02:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:02:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:03:46 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:03:46 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:04:47 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:04:47 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:04:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:04:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:05:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:05:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:09:12 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:09:13 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:10:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:10:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:11:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:11:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:11:58 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:11:58 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:17:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:17:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:28:42 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:28:42 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:29:13 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:29:13 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:31:05 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:31:05 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:31:19 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:31:19 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:31:42 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:31:42 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:32:00 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:32:00 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:37:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:37:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:38:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:38:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:38:57 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:38:57 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:39:41 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:39:41 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:40:54 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:40:54 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:40:57 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:40:57 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:42:08 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:42:08 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:43:04 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:43:04 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:43:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:43:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:44:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:44:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:03 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:04 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:16 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:27 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:27 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:40 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:40 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:52 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:45:52 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:47:09 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:47:09 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:47:33 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:47:33 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:47:44 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:47:44 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:48:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:48:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:48:42 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:48:42 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:49:09 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:49:09 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:49:45 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:49:45 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:50:21 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:50:21 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:54:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:54:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:55:11 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:55:11 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:55:30 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:55:30 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:56:48 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:56:48 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:58:13 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:58:13 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:58:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 14:58:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:00:00 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:00:00 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:00:20 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:00:20 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:01:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:01:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:01:40 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:01:40 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:01:53 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:01:53 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:02:03 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:02:03 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:02:19 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:02:19 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:02:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:02:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:02:57 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
+2013-04-01 15:02:57 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake\elearning\Config\bootstrap.php(101): CakePlugin::load('DebugKit')
+#1 C:\xampp\htdocs\cake\lib\Cake\Core\Configure.php(93): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\cake\lib\Cake\bootstrap.php(164): Configure::bootstrap(true)
+#3 C:\xampp\htdocs\cake\elearning\webroot\index.php(91): include('C:\xampp\htdocs...')
+#4 {main}
