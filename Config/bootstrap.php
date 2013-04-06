@@ -28,6 +28,7 @@ define('RUTA_IMAGEN_DIR_FOTO', 'foto');
 define('DIRECTORIO_UPLOADS', 'webroot'.DS.'files');
 
 // Setup a 'default' cache configuration for use in the application.
+// Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
 
 /**
