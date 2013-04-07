@@ -3168,3 +3168,306 @@ Stack Trace:
 2013-04-07 13:41:03 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-04-07 13:41:55 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:45:21 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:46:02 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:46:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:52:39 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:53:27 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:53:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 14:51:56 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:07:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:07:18 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:07:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:07:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:07:57 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:08:13 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:08:13 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:08:23 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:08:23 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:10:05 Error: [MissingActionException] Action ExamenesAdjuntosController::index.ctp() could not be found.
+#0 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-07 15:10:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:10:16 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:10:16 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:10:23 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:10:23 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:11:01 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:11:01 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:11:37 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:11:37 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:12:36 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:12:36 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:13:12 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:13:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:13:54 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:13:54 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:14:17 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:14:17 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:20:39 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:20:39 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:20:50 Error: [MissingControllerException] Controller class ExamenesController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:20:50 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:21:00 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:21:00 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:21:30 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:21:30 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:46:29 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:46:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 15:46:32 Error: [MissingTableException] Table examens for model Examen was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('examens')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(ExamenesAdjunto), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\ExamenesAdjuntosController.php(17): Controller->paginate()
+#6 [internal function]: ExamenesAdjuntosController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ExamenesAdjuntosController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ExamenesAdjuntosController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-07 15:46:33 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
