@@ -6,7 +6,6 @@ DROP SCHEMA IF EXISTS `elearning` ;
 CREATE SCHEMA IF NOT EXISTS `elearning` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci ;
 USE `elearning` ;
 
-
 -- -----------------------------------------------------
 -- Table `elearning`.`modulos`
 -- -----------------------------------------------------
@@ -56,12 +55,14 @@ CREATE  TABLE IF NOT EXISTS `elearning`.`usuarios` (
   `email` VARCHAR(80) NULL ,
   `telefono` CHAR(12) NULL ,
   `login` VARCHAR(45) NULL ,
-  `password` VARCHAR(20) NULL ,
+  `password` VARCHAR(255) NULL ,
   `tipo` TINYINT NULL DEFAULT 1 COMMENT 'Tipo:1=alumno, 2=profesor.' ,
   `created` DATETIME NULL DEFAULT NULL ,
   `modified` DATETIME NULL DEFAULT NULL ,
+  `foto` VARCHAR(255) NULL ,
+  `foto_dir` VARCHAR(255) NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `login` (`login` ASC) )
+  UNIQUE INDEX `login` (`login` ASC) )
 ENGINE = InnoDB;
 
 
@@ -128,18 +129,18 @@ DROP TABLE IF EXISTS `elearning`.`examenes_cabeceras` ;
 CREATE  TABLE IF NOT EXISTS `elearning`.`examenes_cabeceras` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `dsc` CHAR(30) NULL ,
-  `asignatura_id` INT NULL ,
+  `asignaturas_id` INT NULL ,
   `created` DATETIME NULL DEFAULT NULL ,
   `modified` DATETIME NULL DEFAULT NULL ,
   `enunciado` LONGTEXT NULL ,
   PRIMARY KEY (`id`) ,
-  CONSTRAINT `fk_examenes_cabecera_asignatura`
-    FOREIGN KEY (`asignatura_id` )
+  CONSTRAINT `fk_examenes_cabeceras_asignaturas`
+    FOREIGN KEY (`asignaturas_id` )
     REFERENCES `elearning`.`asignaturas` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-COMMENT = 'Exámenes de la plataforma';
+ENGINE = InnoDB, 
+COMMENT = 'Exámenes de la plataforma' ;
 
 
 -- -----------------------------------------------------
@@ -156,20 +157,20 @@ CREATE  TABLE IF NOT EXISTS `elearning`.`examenes_detalles` (
   `created` DATETIME NULL DEFAULT NULL ,
   `modified` DATETIME NULL DEFAULT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_examenes_detalle_usuarios` (`alumno_id` ASC) ,
-  INDEX `fk_examenes_detalle_cabecera` (`examenes_cabecera_id` ASC) ,
-  CONSTRAINT `fk_examenes_detalle_usuarios`
+  INDEX `fk_examenes_detalles_usuarios` (`alumno_id` ASC) ,
+  INDEX `fk_examenes_detalles_cabeceras` (`examenes_cabecera_id` ASC) ,
+  CONSTRAINT `fk_examenes_detalles_usuarios`
     FOREIGN KEY (`alumno_id` )
     REFERENCES `elearning`.`usuarios` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_examenes_detalle_cabecera`
+  CONSTRAINT `fk_examenes_detalles_cabeceras`
     FOREIGN KEY (`examenes_cabecera_id` )
     REFERENCES `elearning`.`examenes_cabeceras` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-COMMENT = 'Exámenes de la plataforma';
+COMMENT = 'Exámenes de la plataforma' ;
 
 
 -- -----------------------------------------------------
@@ -185,14 +186,14 @@ CREATE  TABLE IF NOT EXISTS `elearning`.`examenes_adjuntos` (
   `created` DATETIME NULL DEFAULT NULL ,
   `modified` DATETIME NULL DEFAULT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_examenes_adjuntos_1` (`examen_id` ASC) ,
-  CONSTRAINT `fk_examenes_adjuntos_1`
+  INDEX `fk_examenes_adjuntos_examenes_detalles` (`examen_id` ASC) ,
+  CONSTRAINT `fk_examenes_adjuntos_examenes_detalles`
     FOREIGN KEY (`examen_id` )
     REFERENCES `elearning`.`examenes_detalles` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-COMMENT = 'Ficheros adjuntos para la tabla exámenes.';
+ENGINE = InnoDB, 
+COMMENT = 'Ficheros adjuntos para la tabla exámenes.' ;
 
 
 -- -----------------------------------------------------
@@ -208,13 +209,13 @@ CREATE  TABLE IF NOT EXISTS `elearning`.`trabajos_enunciados` (
   `modified` DATETIME NULL DEFAULT NULL ,
   `enunciado` LONGTEXT NULL ,
   PRIMARY KEY (`id`) ,
-  CONSTRAINT `fk_trabajos_enunciado_asignaturas`
+  CONSTRAINT `fk_trabajos_enunciados_asignaturas`
     FOREIGN KEY (`asignatura_id` )
     REFERENCES `elearning`.`asignaturas` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-COMMENT = 'Exámenes de la plataforma';
+ENGINE = InnoDB, 
+COMMENT = 'Exámenes de la plataforma' ;
 
 
 -- -----------------------------------------------------
@@ -226,12 +227,12 @@ CREATE  TABLE IF NOT EXISTS `elearning`.`trabajos` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `dsc` CHAR(30) NULL ,
   `asignatura_id` INT NULL ,
-  `enunciado_id` INT NULL ,
+  `trabajos_enunciado_id` INT NULL ,
   `alumno_id` INT NULL ,
   `created` DATETIME NULL DEFAULT NULL ,
   `modified` DATETIME NULL DEFAULT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_trabajos_enunciado` (`enunciado_id` ASC) ,
+  INDEX `fk_trabajos_enunciados` (`trabajos_enunciado_id` ASC) ,
   INDEX `fk_trabajos_usuarios` (`alumno_id` ASC) ,
   CONSTRAINT `fk_trabajos_asignaturas`
     FOREIGN KEY (`asignatura_id` )
@@ -239,7 +240,7 @@ CREATE  TABLE IF NOT EXISTS `elearning`.`trabajos` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_trabajos_enunciado`
-    FOREIGN KEY (`enunciado_id` )
+    FOREIGN KEY (`trabajos_enunciado_id` )
     REFERENCES `elearning`.`trabajos_enunciados` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
@@ -248,8 +249,8 @@ CREATE  TABLE IF NOT EXISTS `elearning`.`trabajos` (
     REFERENCES `elearning`.`usuarios` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-COMMENT = 'Exámenes de la plataforma';
+ENGINE = InnoDB, 
+COMMENT = 'Exámenes de la plataforma' ;
 
 
 -- -----------------------------------------------------
@@ -270,8 +271,8 @@ CREATE  TABLE IF NOT EXISTS `elearning`.`trabajos_adjuntos` (
     REFERENCES `elearning`.`trabajos` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-COMMENT = 'Ficheros adjuntos para la tabla exámenes.';
+ENGINE = InnoDB, 
+COMMENT = 'Ficheros adjuntos para la tabla exámenes.' ;
 
 
 -- -----------------------------------------------------
@@ -282,13 +283,13 @@ DROP TABLE IF EXISTS `elearning`.`notas` ;
 CREATE  TABLE IF NOT EXISTS `elearning`.`notas` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `nota` DECIMAL(4,2) NULL ,
-  `alumnos_asignatura_id` INT NULL ,
+  `alumno_asignatura_id` INT NULL ,
   `created` DATETIME NULL DEFAULT NULL ,
   `modified` DATETIME NULL DEFAULT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_notas_alumnos_asignaturas` (`alumnos_asignatura_id` ASC) ,
+  INDEX `fk_notas_alumnos_asignaturas` (`alumno_asignatura_id` ASC) ,
   CONSTRAINT `fk_notas_alumnos_asignaturas`
-    FOREIGN KEY (`alumnos_asignatura_id` )
+    FOREIGN KEY (`alumno_asignatura_id` )
     REFERENCES `elearning`.`alumnos_asignaturas` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
