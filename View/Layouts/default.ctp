@@ -73,11 +73,10 @@
 
 <div id="wrapper-footer">
 <div id="footer">
-<p>pie</p>
-</div>
-</div>
 <p>
  Eformar : &copy; 2013 FrancoisRoxana, Inc.
 </p>
+</div>
+</div>
 </body>
 </html>
