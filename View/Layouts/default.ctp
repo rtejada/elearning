@@ -52,18 +52,19 @@
 <div id="wrapper-content">
 <div id="wrapper-menu-page">
 	<div id="menu-page">
-	<h3>Iniciar Sesi&oacute;n</h3>
+	<h3>Iniciar Sesi&oacute;n </h3>
+	<ul><li>
 	<form method="post" action="">
 <input type="text" name="usuario" value="Usuario" onFocus="if (this.value=='Usuario') this.value='';">
 <input type="text" name="nombre" value="Contrase&ntilde;a" onFocus="if (this.value=='Contrase&ntilde;a') this.value='';">
 	</form>
-
-
+	</li></ul>
+	
 </div><!--menu-page-->
 </div>
 <div id="content">
 	
-<h2>Texto</h2>
+<h2>TextoTextoTextoTextoTextoTextoTextoTextoTeTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</h2>
 
 
 <?php /* if ($this->controller->Session->check('Message.flash')) $this->controller->Session->flash();*/ ?>
@@ -73,11 +74,10 @@
 
 <div id="wrapper-footer">
 <div id="footer">
-<p>pie</p>
-</div>
-</div>
 <p>
- Eformar : &copy; 2013 FrancoisRoxana, Inc.
+ Eformar : &copy; 2013 Centro Privado no Homologado por la Consejer&iacute;a de Educaci&oacute;n de la Comunidad de Madrid
 </p>
+</div>
+</div>
 </body>
 </html>
