@@ -74,7 +74,7 @@
 <div id="wrapper-footer">
 <div id="footer">
 <p>
- Eformar : &copy; 2013 FrancoisRoxana, Inc.
+ Eformar : &copy; 2013 Centro Privado no Homologado por la Consejer&iacute;a de Educaci&oacute;n de la Comunidad de Madrid
 </p>
 </div>
 </div>
