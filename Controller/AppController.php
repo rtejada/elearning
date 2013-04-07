@@ -33,4 +33,64 @@ App::uses('Sanitize', 'Utility');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+
+    public $components = array(
+        'Session',
+        'Auth' => array(
+            'loginAction' => array(
+                'controller' => 'usuarios',
+                'action' => 'login',
+            ),
+            'authenticate' => array(
+                'Form' => array(
+                    'userModel' => 'Usuario',
+                    'fields' => array(
+                        'username' => 'login',
+                        'password' => 'password'
+                    )
+                )
+            ),
+            //TODO poner aqui la página de inicio para usuarios autentificados
+            'loginRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
+            'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
+            'authorize' => array('Controller'),
+            'authError' => 'No tiene permisos para acceder a esta sección'
+        )
+    );
+
+    public function isAuthorized($user) {
+        // Los profesores pueden acceder a todo.
+        if (isset($user['tipo']) && $user['tipo'] === '2') {
+            return true;
+        }
+
+        // Default deny
+        return false;
+    }
+
+    public function beforeFilter() {
+      //TODO aqui las opciones permitidas sin que el usuario esté logueado.
+      //  $this->Auth->allow('index', 'view', 'add');
+
+    }
+
+
+    function isLogged($user) {
+        if (isset($user['id']) && ($user['id']>0)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    function beforeRender() {
+        parent::beforeRender();
+       /* if ($this->name === 'Usuarios') {
+            $this->layout = 'login';
+        }*/
+    }
+
+
 }

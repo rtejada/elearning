@@ -93,6 +93,12 @@ Cache::config('default', array('engine' => 'File'));
  * ));
  */
 
+// include the Session Component to our application
+App::uses('SessionComponent', 'Controller/Component');
+
+// now create new SessionComponent instance
+$Session = new SessionComponent(new ComponentCollection());
+
 CakePlugin::load('Upload');
 
 Configure::write('Dispatcher.filters', array(
@@ -114,4 +120,16 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+
+Configure::write('Route.default', array('controller' => 'pages', 'action' => 'display', 'home'));
+
+//configurar distintas rutas si el usuario está autentificado o no:
+/*
+if ($Session->read('Auth.User')) {
+    Configure::write('Route.default', array('controller' => 'pages', 'action' => 'display', 'home'));
+} else {
+    Configure::write('Route.default', array('controller' => 'paginas', 'action' => 'display', 'index'));
+}
+*/
 

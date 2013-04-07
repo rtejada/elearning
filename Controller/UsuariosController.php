@@ -129,4 +129,28 @@ class UsuariosController extends AppController {
         $this->DescargasFicheros->descarga('usuario',$mfoto_dir,$mfoto);
     }
 
+
+    public function beforeFilter() {
+        parent::beforeFilter();
+       // $this->Auth->authenticate = array('Form');
+        //$this->Auth->allow('add');
+    }
+
+
+    public function login() {
+        if ($this->request->is('post')) {
+            if ($this->Auth->login()) {
+                $this->redirect($this->Auth->redirect());
+            } else {
+                $this->Session->setFlash(__('Invalid username or password, try again'));
+            }
+        }
+    }
+
+    public function logout() {
+        $this->redirect($this->Auth->logout());
+    }
+
+
+
 }
