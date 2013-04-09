@@ -1,7 +1,7 @@
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>CakePHP : The PHP Rapid Development Framework :: <?php echo $title_for_layout?></title>
+	<title>Cake :: <?php echo $title_for_layout?></title>
 		<?php echo $this->Html->charset('UTF-8'); ?>
 	<meta name="description" content="Plataforma de estudios a distancia" />
 	<meta name="keywords" content="formacion, modulo, distancia" />
@@ -51,24 +51,15 @@
 
 <div id="wrapper-content">
 <div id="wrapper-menu-page">
-	<div id="menu-page">
-	<h3>Iniciar Sesi&oacute;n </h3>
-	<ul><li>
-	<form method="post" action="">
-<input type="text" name="usuario" value="Usuario" onFocus="if (this.value=='Usuario') this.value='';">
-<input type="text" name="nombre" value="Contrase&ntilde;a" onFocus="if (this.value=='Contrase&ntilde;a') this.value='';">
-	</form>
-	</li></ul>
-	
-</div><!--menu-page-->
+
 </div>
 <div id="content">
 	
-<h2>TextoTextoTextoTextoTextoTextoTextoTextoTeTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</h2>
+<h2>
+			<?php echo $this->Session->flash(); ?>
+			<?php echo $this->fetch('content'); ?>
+</h2>
 
-
-<?php /* if ($this->controller->Session->check('Message.flash')) $this->controller->Session->flash();*/ ?>
-<?php /*echo $content_for_layout  */?>
 </div>
 </div>
 
