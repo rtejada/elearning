@@ -50,14 +50,16 @@
 </div>
 
 <div id="wrapper-content">
-<div id="wrapper-menu-page">
 
-</div>
 <div id="content">
 	
 <h2>
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $this->fetch('content'); ?>
+			
+			
+			
+			
 </h2>
 
 </div>

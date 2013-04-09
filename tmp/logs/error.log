@@ -3755,3 +3755,143 @@ Stack Trace:
 2013-04-09 20:46:07 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-04-09 21:14:06 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:14:10 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:14:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:14:55 Error: [MissingActionException] Action UsuariosController::add.ctp() could not be found.
+#0 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-09 21:14:55 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:15:02 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:17:06 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:19:19 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:19:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:21:40 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:21:56 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:24:38 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:24:42 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:24:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:25:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:25:25 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:25:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:25:37 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:25:51 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:29:51 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:29:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:31:11 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:33:48 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:35:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:35:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:36:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:37:13 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:37:23 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:38:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:39:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:39:14 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:39:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:40:46 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:42:33 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:44:20 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:44:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:45:04 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:45:16 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:45:39 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:45:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:46:01 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:46:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:46:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:48:39 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:49:00 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-09 21:50:42 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
