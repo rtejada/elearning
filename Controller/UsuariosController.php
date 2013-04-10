@@ -133,7 +133,7 @@ class UsuariosController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
        // $this->Auth->authenticate = array('Form');
-        //$this->Auth->allow('add');
+        //$this->Auth->allow('*','add');
     }
 
 

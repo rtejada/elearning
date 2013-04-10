@@ -71,7 +71,7 @@ class AppController extends Controller {
 
     public function beforeFilter() {
       //TODO aqui las opciones permitidas sin que el usuario esté logueado.
-      //  $this->Auth->allow('index', 'view', 'add');
+      // $this->Auth->allow('index', 'view', 'add');
 
     }
 
