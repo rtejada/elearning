@@ -3,6 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Curso Model
  *
+ * @property Modulo $Modulo
+ * @property Asignatura $Asignatura
  */
 class Curso extends AppModel {
 
@@ -30,4 +32,43 @@ class Curso extends AppModel {
 			),
 		),
 	);
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Modulo' => array(
+			'className' => 'Modulo',
+			'foreignKey' => 'modulo_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Asignatura' => array(
+			'className' => 'Asignatura',
+			'foreignKey' => 'curso_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

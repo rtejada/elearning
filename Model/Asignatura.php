@@ -90,19 +90,6 @@ class Asignatura extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'Trabajo' => array(
-			'className' => 'Trabajo',
-			'foreignKey' => 'asignatura_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
 		'TrabajosEnunciado' => array(
 			'className' => 'TrabajosEnunciado',
 			'foreignKey' => 'asignatura_id',

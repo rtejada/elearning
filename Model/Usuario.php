@@ -207,7 +207,7 @@ class Usuario extends AppModel {
         //Relaciona al usuario de tipo alumno con sus asignaturas
 		'alumnos_asignaturas' => array(
 			'className' => 'alumnos_asignaturas',
-			'foreignKey' => 'alumno_id',
+			'foreignKey' => 'usuario_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
@@ -221,7 +221,7 @@ class Usuario extends AppModel {
         //Relaciona al usuario de tipo profesor con las asignaturas que imparte
 		'asignaturas' => array(
 			'className' => 'asignaturas',
-			'foreignKey' => 'profesor_id',
+			'foreignKey' => 'usuario_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
@@ -235,7 +235,7 @@ class Usuario extends AppModel {
         //Relaciona al usuario de tipo alumno con los trabajo
 		'trabajos' => array(
 			'className' => 'trabajos',
-			'foreignKey' => 'alumno_id',
+			'foreignKey' => 'usuario_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
@@ -249,7 +249,7 @@ class Usuario extends AppModel {
         //Relaciona al usuario de tipo alumno con sus examenes
 		'examenes_detalles' => array(
 			'className' => 'examenes_detalle',
-			'foreignKey' => 'alumno_id',
+			'foreignKey' => 'usuario_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
