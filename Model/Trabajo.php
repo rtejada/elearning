@@ -1,5 +1,6 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('CakeSession', 'Model/Datasource');
 /**
  * Trabajo Model
  *
@@ -41,13 +42,6 @@ class Trabajo extends AppModel {
 
 	public $belongsTo = array(
 
-		'Asignatura' => array(
-			'className' => 'Asignatura',
-			'foreignKey' => 'asignatura_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
 		'TrabajosEnunciado' => array(
 			'className' => 'TrabajosEnunciado',
 			'foreignKey' => 'trabajos_enunciado_id',
@@ -63,4 +57,26 @@ class Trabajo extends AppModel {
 			'order' => ''
 		)
 	);
+
+
+    /**
+     * Esta función permite establecer el usuario activo como usuario_id del trabajo.
+     * La functión beforeSave se ejecuta justo antes de que se guarden los datos.
+     * La función deberá devolver true o de lo contrario no se almacenarán los cambios.
+     *
+     * @return bool
+     */
+    function beforeSave() {
+        //se obtiene el ID de usuario activo
+        $uid = CakeSession::read("Auth.User.id");
+        //se establece el campo usuario_id del modelo trabajo, como el usuario activo.
+        $this->data['Trabajo']['usuario_id'] = $uid;
+
+        return true;
+    }
+
+
+
+
+
 }

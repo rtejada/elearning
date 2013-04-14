@@ -47,10 +47,10 @@ class TrabajosController extends AppController {
 				$this->Session->setFlash(__('The trabajo could not be saved. Please, try again.'));
 			}
 		}
-		$asignaturas = $this->Trabajo->Asignatura->find('list');
+
 		$trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list');
 		$usuarios = $this->Trabajo->Usuario->find('list');
-		$this->set(compact('asignaturas', 'trabajosEnunciados', 'usuarios'));
+		$this->set(compact('trabajosEnunciados', 'usuarios'));
 	}
 
 /**

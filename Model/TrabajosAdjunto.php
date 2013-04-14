@@ -14,6 +14,16 @@ class TrabajosAdjunto extends AppModel {
  */
 	public $displayField = 'dsc';
 
+    public $actsAs = array(
+        'Upload.Upload' => array(
+            'fichero' => array(
+                'fields' => array(
+                    'dir' => 'fichero_dir'
+                )
+            )
+        )
+    );
+
 /**
  * Validation rules
  *

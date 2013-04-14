@@ -4,10 +4,8 @@
 		<legend><?php echo __('Edit Trabajo'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
+        echo $this->Form->input('trabajos_enunciado_id');
 		echo $this->Form->input('dsc');
-		echo $this->Form->input('asignatura_id');
-		echo $this->Form->input('trabajos_enunciado_id');
-		echo $this->Form->input('usuario_id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
