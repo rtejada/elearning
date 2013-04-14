@@ -9,6 +9,9 @@ App::uses('AppModel', 'Model');
  */
 class Trabajo extends AppModel {
 
+
+    public $displayField = 'dsc';
+
 /**
  * Validation rules
  *
