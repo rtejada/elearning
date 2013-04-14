@@ -75,10 +75,13 @@ class TrabajosController extends AppController {
 			$options = array('conditions' => array('Trabajo.' . $this->Trabajo->primaryKey => $id));
 			$this->request->data = $this->Trabajo->find('first', $options);
 		}
-		$asignaturas = $this->Trabajo->Asignatura->find('list');
+		//$asignaturas = $this->Trabajo->Asignatura->find('list');
 		$trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list');
 		$usuarios = $this->Trabajo->Usuario->find('list');
-		$this->set(compact('asignaturas', 'trabajosEnunciados', 'usuarios'));
+		$this->set(compact('trabajosEnunciados', 'usuarios'));
+
+        $this->loadModel("Nota");
+
 	}
 
 /**

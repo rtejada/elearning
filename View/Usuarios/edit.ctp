@@ -17,9 +17,11 @@
         echo $this->Form->input('Usuario.foto_dir', array('type' => 'hidden'));
 
         $url = $this->Html->url($link);
-        echo $this->Html->image($url);
+        //echo $this->Html->image($url);
 
         ?>
+
+    <img src="<?php echo $url; ?>" />
 
 	</fieldset>
 
