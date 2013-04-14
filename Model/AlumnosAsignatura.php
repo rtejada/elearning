@@ -14,7 +14,7 @@ class AlumnosAsignatura extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'alumno_id';
+	public $displayField = 'usuario_id';
 
 /**
  * Validation rules
@@ -22,7 +22,7 @@ class AlumnosAsignatura extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'alumno_id' => array(
+		'usuario_id' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
@@ -69,7 +69,7 @@ class AlumnosAsignatura extends AppModel {
 	public $belongsTo = array(
 		'Usuario' => array(
 			'className' => 'Usuario',
-			'foreignKey' => 'alumno_id',
+			'foreignKey' => 'usuario_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

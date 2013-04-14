@@ -64,7 +64,7 @@ class Asignatura extends AppModel {
 		),
 		'Usuario' => array(
 			'className' => 'Usuario',
-			'foreignKey' => 'profesor_id',
+			'foreignKey' => 'usuario_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -118,7 +118,7 @@ class Asignatura extends AppModel {
 		),
 		'alumnos_asignaturas' => array(
 			'className' => 'alumnos_asignaturas',
-			'foreignKey' => 'alumno_id',
+			'foreignKey' => 'usuario_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
