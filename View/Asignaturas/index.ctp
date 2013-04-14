@@ -1,5 +1,15 @@
 <div class="asignaturas index">
 	<h2><?php echo __('Asignaturas'); ?></h2>
+
+
+    <div>
+        <?php echo $this->Form->create('Basica');?>
+        <?php echo $this->Form->input('dsc');?>
+        <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit', 'class' => 'button margin-left')); ?>
+        <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear', 'class' => 'button margin-left')); ?>
+        <?php echo $this->Form->end();?>
+    </div>
+
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>

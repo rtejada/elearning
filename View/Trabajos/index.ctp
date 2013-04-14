@@ -4,7 +4,6 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('dsc'); ?></th>
-			<th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('trabajos_enunciado_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('usuario_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
@@ -15,9 +14,6 @@
 	<tr>
 		<td><?php echo h($trabajo['Trabajo']['id']); ?>&nbsp;</td>
 		<td><?php echo h($trabajo['Trabajo']['dsc']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($trabajo['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $trabajo['Asignatura']['id'])); ?>
-		</td>
 		<td>
 			<?php echo $this->Html->link($trabajo['TrabajosEnunciado']['dsc'], array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajo['TrabajosEnunciado']['id'])); ?>
 		</td>

@@ -102,4 +102,5 @@ class TrabajosController extends AppController {
 		$this->Session->setFlash(__('Trabajo was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+
 }

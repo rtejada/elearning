@@ -111,7 +111,7 @@
 		foreach ($usuario['alumnos_asignaturas'] as $alumnosAsignaturas): ?>
 		<tr>
 			<td><?php echo $alumnosAsignaturas['id']; ?></td>
-			<td><?php echo $alumnosAsignaturas['alumno_id']; ?></td>
+			<td><?php echo $alumnosAsignaturas['usuario_id']; ?></td>
 			<td><?php echo $alumnosAsignaturas['asignatura_id']; ?></td>
 			<td><?php echo $alumnosAsignaturas['created']; ?></td>
 			<td><?php echo $alumnosAsignaturas['modified']; ?></td>
@@ -192,7 +192,7 @@
 			<td><?php echo $trabajos['dsc']; ?></td>
 			<td><?php echo $trabajos['asignatura_id']; ?></td>
 			<td><?php echo $trabajos['enunciado_id']; ?></td>
-			<td><?php echo $trabajos['alumno_id']; ?></td>
+			<td><?php echo $trabajos['usuario_id']; ?></td>
 			<td><?php echo $trabajos['created']; ?></td>
 			<td><?php echo $trabajos['modified']; ?></td>
 			<td class="actions">
@@ -231,7 +231,7 @@
 		<tr>
 			<td><?php echo $examenesDetalles['id']; ?></td>
 			<td><?php echo $examenesDetalles['dsc']; ?></td>
-			<td><?php echo $examenesDetalles['alumno_id']; ?></td>
+			<td><?php echo $examenesDetalles['usuario_id']; ?></td>
 			<td><?php echo $examenesDetalles['examenes_cabecera_id']; ?></td>
 			<td><?php echo $examenesDetalles['nota']; ?></td>
 			<td><?php echo $examenesDetalles['created']; ?></td>

@@ -5,15 +5,11 @@
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('nombre'); ?></th>
 			<th><?php echo $this->Paginator->sort('apellidos'); ?></th>
-			<th><?php echo $this->Paginator->sort('fecha_nacimiento'); ?></th>
 			<th><?php echo $this->Paginator->sort('direccion'); ?></th>
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
 			<th><?php echo $this->Paginator->sort('telefono'); ?></th>
 			<th><?php echo $this->Paginator->sort('login'); ?></th>
-			<th><?php echo $this->Paginator->sort('password'); ?></th>
 			<th><?php echo $this->Paginator->sort('tipo'); ?></th>
-			<th><?php echo $this->Paginator->sort('foto'); ?></th>
-			<th><?php echo $this->Paginator->sort('foto_dir'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -23,12 +19,10 @@
 		<td><?php echo h($usuario['Usuario']['id']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['nombre']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['apellidos']); ?>&nbsp;</td>
-		<td><?php echo h($usuario['Usuario']['fecha_nacimiento']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['direccion']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['email']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['telefono']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['login']); ?>&nbsp;</td>
-		<td><?php echo h($usuario['Usuario']['password']); ?>&nbsp;</td>
 		<td><?php
             if (h($usuario['Usuario']['tipo'])=='1') {
                 echo "Alumno";
@@ -36,8 +30,6 @@
                 echo "Profesor";
             }
             ?>&nbsp;</td>
-		<td><?php echo h($usuario['Usuario']['foto']); ?>&nbsp;</td>
-		<td><?php echo h($usuario['Usuario']['foto_dir']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['created']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['modified']); ?>&nbsp;</td>
 		<td class="actions">

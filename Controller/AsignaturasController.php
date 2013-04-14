@@ -13,6 +13,22 @@ class AsignaturasController extends AppController {
  * @return void
  */
 	public function index() {
+
+        $conditions = array();
+
+        if (isset($this->params['data']['submit'])) {
+
+        if (!empty($this->params['data']['Basica']['dsc'])) {
+            $txtdsc = $this->params['data']['Basica']['dsc'];
+            $conditions[] = array('Asignatura.dsc LIKE' => '%'.$txtdsc.'%');
+        }
+
+        $this->paginate = array(
+        'limit' => 20,
+        'conditions' => $conditions	);
+
+        }
+
 		$this->Asignatura->recursive = 0;
 		$this->set('asignaturas', $this->paginate());
 	}
