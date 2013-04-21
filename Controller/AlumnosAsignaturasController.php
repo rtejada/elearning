@@ -25,11 +25,11 @@ class AlumnosAsignaturasController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		if (!$this->AlumnosAsignatura->exists($id)) {
+		$this->AlumnosAsignatura->id = $id;
+		if (!$this->AlumnosAsignatura->exists()) {
 			throw new NotFoundException(__('Invalid alumnos asignatura'));
 		}
-		$options = array('conditions' => array('AlumnosAsignatura.' . $this->AlumnosAsignatura->primaryKey => $id));
-		$this->set('alumnosAsignatura', $this->AlumnosAsignatura->find('first', $options));
+		$this->set('alumnosAsignatura', $this->AlumnosAsignatura->read(null, $id));
 	}
 
 /**
@@ -47,7 +47,7 @@ class AlumnosAsignaturasController extends AppController {
 				$this->Session->setFlash(__('The alumnos asignatura could not be saved. Please, try again.'));
 			}
 		}
-        $usuarios = $this->AlumnosAsignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
+		$usuarios = $this->AlumnosAsignatura->Usuario->find('list');
 		$asignaturas = $this->AlumnosAsignatura->Asignatura->find('list');
 		$this->set(compact('usuarios', 'asignaturas'));
 	}
@@ -60,7 +60,8 @@ class AlumnosAsignaturasController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-		if (!$this->AlumnosAsignatura->exists($id)) {
+		$this->AlumnosAsignatura->id = $id;
+		if (!$this->AlumnosAsignatura->exists()) {
 			throw new NotFoundException(__('Invalid alumnos asignatura'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
@@ -71,11 +72,9 @@ class AlumnosAsignaturasController extends AppController {
 				$this->Session->setFlash(__('The alumnos asignatura could not be saved. Please, try again.'));
 			}
 		} else {
-			$options = array('conditions' => array('AlumnosAsignatura.' . $this->AlumnosAsignatura->primaryKey => $id));
-			$this->request->data = $this->AlumnosAsignatura->find('first', $options);
+			$this->request->data = $this->AlumnosAsignatura->read(null, $id);
 		}
-        $usuarios = $this->AlumnosAsignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
-
+		$usuarios = $this->AlumnosAsignatura->Usuario->find('list');
 		$asignaturas = $this->AlumnosAsignatura->Asignatura->find('list');
 		$this->set(compact('usuarios', 'asignaturas'));
 	}
@@ -83,17 +82,19 @@ class AlumnosAsignaturasController extends AppController {
 /**
  * delete method
  *
- * @throws NotFoundException
  * @throws MethodNotAllowedException
+ * @throws NotFoundException
  * @param string $id
  * @return void
  */
 	public function delete($id = null) {
+		if (!$this->request->is('post')) {
+			throw new MethodNotAllowedException();
+		}
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
 			throw new NotFoundException(__('Invalid alumnos asignatura'));
 		}
-		$this->request->onlyAllow('post', 'delete');
 		if ($this->AlumnosAsignatura->delete()) {
 			$this->Session->setFlash(__('Alumnos asignatura deleted'));
 			$this->redirect(array('action' => 'index'));

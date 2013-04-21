@@ -47,6 +47,8 @@ class ExamenesAdjuntosController extends AppController {
 				$this->Session->setFlash(__('The examenes adjunto could not be saved. Please, try again.'));
 			}
 		}
+		$examenesDetalles = $this->ExamenesAdjunto->ExamenesDetalle->find('list');
+		$this->set(compact('examenesDetalles'));
 	}
 
 /**
@@ -71,6 +73,8 @@ class ExamenesAdjuntosController extends AppController {
 		} else {
 			$this->request->data = $this->ExamenesAdjunto->read(null, $id);
 		}
+		$examenesDetalles = $this->ExamenesAdjunto->ExamenesDetalle->find('list');
+		$this->set(compact('examenesDetalles'));
 	}
 
 /**

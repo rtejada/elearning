@@ -11,9 +11,9 @@
 			<?php echo h($examenesDetalle['ExamenesDetalle']['dsc']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Alumno Id'); ?></dt>
+		<dt><?php echo __('Usuario Id'); ?></dt>
 		<dd>
-			<?php echo h($examenesDetalle['ExamenesDetalle']['alumno_id']); ?>
+			<?php echo h($examenesDetalle['ExamenesDetalle']['usuario_id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Examenes Cabecera Id'); ?></dt>

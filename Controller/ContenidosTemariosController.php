@@ -47,6 +47,9 @@ class ContenidosTemariosController extends AppController {
 				$this->Session->setFlash(__('The contenidos temario could not be saved. Please, try again.'));
 			}
 		}
+		$usuarios = $this->ContenidosTemario->Usuario->find('list');
+		$asignaturas = $this->ContenidosTemario->Asignatura->find('list');
+		$this->set(compact('usuarios', 'asignaturas'));
 	}
 
 /**
@@ -71,6 +74,9 @@ class ContenidosTemariosController extends AppController {
 		} else {
 			$this->request->data = $this->ContenidosTemario->read(null, $id);
 		}
+		$usuarios = $this->ContenidosTemario->Usuario->find('list');
+		$asignaturas = $this->ContenidosTemario->Asignatura->find('list');
+		$this->set(compact('usuarios', 'asignaturas'));
 	}
 
 /**

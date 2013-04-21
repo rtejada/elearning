@@ -39,40 +39,5 @@
 		<li><?php echo $this->Html->link(__('New Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Notas'), array('controller' => 'notas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Nota'), array('controller' => 'notas', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
-	<div class="related">
-		<h3><?php echo __('Related Notas'); ?></h3>
-	<?php if (!empty($alumnosAsignatura['Nota'])): ?>
-		<dl>
-			<dt><?php echo __('Id'); ?></dt>
-		<dd>
-	<?php echo $alumnosAsignatura['Nota']['id']; ?>
-&nbsp;</dd>
-		<dt><?php echo __('Nota'); ?></dt>
-		<dd>
-	<?php echo $alumnosAsignatura['Nota']['nota']; ?>
-&nbsp;</dd>
-		<dt><?php echo __('Alumno Asignatura Id'); ?></dt>
-		<dd>
-	<?php echo $alumnosAsignatura['Nota']['alumno_asignatura_id']; ?>
-&nbsp;</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-	<?php echo $alumnosAsignatura['Nota']['created']; ?>
-&nbsp;</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-	<?php echo $alumnosAsignatura['Nota']['modified']; ?>
-&nbsp;</dd>
-		</dl>
-	<?php endif; ?>
-		<div class="actions">
-			<ul>
-				<li><?php echo $this->Html->link(__('Edit Nota'), array('controller' => 'notas', 'action' => 'edit', $alumnosAsignatura['Nota']['id'])); ?></li>
-			</ul>
-		</div>
-	</div>
-	

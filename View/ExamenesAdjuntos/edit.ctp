@@ -6,7 +6,7 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('dsc');
 		echo $this->Form->input('ruta_fichero');
-		echo $this->Form->input('examen_id');
+		echo $this->Form->input('examenes_detalle_id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
@@ -17,5 +17,7 @@
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('ExamenesAdjunto.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('ExamenesAdjunto.id'))); ?></li>
 		<li><?php echo $this->Html->link(__('List Examenes Adjuntos'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Examenes Detalles'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Examenes Detalle'), array('controller' => 'examenes_detalles', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

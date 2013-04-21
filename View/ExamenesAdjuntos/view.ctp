@@ -16,9 +16,9 @@
 			<?php echo h($examenesAdjunto['ExamenesAdjunto']['ruta_fichero']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Examen Id'); ?></dt>
+		<dt><?php echo __('Examenes Detalle'); ?></dt>
 		<dd>
-			<?php echo h($examenesAdjunto['ExamenesAdjunto']['examen_id']); ?>
+			<?php echo $this->Html->link($examenesAdjunto['ExamenesDetalle']['nota'], array('controller' => 'examenes_detalles', 'action' => 'view', $examenesAdjunto['ExamenesDetalle']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
@@ -40,5 +40,7 @@
 		<li><?php echo $this->Form->postLink(__('Delete Examenes Adjunto'), array('action' => 'delete', $examenesAdjunto['ExamenesAdjunto']['id']), null, __('Are you sure you want to delete # %s?', $examenesAdjunto['ExamenesAdjunto']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Examenes Adjuntos'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Examenes Adjunto'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Examenes Detalles'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Examenes Detalle'), array('controller' => 'examenes_detalles', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

@@ -11,9 +11,9 @@
 			<?php echo h($nota['Nota']['nota']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Alumno Asignatura Id'); ?></dt>
+		<dt><?php echo __('Alumnos Asignatura'); ?></dt>
 		<dd>
-			<?php echo h($nota['Nota']['alumno_asignatura_id']); ?>
+			<?php echo $this->Html->link($nota['AlumnosAsignatura']['asignatura_id'], array('controller' => 'alumnos_asignaturas', 'action' => 'view', $nota['AlumnosAsignatura']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
@@ -35,5 +35,7 @@
 		<li><?php echo $this->Form->postLink(__('Delete Nota'), array('action' => 'delete', $nota['Nota']['id']), null, __('Are you sure you want to delete # %s?', $nota['Nota']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Notas'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Nota'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Alumnos Asignatura'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
