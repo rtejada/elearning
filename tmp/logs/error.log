@@ -4923,3 +4923,306 @@ Stack Trace:
 #11 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
 #12 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2013-04-14 20:47:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:47:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:47:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:47:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:47:35 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/4994189560_02c56a3ddf_b.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:47:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:48:39 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
+)
+Request URL: /elearning/usuarios/downloadFile/1/4994189560_02c56a3ddf_b.jpg
+Stack Trace:
+#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 20:49:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:49:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:49:03 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/4994189560_02c56a3ddf_b.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:49:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:49:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:49:36 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:49:50 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
+)
+Request URL: /elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 20:53:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:53:40 Error: [NotFoundException] Invalid usuario
+Request URL: /elearning/usuarios/edit
+Stack Trace:
+#0 [internal function]: UsuariosController->edit()
+#1 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 20:53:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:53:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:53:46 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:53:46 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:54:01 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
+)
+Request URL: /elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 20:58:59 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:58:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 20:58:59 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 21:00:26 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 21:00:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 21:00:26 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
+)
+Request URL: /elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 21:00:26 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 21:02:15 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
+)
+Request URL: /elearning/usuarios/downloadFile/1/imagen1.jpg
+Stack Trace:
+#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 21:02:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 15:57:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-15 15:57:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/css/cake.forms.css
+Stack Trace:
+#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
