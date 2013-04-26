@@ -4714,515 +4714,533 @@ Stack Trace:
 2013-04-14 12:35:41 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 17:40:22 Error: [MissingControllerException] Controller class CursoController could not be found.
-Exception Attributes: array (
-  'class' => 'CursoController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/curso
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-14 14:02:20 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 18:39:02 Error: [MissingActionException] Action CursosController::modulos() could not be found.
-Exception Attributes: array (
-  'controller' => 'CursosController',
-  'action' => 'modulos',
-)
-Request URL: /elearning/cursos/modulos
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest), Object(CakeResponse))
-#2 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-04-14 18:50:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Modulo.modulo_id' in 'field list'
-Request URL: /elearning/cursos/edit/1
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Modulo`...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Modulo`...', Array, Array)
-#3 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Modulo`...', false)
-#4 /srv/cakephp/lib/Cake/Model/Model.php(2688): DboSource->read(Object(Modulo), Array)
-#5 /opt/lampp/htdocs/elearning/Controller/CursosController.php(78): Model->find('all', Array)
-#6 [internal function]: CursosController->edit('1')
-#7 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(CursosController), Array)
-#8 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#9 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest), Object(CakeResponse))
-#10 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#11 {main}
-2013-04-14 18:51:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`elearning`.`cursos`, CONSTRAINT `fk_cursos_modulos` FOREIGN KEY (`modulo_id`) REFERENCES `modulos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
-Request URL: /elearning/cursos/edit/1
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE `elearni...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/Database/Mysql.php(379): DboSource->execute('UPDATE `elearni...')
-#3 /srv/cakephp/lib/Cake/Model/Model.php(1725): Mysql->update(Object(Curso), Array, Array)
-#4 /opt/lampp/htdocs/elearning/Controller/CursosController.php(67): Model->save(Array)
-#5 [internal function]: CursosController->edit('1')
-#6 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(CursosController), Array)
-#7 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest), Object(CakeResponse))
-#9 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-04-14 18:51:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`elearning`.`cursos`, CONSTRAINT `fk_cursos_modulos` FOREIGN KEY (`modulo_id`) REFERENCES `modulos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
-Request URL: /elearning/cursos/edit/1
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE `elearni...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/Database/Mysql.php(379): DboSource->execute('UPDATE `elearni...')
-#3 /srv/cakephp/lib/Cake/Model/Model.php(1725): Mysql->update(Object(Curso), Array, Array)
-#4 /opt/lampp/htdocs/elearning/Controller/CursosController.php(67): Model->save(Array)
-#5 [internal function]: CursosController->edit('1')
-#6 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(CursosController), Array)
-#7 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest), Object(CakeResponse))
-#9 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-04-14 18:51:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`elearning`.`cursos`, CONSTRAINT `fk_cursos_modulos` FOREIGN KEY (`modulo_id`) REFERENCES `modulos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
-Request URL: /elearning/cursos/edit/1
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE `elearni...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/Database/Mysql.php(379): DboSource->execute('UPDATE `elearni...')
-#3 /srv/cakephp/lib/Cake/Model/Model.php(1725): Mysql->update(Object(Curso), Array, Array)
-#4 /opt/lampp/htdocs/elearning/Controller/CursosController.php(67): Model->save(Array)
-#5 [internal function]: CursosController->edit('1')
-#6 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(CursosController), Array)
-#7 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest), Object(CakeResponse))
-#9 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-04-14 19:05:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ExamenesCabecera.asignatura_id' in 'field list'
-Request URL: /elearning/asignaturas/edit/1
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Examene...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Examene...', Array, Array)
-#3 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1343): DboSource->fetchAll('SELECT `Examene...', false)
-#4 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1205): DboSource->fetchAssociated(Object(Asignatura), 'SELECT `Examene...', Array)
-#5 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1116): DboSource->queryAssociation(Object(Asignatura), Object(ExamenesCabecera), 'hasMany', 'ExamenesCabecer...', Array, Array, true, Array, 0, Array)
-#6 /srv/cakephp/lib/Cake/Model/Model.php(2688): DboSource->read(Object(Asignatura), Array)
-#7 /opt/lampp/htdocs/elearning/Controller/AsignaturasController.php(75): Model->find('first', Array)
-#8 [internal function]: AsignaturasController->edit('1')
-#9 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AsignaturasController), Array)
-#10 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#11 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AsignaturasController), Object(CakeRequest), Object(CakeResponse))
-#12 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#13 {main}
-2013-04-14 19:06:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Trabajo.asignatura_id' in 'field list'
-Request URL: /elearning/asignaturas/edit/2
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Trabajo...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Trabajo...', Array, Array)
-#3 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1343): DboSource->fetchAll('SELECT `Trabajo...', false)
-#4 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1205): DboSource->fetchAssociated(Object(Asignatura), 'SELECT `Trabajo...', Array)
-#5 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1116): DboSource->queryAssociation(Object(Asignatura), Object(Trabajo), 'hasMany', 'Trabajo', Array, Array, true, Array, 0, Array)
-#6 /srv/cakephp/lib/Cake/Model/Model.php(2688): DboSource->read(Object(Asignatura), Array)
-#7 /opt/lampp/htdocs/elearning/Controller/AsignaturasController.php(75): Model->find('first', Array)
-#8 [internal function]: AsignaturasController->edit('2')
-#9 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AsignaturasController), Array)
-#10 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#11 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AsignaturasController), Object(CakeRequest), Object(CakeResponse))
-#12 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#13 {main}
-2013-04-14 19:12:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alumnos_asignaturas.alumno_id' in 'field list'
-Request URL: /elearning/usuarios/edit/1
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `alumnos...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `alumnos...', Array, Array)
-#3 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1343): DboSource->fetchAll('SELECT `alumnos...', false)
-#4 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1205): DboSource->fetchAssociated(Object(Usuario), 'SELECT `alumnos...', Array)
-#5 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1116): DboSource->queryAssociation(Object(Usuario), Object(AppModel), 'hasMany', 'alumnos_asignat...', Array, Array, true, Array, 0, Array)
-#6 /srv/cakephp/lib/Cake/Model/Model.php(2688): DboSource->read(Object(Usuario), Array)
-#7 /opt/lampp/htdocs/elearning/Controller/UsuariosController.php(83): Model->find('first', Array)
-#8 [internal function]: UsuariosController->edit('1')
-#9 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
-#10 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#11 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
-#12 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#13 {main}
-2013-04-14 19:13:07 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/4994189560_02c56a3ddf_b.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-14 14:02:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 19:13:15 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/4994189560_02c56a3ddf_b.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-14 14:02:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 19:13:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nota.alumnos_asignatura_id' in 'on clause'
-Request URL: /elearning/alumnos_asignaturas
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Alumnos...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Alumnos...', Array, Array)
-#3 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Alumnos...', false)
-#4 /srv/cakephp/lib/Cake/Model/Model.php(2688): DboSource->read(Object(AlumnosAsignatura), Array)
-#5 /srv/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
-#6 /srv/cakephp/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate(NULL, Array, Array)
-#7 /srv/cakephp/lib/Cake/Controller/Scaffold.php(191): Controller->paginate()
-#8 /srv/cakephp/lib/Cake/Controller/Scaffold.php(389): Scaffold->_scaffoldIndex(Object(CakeRequest))
-#9 /srv/cakephp/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
-#10 /srv/cakephp/lib/Cake/Controller/Controller.php(531): Scaffold->__construct(Object(AlumnosAsignaturasController), Object(CakeRequest))
-#11 /srv/cakephp/lib/Cake/Controller/Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
-#12 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#13 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
-#14 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#15 {main}
-2013-04-14 19:21:31 Error: Fatal Error (1): Call to a member function find() on a non-object in [/opt/lampp/htdocs/elearning/Controller/AlumnosAsignaturasController.php, line 50]
-2013-04-14 19:21:31 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /elearning/alumnos_asignaturas/add
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/opt/lampp/htdo...', 50)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/opt/lampp/htdo...', 50, Array)
-#2 /srv/cakephp/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/opt/lampp/htdo...', 50, Array)
-#3 /srv/cakephp/lib/Cake/Core/App.php(900): App::_checkFatalError()
+2013-04-14 19:27:13 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 19:27:13 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 19:27:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 19:27:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 19:27:50 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 19:28:07 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 19:31:03 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-14 19:43:23 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:05:48 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:05:48 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:06:17 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:06:37 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:10:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:10:40 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:10:45 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:15:49 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:17:46 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:18:23 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:18:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:21:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:21:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:32:52 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:33:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:34:07 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\cake\elearning\Model\Nota.php, line 7]
+2013-04-21 13:34:07 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2013-04-14 19:25:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nota.alumnos_asignatura_id' in 'on clause'
-Request URL: /elearning/alumnos_asignaturas
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Alumnos...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Alumnos...', Array, Array)
-#3 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Alumnos...', false)
-#4 /srv/cakephp/lib/Cake/Model/Model.php(2688): DboSource->read(Object(AlumnosAsignatura), Array)
-#5 /srv/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
-#6 /srv/cakephp/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate(NULL, Array, Array)
-#7 /opt/lampp/htdocs/elearning/Controller/AlumnosAsignaturasController.php(17): Controller->paginate()
+2013-04-21 13:34:07 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:34:27 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:35:32 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\cake\elearning\Model\Nota.php, line 11]
+2013-04-21 13:35:32 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-21 13:35:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:42:06 Error: [MissingTableException] Table alumno_asignaturas for model AlumnoAsignatura was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('alumno_asignatu...')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(Nota), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\NotasController.php(17): Controller->paginate()
+#6 [internal function]: NotasController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-21 13:42:06 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:42:11 Error: [MissingTableException] Table alumno_asignaturas for model AlumnoAsignatura was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('alumno_asignatu...')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(Nota), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\NotasController.php(17): Controller->paginate()
+#6 [internal function]: NotasController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-21 13:42:11 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:42:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:43:00 Error: [MissingTableException] Table alumno_asignaturas for model AlumnoAsignatura was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('alumno_asignatu...')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(Nota), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\NotasController.php(17): Controller->paginate()
+#6 [internal function]: NotasController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-21 13:43:00 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:43:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:43:44 Error: [MissingTableException] Table alumno_asignaturas for model AlumnoAsignatura was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('alumno_asignatu...')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(Nota), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\NotasController.php(17): Controller->paginate()
+#6 [internal function]: NotasController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-21 13:43:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:43:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:44:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 13:45:09 Error: [MissingTableException] Table alumno_asignaturas for model AlumnoAsignatura was not found in datasource default.
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3180): Model->setSource('alumno_asignatu...')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(Nota), Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\xampp\htdocs\cake\elearning\Controller\NotasController.php(17): Controller->paginate()
+#6 [internal function]: NotasController->index()
+#7 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#8 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-21 13:45:10 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:09:45 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:10:38 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:11:56 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:12:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:12:49 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:25:49 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:26:50 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:31:30 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:32:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:32:41 Error: [MissingViewException] View file "C:\xampp\htdocs\cake\elearning\View\Contenidos\index.ctp" is missing.
+#0 C:\xampp\htdocs\cake\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContenidosController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-21 14:32:41 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:33:03 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:33:26 Error: [MissingViewException] View file "C:\xampp\htdocs\cake\elearning\View\Contenidos\index.ctp" is missing.
+#0 C:\xampp\htdocs\cake\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContenidosController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-21 14:33:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:34:38 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:36:37 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:38:42 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:40:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:42:07 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:42:36 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:45:58 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:46:01 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 14:46:04 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:29:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:33:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:34:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:34:55 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:34:58 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:34:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nota.alumnos_asignatura_id' in 'on clause'
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Alumnos...', Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Alumnos...', Array, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `Alumnos...', false)
+#4 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AlumnosAsignatura), Array)
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\xampp\htdocs\cake\elearning\Controller\AlumnosAsignaturasController.php(17): Controller->paginate()
 #8 [internal function]: AlumnosAsignaturasController->index()
-#9 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AlumnosAsignaturasController), Array)
-#10 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#11 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
-#12 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(AlumnosAsignaturasController), Array)
+#10 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
-2013-04-14 19:25:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nota.alumnos_asignatura_id' in 'on clause'
-Request URL: /elearning/alumnos_asignaturas
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Alumnos...', Array)
-#2 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Alumnos...', Array, Array)
-#3 /srv/cakephp/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Alumnos...', false)
-#4 /srv/cakephp/lib/Cake/Model/Model.php(2688): DboSource->read(Object(AlumnosAsignatura), Array)
-#5 /srv/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
-#6 /srv/cakephp/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate(NULL, Array, Array)
-#7 /opt/lampp/htdocs/elearning/Controller/AlumnosAsignaturasController.php(17): Controller->paginate()
+2013-04-21 15:35:01 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:06 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:08 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:13 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:17 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:19 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:21 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:31 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:35:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nota.alumnos_asignatura_id' in 'on clause'
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Alumnos...', Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Alumnos...', Array, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `Alumnos...', false)
+#4 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AlumnosAsignatura), Array)
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\xampp\htdocs\cake\elearning\Controller\AlumnosAsignaturasController.php(17): Controller->paginate()
 #8 [internal function]: AlumnosAsignaturasController->index()
-#9 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AlumnosAsignaturasController), Array)
-#10 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#11 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
-#12 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(AlumnosAsignaturasController), Array)
+#10 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
-2013-04-14 20:47:16 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:35:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:47:23 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:36:20 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:47:28 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:36:25 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:47:32 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:36:27 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:47:35 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/4994189560_02c56a3ddf_b.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:36:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:47:35 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:36:31 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:48:39 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
-Exception Attributes: array (
-  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
-)
-Request URL: /elearning/usuarios/downloadFile/1/4994189560_02c56a3ddf_b.jpg
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
-#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
-#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
-#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#5 {main}
-2013-04-14 20:49:00 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:36:42 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:49:03 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:36:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:49:03 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/4994189560_02c56a3ddf_b.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:37:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:49:32 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:37:30 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:49:36 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:37:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:49:36 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:37:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:49:50 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
-Exception Attributes: array (
-  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
-)
-Request URL: /elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
-#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
-#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
-#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#5 {main}
-2013-04-14 20:53:19 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:37:37 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:53:40 Error: [NotFoundException] Invalid usuario
-Request URL: /elearning/usuarios/edit
-Stack Trace:
-#0 [internal function]: UsuariosController->edit()
-#1 /srv/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
-#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
-#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#5 {main}
-2013-04-14 20:53:40 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:37:43 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:53:46 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:37:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nota.alumnos_asignatura_id' in 'on clause'
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Alumnos...', Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Alumnos...', Array, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `Alumnos...', false)
+#4 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AlumnosAsignatura), Array)
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\xampp\htdocs\cake\elearning\Controller\AlumnosAsignaturasController.php(17): Controller->paginate()
+#8 [internal function]: AlumnosAsignaturasController->index()
+#9 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(AlumnosAsignaturasController), Array)
+#10 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-04-21 15:37:50 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:53:46 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:37:56 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:53:46 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:38:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nota.alumnos_asignatura_id' in 'on clause'
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Alumnos...', Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Alumnos...', Array, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `Alumnos...', false)
+#4 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AlumnosAsignatura), Array)
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\xampp\htdocs\cake\elearning\Controller\AlumnosAsignaturasController.php(17): Controller->paginate()
+#8 [internal function]: AlumnosAsignaturasController->index()
+#9 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(AlumnosAsignaturasController), Array)
+#10 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-04-21 15:38:17 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:54:01 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
-Exception Attributes: array (
-  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
-)
-Request URL: /elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
-#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
-#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
-#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#5 {main}
-2013-04-14 20:58:59 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:38:19 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:58:59 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:38:20 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 20:58:59 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:38:20 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 21:00:26 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:38:22 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 21:00:26 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:38:27 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 21:00:26 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
-Exception Attributes: array (
-  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
-)
-Request URL: /elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
-#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
-#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
-#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#5 {main}
-2013-04-14 21:00:26 Error: [MissingControllerException] Controller class ElearningController could not be found.
-Exception Attributes: array (
-  'class' => 'ElearningController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:38:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nota.alumnos_asignatura_id' in 'on clause'
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Alumnos...', Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Alumnos...', Array, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `Alumnos...', false)
+#4 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AlumnosAsignatura), Array)
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\xampp\htdocs\cake\elearning\Controller\AlumnosAsignaturasController.php(17): Controller->paginate()
+#8 [internal function]: AlumnosAsignaturasController->index()
+#9 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(AlumnosAsignaturasController), Array)
+#10 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AlumnosAsignaturasController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-04-21 15:38:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-14 21:02:15 Error: [MissingViewException] View file "/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp" is missing.
-Exception Attributes: array (
-  'file' => '/opt/lampp/htdocs/elearning/View/Usuarios/download_file.ctp',
-)
-Request URL: /elearning/usuarios/downloadFile/1/imagen1.jpg
-Stack Trace:
-#0 /srv/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
-#1 /srv/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
-#2 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#3 /srv/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
-#4 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#5 {main}
-2013-04-14 21:02:15 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:42:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-15 15:57:36 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:42:51 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-04-15 15:57:48 Error: [MissingControllerException] Controller class CssController could not be found.
-Exception Attributes: array (
-  'class' => 'CssController',
-  'plugin' => NULL,
-)
-Request URL: /elearning/css/cake.forms.css
-Stack Trace:
-#0 /opt/lampp/htdocs/elearning/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2013-04-21 15:42:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:43:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:43:19 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:47:49 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:47:51 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:47:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 15:47:57 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 16:16:23 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 16:55:43 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 16:55:45 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 16:55:47 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 17:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 17:03:22 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 17:03:41 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-21 17:03:41 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\cake\elearning\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}

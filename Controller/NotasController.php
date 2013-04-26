@@ -47,6 +47,8 @@ class NotasController extends AppController {
 				$this->Session->setFlash(__('The nota could not be saved. Please, try again.'));
 			}
 		}
+		$alumnosAsignaturas = $this->Nota->AlumnosAsignatura->find('list');
+		$this->set(compact('alumnosAsignaturas'));
 	}
 
 /**
@@ -71,6 +73,8 @@ class NotasController extends AppController {
 		} else {
 			$this->request->data = $this->Nota->read(null, $id);
 		}
+		$alumnosAsignaturas = $this->Nota->AlumnosAsignatura->find('list');
+		$this->set(compact('alumnosAsignaturas'));
 	}
 
 /**

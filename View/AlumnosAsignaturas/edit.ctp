@@ -4,7 +4,7 @@
 		<legend><?php echo __('Edit Alumnos Asignatura'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-        echo $this->Form->input('usuario_id', array('label' => 'Alumno'));
+		echo $this->Form->input('usuario_id');
 		echo $this->Form->input('asignatura_id');
 	?>
 	</fieldset>
@@ -20,7 +20,5 @@
 		<li><?php echo $this->Html->link(__('New Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Notas'), array('controller' => 'notas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Nota'), array('controller' => 'notas', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

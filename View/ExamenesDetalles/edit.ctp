@@ -5,7 +5,7 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('dsc');
-		echo $this->Form->input('alumno_id');
+		echo $this->Form->input('usuario_id');
 		echo $this->Form->input('examenes_cabecera_id');
 		echo $this->Form->input('nota');
 	?>

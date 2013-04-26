@@ -1,12 +1,12 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * ContenidosTemario Model
+ * ContenidosArchivo Model
  *
  * @property Usuario $Usuario
  * @property Asignatura $Asignatura
  */
-class ContenidosTemario extends AppModel {
+class ContenidosArchivo extends AppModel {
 
 /**
  * Display field

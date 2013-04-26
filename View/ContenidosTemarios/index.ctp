@@ -3,20 +3,28 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			<th><?php echo $this->Paginator->sort('archivo'); ?></th>
+			<th><?php echo $this->Paginator->sort('archivo_dir'); ?></th>
+			<th><?php echo $this->Paginator->sort('usuario_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th><?php echo $this->Paginator->sort('archivo'); ?></th>
-			<th><?php echo $this->Paginator->sort('usuario_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
 	foreach ($contenidosTemarios as $contenidosTemario): ?>
 	<tr>
 		<td><?php echo h($contenidosTemario['ContenidosTemario']['id']); ?>&nbsp;</td>
+		<td><?php echo h($contenidosTemario['ContenidosTemario']['archivo']); ?>&nbsp;</td>
+		<td><?php echo h($contenidosTemario['ContenidosTemario']['archivo_dir']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($contenidosTemario['Usuario']['login'], array('controller' => 'usuarios', 'action' => 'view', $contenidosTemario['Usuario']['id'])); ?>
+		</td>
 		<td><?php echo h($contenidosTemario['ContenidosTemario']['created']); ?>&nbsp;</td>
 		<td><?php echo h($contenidosTemario['ContenidosTemario']['modified']); ?>&nbsp;</td>
-		<td><?php echo h($contenidosTemario['ContenidosTemario']['archivo']); ?>&nbsp;</td>
-		<td><?php echo h($contenidosTemario['ContenidosTemario']['usuario_id']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($contenidosTemario['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $contenidosTemario['Asignatura']['id'])); ?>
+		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $contenidosTemario['ContenidosTemario']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $contenidosTemario['ContenidosTemario']['id'])); ?>
@@ -43,6 +51,29 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Contenidos Temario'), array('action' => 'add')); ?></li>
+<li><?php echo $this->Html->link(__('List Usuario'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('New Usuario'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Asignaturas'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Cursos'), array('controller' => 'cursos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Cursos'), array('controller' => 'cursos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Trabajos'), array('controller' => 'trabajos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Trabajos'), array('controller' => 'trabajos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Trabajos Adjuntos'), array('controller' => 'trabajos_adjuntos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Trabajos Adjuntos'), array('controller' => 'trabajos_adjuntos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Examenes Detalles'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Examenes Detalles'), array('controller' => 'examenes_detalles', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Contenidos'), array('controller' => 'contenidos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Contenidos'), array('controller' => 'contenidos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Contenidos Temarios'), array('controller' => 'contenidos_temarios', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Contenidos Temarios'), array('controller' => 'contenidos_temarios', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Notas'), array('controller' => 'notas', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Notas'), array('controller' => 'notas', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Examenes Adjuntos'), array('controller' => 'examenes_adjuntos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Examenes Adjuntos'), array('controller' => 'examenes_adjuntos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Examenes Cabeceras'), array('controller' => 'examenes_cabeceras', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Examenes Cabeceras'), array('controller' => 'examenes_cabeceras', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
