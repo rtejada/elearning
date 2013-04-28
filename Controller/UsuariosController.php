@@ -17,6 +17,7 @@ class UsuariosController extends AppController {
     public $components = array('DescargasFicheros');
 
 	public function index() {
+        $this->restringirAlumno();
 		$this->Usuario->recursive = 0;
 		$this->set('usuarios', $this->paginate());
 	}
@@ -29,6 +30,13 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+
+        $tipo = $this->Auth->user('tipo');
+        $usuario_id = $this->Auth->user('id');
+        if($tipo==1) {
+            $id = $usuario_id;
+        }
+
 		if (!$this->Usuario->exists($id)) {
 			throw new NotFoundException(__('Invalid usuario'));
 		}
@@ -48,6 +56,7 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function add() {
+        $this->restringirAlumno();
 		if ($this->request->is('post')) {
 			$this->Usuario->create();
 			if ($this->Usuario->save($this->request->data)) {
@@ -67,6 +76,13 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+
+        $tipo = $this->Auth->user('tipo');
+        $usuario_id = $this->Auth->user('id');
+        if($tipo==1) {
+            $id = $usuario_id;
+        }
+
 		if (!$this->Usuario->exists($id)) {
 			throw new NotFoundException(__('Invalid usuario'));
 		}
@@ -100,6 +116,7 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+        $this->restringirAlumno();
 		$this->Usuario->id = $id;
 		if (!$this->Usuario->exists()) {
 			throw new NotFoundException(__('Invalid usuario'));
@@ -148,7 +165,7 @@ class UsuariosController extends AppController {
                     case 1:     $this->redirect(array('controller' => 'AlumnosAsignaturas', 'action' => 'index'));
                                 break;
 
-                    case 2:     $this->redirect($this->Auth->redirect());
+                    case 2:     $this->redirect(array('controller' => 'Asignaturas', 'action' => 'index'));
                                 break;
                 }
 

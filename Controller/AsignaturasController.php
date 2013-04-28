@@ -54,6 +54,8 @@ class AsignaturasController extends AppController {
  * @return void
  */
 	public function add() {
+
+        $this->restringirAlumno();
 		if ($this->request->is('post')) {
 			$this->Asignatura->create();
 			if ($this->Asignatura->save($this->request->data)) {
@@ -76,6 +78,7 @@ class AsignaturasController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+        $this->restringirAlumno();
 		if (!$this->Asignatura->exists($id)) {
 			throw new NotFoundException(__('Invalid asignatura'));
 		}
@@ -104,6 +107,7 @@ class AsignaturasController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+        $this->restringirAlumno();
 		$this->Asignatura->id = $id;
 		if (!$this->Asignatura->exists()) {
 			throw new NotFoundException(__('Invalid asignatura'));

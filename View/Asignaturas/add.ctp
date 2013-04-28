@@ -1,7 +1,7 @@
 <div class="asignaturas form">
 <?php echo $this->Form->create('Asignatura'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Asignatura'); ?></legend>
+		<legend><?php echo __('Agregar Asignatura'); ?></legend>
 	<?php
 		echo $this->Form->input('dsc');
 		echo $this->Form->input('curso_id');
@@ -10,22 +10,19 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+    <h3><?php echo __('Menu'); ?></h3>
 
-		<li><?php echo $this->Html->link(__('List Asignaturas'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Cursos'), array('controller' => 'cursos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Curso'), array('controller' => 'cursos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Usuarios'), array('controller' => 'usuarios', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Examenes Cabeceras'), array('controller' => 'examenes_cabeceras', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Examenes Cabecera'), array('controller' => 'examenes_cabeceras', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos'), array('controller' => 'trabajos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajo'), array('controller' => 'trabajos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos Enunciados'), array('controller' => 'trabajos_enunciados', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajos Enunciado'), array('controller' => 'trabajos_enunciados', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?> </li>
-	</ul>
+    <?php if ($tipo==2) { ?>
+        <div id='cssmenu'>
+            <ul>
+                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
+                <li><?php echo $this->Html->link(__('Nueva Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'pages', 'action' => 'index')); ?></li>
+            </ul>
+        </div>
+    <?php } ?>
+
+    <?php echo $this->element('menu'); ?>
 </div>

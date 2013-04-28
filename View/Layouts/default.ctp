@@ -27,9 +27,9 @@
 
 <div id="menu-top">
 	<ul>
-		<li><a href="http://cakephp.org/" title="sobre"><span>Sobre Eformar</span></a></li>
-		<li><a href="http://cakephp.org" title="ventajas"><span>Ventajas</span></a></li>
-		<li><a href="http://cakephp.org/" title="contacto"><span>Contacto</span></a></li>
+		<li><?php echo $this->Html->link(__('<span>Sobre Eformar</span>'), array('controller' => 'pages', 'action' => 'display', 'sobre_eformar' ), array('escape' => false)); ?></li>
+		<li><?php echo $this->Html->link(__('<span>Ventajas</span>'), array('controller' => 'pages', 'action' => 'display', 'ventajas' ), array('escape' => false)); ?></li>
+		<li><?php echo $this->Html->link(__('<span>Contacto</span>'), array('controller' => 'pages', 'action' => 'display', 'contacto' ), array('escape' => false)); ?></li>
 	</ul>
 	
 </div><!--menu-top-->

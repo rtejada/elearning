@@ -13,7 +13,7 @@
     <br />
     <div id='cssmenu'>
         <ul>
-            <li class='active'><?php echo $this->Html->link(__('Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?></li>
+            <li class='active'><?php echo $this->Html->link(__('Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
             <li><?php echo $this->Html->link(__('Trabajos'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>
             <li><?php echo $this->Html->link(__('Examenes'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>
             <li><?php echo $this->Html->link(__('Notas'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>

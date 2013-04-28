@@ -1,7 +1,7 @@
 <div class="usuarios form">
 <?php echo $this->Form->create('Usuario', array('type' => 'file')); ?>
 	<fieldset>
-		<legend><?php echo __('Add Usuario'); ?></legend>
+		<legend><?php echo __('Agregar Usuario'); ?></legend>
 	<?php
 
 		echo $this->Form->input('nombre');
@@ -19,18 +19,19 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+    <h3><?php echo __('Menu'); ?></h3>
 
-		<li><?php echo $this->Html->link(__('List Usuarios'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Asignaturas'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos'), array('controller' => 'trabajos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajos'), array('controller' => 'trabajos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Examenes Detalles'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Examenes Detalles'), array('controller' => 'examenes_detalles', 'action' => 'add')); ?> </li>
-	</ul>
+    <?php if ($tipo==2) { ?>
+        <div id='cssmenu'>
+            <ul>
+                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
+                <li><?php echo $this->Html->link(__('Nueva Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'pages', 'action' => 'index')); ?></li>
+            </ul>
+        </div>
+    <?php } ?>
+
+    <?php echo $this->element('menu'); ?>
 </div>
