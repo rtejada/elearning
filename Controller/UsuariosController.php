@@ -149,6 +149,7 @@ class UsuariosController extends AppController {
 
     public function beforeFilter() {
         $this->Auth->autoRedirect=FALSE;
+        $this->Auth->allow('*','add');
         parent::beforeFilter();
        // $this->Auth->authenticate = array('Form');
         //$this->Auth->allow('*','add');

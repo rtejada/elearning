@@ -81,4 +81,12 @@ class TrabajosEnunciado extends AppModel {
 		)
 	);
 
+    function beforeSave() {
+        //se obtiene el ID de usuario activo
+        $uid = CakeSession::read("Auth.User.id");
+        //se establece el campo usuario_id del modelo trabajo, como el usuario activo.
+        $this->data['TrabajosEnunciado']['usuario_id'] = $uid;
+
+        return true;
+    }
 }

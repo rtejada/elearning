@@ -33,18 +33,21 @@
 		</dd>
 	</dl>
 </div>
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Trabajos Enunciado'), array('action' => 'edit', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Trabajos Enunciado'), array('action' => 'delete', $trabajosEnunciado['TrabajosEnunciado']['id']), null, __('Are you sure you want to delete # %s?', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos Enunciados'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajos Enunciado'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos'), array('controller' => 'trabajos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajo'), array('controller' => 'trabajos', 'action' => 'add')); ?> </li>
-	</ul>
+    <h3><?php echo __('Menu'); ?></h3>
+
+    <?php if ($tipo==2) { ?>
+        <div id='cssmenu'>
+            <ul>
+                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'trabajos_enunciado', 'action' => 'index')); ?></li>
+                <li><?php echo $this->Html->link(__('Nuevo Trabajo'), array('controller' => 'trabajos_enunciado', 'action' => 'add')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
+            </ul>
+        </div>
+    <?php } ?>
+
+    <?php echo $this->element('menu'); ?>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Trabajos'); ?></h3>

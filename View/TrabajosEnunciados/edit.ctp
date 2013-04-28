@@ -4,22 +4,27 @@
 		<legend><?php echo __('Edit Trabajos Enunciado'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('dsc');
+		echo $this->Form->input('dsc', array('label' => 'Título'));
 		echo $this->Form->input('enunciado');
 		echo $this->Form->input('asignatura_id');
+        echo $this->Form->input('fecha_tope', array('label' => 'Fecha máxima de entrega'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+    <h3><?php echo __('Menu'); ?></h3>
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('TrabajosEnunciado.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('TrabajosEnunciado.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Trabajos Enunciados'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos'), array('controller' => 'trabajos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajo'), array('controller' => 'trabajos', 'action' => 'add')); ?> </li>
-	</ul>
+    <?php if ($tipo==2) { ?>
+        <div id='cssmenu'>
+            <ul>
+                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'trabajos_enunciado', 'action' => 'index')); ?></li>
+                <li><?php echo $this->Html->link(__('Nuevo Trabajo'), array('controller' => 'trabajos_enunciado', 'action' => 'add')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
+            </ul>
+        </div>
+    <?php } ?>
+
+    <?php echo $this->element('menu'); ?>
 </div>

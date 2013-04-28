@@ -7,8 +7,8 @@ App::uses('AppController', 'Controller');
  */
 class TrabajosEnunciadosController extends AppController {
 
-
-    // TODO solo permitir agregar trabajos para las asignaturas de cada profesor
+    // TODO Realizado, falta testear:
+    //  solo permitir agregar trabajos para las asignaturas de cada profesor
     // (filtrar el combo para que saque sólo las asignaturas de cada profesor).
 
 /**
@@ -17,6 +17,15 @@ class TrabajosEnunciadosController extends AppController {
  * @return void
  */
 	public function index() {
+
+        $this->restringirAlumno();
+        $usuario_id = $this->Auth->user('id');
+        $conditions[] = array('TrabajosEnunciado.usuario_id =' => $usuario_id);
+
+        $this->paginate = array(
+            'limit' => 20,
+            'conditions' => $conditions	);
+
 		$this->TrabajosEnunciado->recursive = 0;
 		$this->set('trabajosEnunciados', $this->paginate());
 	}
@@ -42,6 +51,7 @@ class TrabajosEnunciadosController extends AppController {
  * @return void
  */
 	public function add() {
+        $this->restringirAlumno();
 		if ($this->request->is('post')) {
 			$this->TrabajosEnunciado->create();
 			if ($this->TrabajosEnunciado->save($this->request->data)) {
@@ -51,7 +61,8 @@ class TrabajosEnunciadosController extends AppController {
 				$this->Session->setFlash(__('The trabajos enunciado could not be saved. Please, try again.'));
 			}
 		}
-		$asignaturas = $this->TrabajosEnunciado->Asignatura->find('list');
+        $usuario_id = $this->Auth->user('id');
+		$asignaturas = $this->TrabajosEnunciado->Asignatura->find('list', array('conditions' => array('Asignatura.usuario_id' => $usuario_id)));
 		$this->set(compact('asignaturas'));
 	}
 
@@ -63,6 +74,7 @@ class TrabajosEnunciadosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+        $this->restringirAlumno();
 		if (!$this->TrabajosEnunciado->exists($id)) {
 			throw new NotFoundException(__('Invalid trabajos enunciado'));
 		}
@@ -77,8 +89,9 @@ class TrabajosEnunciadosController extends AppController {
 			$options = array('conditions' => array('TrabajosEnunciado.' . $this->TrabajosEnunciado->primaryKey => $id));
 			$this->request->data = $this->TrabajosEnunciado->find('first', $options);
 		}
-		$asignaturas = $this->TrabajosEnunciado->Asignatura->find('list');
-		$this->set(compact('asignaturas'));
+        $usuario_id = $this->Auth->user('id');
+        $asignaturas = $this->TrabajosEnunciado->Asignatura->find('list', array('conditions' => array('Asignatura.usuario_id' => $usuario_id)));
+        $this->set(compact('asignaturas'));
 	}
 
 /**
@@ -90,6 +103,7 @@ class TrabajosEnunciadosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+        $this->restringirAlumno();
 		$this->TrabajosEnunciado->id = $id;
 		if (!$this->TrabajosEnunciado->exists()) {
 			throw new NotFoundException(__('Invalid trabajos enunciado'));
