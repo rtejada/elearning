@@ -131,6 +131,7 @@ class UsuariosController extends AppController {
 
 
     public function beforeFilter() {
+        $this->Auth->autoRedirect=FALSE;
         parent::beforeFilter();
        // $this->Auth->authenticate = array('Form');
         //$this->Auth->allow('*','add');
@@ -140,7 +141,18 @@ class UsuariosController extends AppController {
     public function login() {
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
-                $this->redirect($this->Auth->redirect());
+
+                $tipo = $this->Auth->user('tipo');
+
+                switch($tipo) {
+                    case 1:     $this->redirect(array('controller' => 'AlumnosAsignaturas', 'action' => 'index'));
+                                break;
+
+                    case 2:     $this->redirect($this->Auth->redirect());
+                                break;
+                }
+
+               // $this->redirect($this->Auth->redirect());
             } else {
                 $this->Session->setFlash(__('Invalid username or password, try again'));
             }

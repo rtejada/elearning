@@ -13,8 +13,44 @@ class AlumnosAsignaturasController extends AppController {
  * @return void
  */
 	public function index() {
+
+        $tipo = $this->Auth->user('tipo');
+        $user_id = $this->Auth->user('id');
+        $conditions = array();
+
+        switch($tipo) {
+            case 1:
+                    $conditions[] = array('AlumnosAsignatura.usuario_id =' => $user_id);
+                    break;
+            case 2:
+
+                    if (isset($this->params['data']['submit'])) {
+                        if (!empty($this->params['data']['Basica']['asignaturas'])) {
+                            $txtdsc = $this->params['data']['Basica']['asignaturas'];
+                            $conditions[] = array('AlumnosAsignatura.asignatura_id =' => $txtdsc);
+                        }
+
+                        if (!empty($this->params['data']['Basica']['alumnos'])) {
+                            $txtdsc = $this->params['data']['Basica']['alumnos'];
+                            $conditions[] = array('AlumnosAsignatura.usuario_id =' => $txtdsc);
+                        }
+                    }
+
+                    $asignaturas = $this->AlumnosAsignatura->Asignatura->find("list");
+                    $usuarios = $this->AlumnosAsignatura->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
+                    $this->set('asignaturas', $asignaturas);
+                    $this->set('alumnos', $usuarios);
+                    break;
+        }
+
+        $this->paginate = array(
+            'limit' => 20,
+            'order' => array('AlumnosAsignatura.dsc' => 'ASC'),
+            'conditions' => $conditions	);
+
 		$this->AlumnosAsignatura->recursive = 0;
 		$this->set('alumnosAsignaturas', $this->paginate());
+        $this->set('tipo', $tipo);
 	}
 
 /**
@@ -25,6 +61,8 @@ class AlumnosAsignaturasController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+
+        $this->restringirAlumno();
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
 			throw new NotFoundException(__('Invalid alumnos asignatura'));
@@ -38,6 +76,9 @@ class AlumnosAsignaturasController extends AppController {
  * @return void
  */
 	public function add() {
+
+        $this->restringirAlumno();
+
 		if ($this->request->is('post')) {
 			$this->AlumnosAsignatura->create();
 			if ($this->AlumnosAsignatura->save($this->request->data)) {
@@ -60,6 +101,8 @@ class AlumnosAsignaturasController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+
+        $this->restringirAlumno();
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
 			throw new NotFoundException(__('Invalid alumnos asignatura'));
@@ -91,6 +134,7 @@ class AlumnosAsignaturasController extends AppController {
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
+        $this->restringirAlumno();
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
 			throw new NotFoundException(__('Invalid alumnos asignatura'));
@@ -102,4 +146,9 @@ class AlumnosAsignaturasController extends AppController {
 		$this->Session->setFlash(__('Alumnos asignatura was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+
+
+    public function isAuthorized($user) {
+        return true;
+    }
 }

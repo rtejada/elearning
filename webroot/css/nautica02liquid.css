@@ -81,11 +81,11 @@ body {
 	background: transparent url('images/bg02-blue-right.png') top right no-repeat;
 }
 
-#header h1 {
+#header div.cabecera {
 
 	margin: 0 950px;
 	padding: 0;
-	height: 192px;
+	height: 100px;
 	line-height: 3em;
 	color: #ccc;
 	font-size: 130%;
@@ -94,6 +94,7 @@ body {
 
 #wrapper-content {
 	background: white url('images/bg02-white-left.png') no-repeat left top;
+    min-height: 500px;
 }
 
 * html #wrapper-content { height: 1%; }
@@ -101,7 +102,9 @@ body {
 #content {
 	background: transparent url('images/bg02-white-right.png') no-repeat right top;
 	padding: 5px 245px 5px 40px;
+    overflow: hidden;
 }
+
 
 #wrapper-menu-page {
 	float: right;
@@ -184,4 +187,17 @@ table tr td {
 }
 table tr.altRow td {
   background: #f4f4f4;
+}
+
+.addthis_toolbox {
+    position: absolute;
+    top: 1;
+    right: 200px;
+}
+
+#user_top {
+   width: 200px;
+   margin-left: 500px;
+   padding-top: 20px;
+
 }

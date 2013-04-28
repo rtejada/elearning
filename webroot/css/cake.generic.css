@@ -22,7 +22,7 @@
 	padding:0;
 }
 
-/** General Style Info **/
+/** General Style Info
 body {
 	background: #003d4c;
 	color: #fff;
@@ -74,6 +74,8 @@ p {
 }
 
 /** Layout **/
+
+/*
 #container {
 	text-align: left;
 }
@@ -110,7 +112,7 @@ p {
 	padding: 6px 10px;
 	text-align: right;
 }
-
+*/
 /** containers **/
 div.form,
 div.index,
@@ -119,6 +121,8 @@ div.view {
 	width:76%;
 	border-left:1px solid #666;
 	padding:10px 2%;
+    background: transparent;
+
 }
 div.actions {
 	float:left;

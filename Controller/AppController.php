@@ -34,6 +34,7 @@ App::uses('Sanitize', 'Utility');
  */
 class AppController extends Controller {
 
+    var $helpers = array('Session');
 
     public $components = array(
         'Session',
@@ -61,12 +62,12 @@ class AppController extends Controller {
 
     public function isAuthorized($user) {
         // Los profesores pueden acceder a todo.
-        if (isset($user['tipo']) && $user['tipo'] === '2') {
+        /*if (isset($user['tipo']) && $user['tipo'] === '2') {
             return true;
-        }
+        }*/
 
         // Default deny
-        return false;
+        return true;
     }
 
     public function beforeFilter() {
@@ -90,6 +91,14 @@ class AppController extends Controller {
        /* if ($this->name === 'Usuarios') {
             $this->layout = 'login';
         }*/
+    }
+
+    public function restringirAlumno() {
+        $tipo = $this->Auth->user('tipo');
+        if ($tipo == 1) {
+            $this->Session->setFlash('No puede accder a ese área.');
+            $this->redirect(array('action' => 'index'));
+        }
     }
 
 
