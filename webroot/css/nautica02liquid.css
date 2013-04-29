@@ -193,6 +193,7 @@ table tr.altRow td {
     position: absolute;
     top: 1;
     right: 200px;
+    width: 150px;
 }
 
 #user_top {
@@ -201,3 +202,4 @@ table tr.altRow td {
    padding-top: 20px;
 
 }
+
