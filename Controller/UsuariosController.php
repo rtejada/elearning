@@ -43,6 +43,8 @@ class UsuariosController extends AppController {
 		$options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
 		$this->set('usuario', $this->Usuario->find('first', $options));
 
+        $this->Usuario->id = $id;
+
         //link para recibir la imagen desde componente de download
         $directorio = $this->Usuario->field("foto_dir");
         $url_fichero = $this->Usuario->field("foto");
@@ -95,8 +97,10 @@ class UsuariosController extends AppController {
 			}
 		} else {
 
-            $options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
-			$this->request->data = $this->Usuario->find('first', $options);
+           $options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
+		   $this->request->data = $this->Usuario->find('first', $options);
+
+            $this->Usuario->id = $id;
 
             //link para recibir la imagen desde componente de download
             $directorio = $this->Usuario->field("foto_dir");

@@ -7,10 +7,6 @@ App::uses('AppController', 'Controller');
  */
 class TrabajosEnunciadosController extends AppController {
 
-    // TODO Realizado, falta testear:
-    //  solo permitir agregar trabajos para las asignaturas de cada profesor
-    // (filtrar el combo para que saque sólo las asignaturas de cada profesor).
-
 /**
  * index method
  *
