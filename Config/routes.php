@@ -25,7 +25,20 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+
+if (isset($_SESSION["Auth"]["User"]["tipo"])) {
+    $tipo = $_SESSION["Auth"]["User"]["tipo"];
+    if($tipo=='1') {
+        Router::connect('/', array('controller' => 'alumnos_asignaturas', 'action' => 'index'));
+    } elseif($tipo=='2') {
+        Router::connect('/', array('controller' => 'Asignaturas', 'action' => 'index'));
+    }
+} else {
+    Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+}
+
+
+	//Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
