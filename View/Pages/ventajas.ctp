@@ -1,1 +1,0 @@
-<h1>Ventajas</h1>

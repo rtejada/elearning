@@ -64,7 +64,7 @@
 
 /* The hover state of the menu/submenu links */
 #cssmenu > ul li>a:hover, #cssmenu > ul li:hover>a {
-    color: #fffff;
+    color: #5b8fbe;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
 	text-align:center;
     background: #fffff;
