@@ -30,21 +30,21 @@
     position: relative;
     margin: 0;
     border-top: 1px dotted #fff;
-    border-bottom: 1px dotted #d9d9d9;
+    border-bottom: 1px solid #fffff;
     padding: 11px 20px;
     width: 150px;
 
     /* Typography */
-    font-family:  Helvetica, Arial, sans-serif;
-    color: #3dafea;
+    font-family: trebuchet ms, verdana, arial, tahoma;
+    color: #5b8fbe;
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: 0 1px 0 #fff;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: bold;
 
     /* Background & effects */
-    background: #eaeaea;
+    background: #fffff;
 }
 
 /* Rounded corners for the first link of the menu/submenus */
@@ -64,13 +64,14 @@
 
 /* The hover state of the menu/submenu links */
 #cssmenu > ul li>a:hover, #cssmenu > ul li:hover>a {
-    color: #fff;
+    color: #fffff;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
-    background: #54cdf1;
-    background: -webkit-linear-gradient(bottom, #54cdf1, #74d7f3);
-    background: -ms-linear-gradient(bottom, #54cdf1, #74d7f3);
-    background: -moz-linear-gradient(bottom, #54cdf1, #74d7f3);
-    background: -o-linear-gradient(bottom, #54cdf1, #74d7f3);
+	text-align:center;
+    background: #fffff;
+    background: -webkit-linear-gradient(bottom, #fffff, #fffff);
+    background: -ms-linear-gradient(bottom, #fffff, #fffff);
+    background: -moz-linear-gradient(bottom, #fffff, #fffff);
+    background: -o-linear-gradient(bottom, #fffff, #fffff);
     border-color: transparent;
 }
 
