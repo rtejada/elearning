@@ -32,14 +32,7 @@ class TrabajosController extends AppController {
 		$this->Trabajo->recursive = 0;
 		$this->set('trabajos', $this->paginate());
 
-        //obtener sólo el listado de trabajos para las asignaturas
-        //en las que está matriculado el alumno
-        $AlumnosAsignaturas = new AlumnosAsignaturasController();
-        $asignaturas_del_alumno = $AlumnosAsignaturas->obtenerAsignaturasAlumno($user_id);
-
-        $conditions = array();
-        $conditions[] = array('TrabajosEnunciado.asignatura_id' => $asignaturas_del_alumno);
-        $conditions[] = array('TrabajosEnunciado.fecha_tope >=' => date('Y-m-d H:i:s'));
+        $conditions = $this->_obtenerCondicionTrabajos();
 
         $this->paginate = array(
             'limit' => 20,
@@ -51,6 +44,25 @@ class TrabajosController extends AppController {
         $this->set('trabajosEnunciados', $this->paginate('TrabajosEnunciado'));
 
 	}
+
+    /**
+     * obtener sólo el listado de trabajos para las asignaturas
+     * en las que está matriculado el alumno
+     *
+     * @return array
+     */
+
+    private function _obtenerCondicionTrabajos() {
+        $user_id = $this->Auth->user('id');
+        $AlumnosAsignaturas = new AlumnosAsignaturasController();
+        $asignaturas_del_alumno = $AlumnosAsignaturas->obtenerAsignaturasAlumno($user_id);
+
+        $conditions = array();
+        $conditions[] = array('TrabajosEnunciado.asignatura_id' => $asignaturas_del_alumno);
+        $conditions[] = array('TrabajosEnunciado.fecha_tope >=' => date('Y-m-d H:i:s'));
+
+        return $conditions;
+    }
 
 /**
  * view method
@@ -92,7 +104,9 @@ class TrabajosController extends AppController {
 			}
 		}
 
-		$trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list');
+        $conditions = $this->_obtenerCondicionTrabajos();
+
+		$trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list', array('conditions' => $conditions));
 		$usuarios = $this->Trabajo->Usuario->find('list');
 		$this->set(compact('trabajosEnunciados', 'usuarios'));
 	}
