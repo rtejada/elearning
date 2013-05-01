@@ -232,7 +232,7 @@ table td.actions a {
 }
 .paging .current {
 	background: #efefef;
-	color: #c73e14;
+	color: #5b8fbe;
 }
 
 /** Scaffold View **/
@@ -271,7 +271,7 @@ fieldset {
 	padding: 16px 10px;
 }
 fieldset legend {
-	color: #e32;
+	color: #5b8fbe;
 	font-size: 160%;
 	font-weight: bold;
 }
@@ -417,7 +417,7 @@ form .error-message {
 .notice,
 p.error,
 .error-message {
-	background: #ffcc00;
+	background: #80acfd;
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top, #ffcc00, #E6B800);
 	background-image: -ms-linear-gradient(top, #ffcc00, #E6B800);
