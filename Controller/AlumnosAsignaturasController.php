@@ -147,6 +147,20 @@ class AlumnosAsignaturasController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 
+    /**
+     * Obtiene las asignaturas del alumno y las devuelve en
+     * un array.
+     *
+     * @param $usuario_id
+     * @return mixed
+     */
+    public function obtenerAsignaturasAlumno($usuario_id) {
+
+        $asignaturas = $this->AlumnosAsignatura->find('list', array('fields' => 'AlumnosAsignatura.id', 'conditions' => array('AlumnosAsignatura.usuario_id' => $usuario_id)));
+        return $asignaturas;
+
+    }
+
 
     public function isAuthorized($user) {
         return true;
