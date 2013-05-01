@@ -24,12 +24,13 @@
 			<div id='im1'>
                 <p>
                           Si deseas obtener informaci&oacute;n adicional, resolver cualquier duda o sugerirnos cualquier tipo de mejora, puedes ponerte en contacto con nosotros en la siguiente direcci&oacute;n:</p> 
+							</br>
 							<ul class="text">
                             	<li>Eformar</li>
                                 <li>C/ Cepal, 5</li>
                                 <li>28039 (Madrid)</li>
                                 <li>Email: eformar@outlook.es</li>
-                                <li>Tel&eacute;fono: 910 133 450</li>
+                                <li>Tel&eacute;fono: 635 043 440</li>
                                 <li>Horario de atenci&oacute;n telef&oacute;nica: de 9:30 a 13:30 y de 17:30 a 19:30.</li>
                             </ul>
 			
