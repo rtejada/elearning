@@ -101,14 +101,20 @@ body {
 
 #content {
 	background: transparent url('images/bg02-white-right.png') no-repeat right top;
-	padding: 5px 245px 5px 40px;
+	padding: 5px 40px 5px 40px;
     overflow: hidden;
 }
 
+#im {
+	background: transparent url('images/eLearning.jpg') no-repeat;
+}
+#im1{
+	padding: 5px 140px 5px 140px;
+}
 
 #wrapper-menu-page {
 	float: right;
-	width:180px;
+	width:1px;
 	margin: 20px 30px 3em 2em;
 	background: transparent url('images/menu.png') no-repeat;
 	text-align: center;
