@@ -13,6 +13,16 @@ class Trabajo extends AppModel {
 
     public $displayField = 'dsc';
 
+    public $actsAs = array(
+        'Upload.Upload' => array(
+            'fichero' => array(
+                'fields' => array(
+                    'dir' => 'fichero_dir'
+                )
+            )
+        )
+    );
+
 /**
  * Validation rules
  *
@@ -58,6 +68,11 @@ class Trabajo extends AppModel {
 		)
 	);
 
+    /*public $hasOne = array(
+        'TrabajosAdjunto' => array(
+            'className'  => 'TrabajosAdjunto'
+        )
+    );*/
 
     /**
      * Esta función permite establecer el usuario activo como usuario_id del trabajo.

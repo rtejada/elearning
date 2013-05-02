@@ -13,13 +13,14 @@ class TrabajosController extends AppController {
  *
  * @return void
  */
-    public $components = array('Paginator');
+    public $components = array('Paginator', 'DescargasFicheros');
 
 	public function index() {
 
         $tipo = $this->Auth->user('tipo');
         $user_id = $this->Auth->user('id');
         $conditions = array();
+        $trabajo = array();
         //los alumnos sólo podrán visualizar sus propios trabajos.
 
         if ($tipo ==1 ) {
@@ -27,12 +28,13 @@ class TrabajosController extends AppController {
 
             $trabajo = array(
                 'Trabajo' => array(
-                    'limit' => 10,
+                    'limit' => 5,
                     'maxLimit' => 100,
+                    'order' => array('Trabajo.id' => 'ASC'),
                     'conditions' => $conditions,
                 ),
             );
-            $this->Paginator->settings = $trabajo;
+           // $this->Paginator->settings = $trabajo;
            /* $this->paginate = array(
                         'limit' => 5,
                         'order' => array('Trabajo.id' => 'ASC'),
@@ -43,20 +45,20 @@ class TrabajosController extends AppController {
         }
 
 
-		$this->Trabajo->recursive = 0;
-		$this->set('trabajos', $this->Paginator->paginate('Trabajo'));
+		$this->Trabajo->recursive = 1;
+
 
         $conditions = $this->_obtenerCondicionTrabajos();
 
         $trabajosEnunciado = array(
-            'Trabajo' => array(
+            'TrabajosEnunciado' => array(
             'limit' => 10,
             'order' => array('TrabajosEnunciado.id' => 'ASC'),
             'conditions' => $conditions,
             )
         );
 
-        $this->Paginator->settings = $trabajosEnunciado;
+        $this->Paginator->settings = array_merge($trabajo, $trabajosEnunciado);
         /*$this->paginate = array(
             'limit' => 10,
             'order' => array('TrabajosEnunciado.id' => 'ASC'),
@@ -64,6 +66,9 @@ class TrabajosController extends AppController {
             'contain' => array('TrabajosEnunciado')
         );*/
 
+        $this->Paginator->settings = $trabajo;
+        $this->set('trabajos', $this->Paginator->paginate('Trabajo'));
+        $this->Paginator->settings = $trabajosEnunciado;
         $this->set('trabajosEnunciados', $this->Paginator->paginate('TrabajosEnunciado'));
 
 	}
@@ -120,10 +125,8 @@ class TrabajosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Trabajo->create();
 			if ($this->Trabajo->save($this->request->data)) {
-               // Debugger::dump($this->request->data);
-
 				$this->Session->setFlash(__('The trabajo has been saved'));
-				//$this->redirect(array('action' => 'index'));
+				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The trabajo could not be saved. Please, try again.'));
 			}
@@ -196,5 +199,6 @@ class TrabajosController extends AppController {
 		$this->Session->setFlash(__('Trabajo was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+
 
 }

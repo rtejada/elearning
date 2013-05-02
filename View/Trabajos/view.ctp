@@ -1,37 +1,40 @@
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="trabajos view">
-<h2><?php  echo __('Trabajo'); ?></h2>
+<h2><?php  echo __('Trabajo Enviado'); ?></h2>
+    <br />
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($trabajo['Trabajo']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Dsc'); ?></dt>
+        <dt><?php echo __('Enunciado'); ?></dt>
+        <dd>
+            <?php echo $this->Html->link($trabajo['TrabajosEnunciado']['dsc'], array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajo['TrabajosEnunciado']['id'])); ?>
+            &nbsp;
+        </dd>
+		<dt><?php echo __('Descripción'); ?></dt>
 		<dd>
 			<?php echo h($trabajo['Trabajo']['dsc']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Asignatura'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($trabajo['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $trabajo['Asignatura']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Trabajos Enunciado'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($trabajo['TrabajosEnunciado']['dsc'], array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajo['TrabajosEnunciado']['id'])); ?>
-			&nbsp;
-		</dd>
+        <?php if ($tipo==2) {   ?>
 		<dt><?php echo __('Usuario'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($trabajo['Usuario']['login'], array('controller' => 'usuarios', 'action' => 'view', $trabajo['Usuario']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+        <?php }   ?>
+
+        <dt><?php echo __('Adjunto'); ?></dt>
+        <dd>
+            <?php
+            $link = array('action' => 'downloadFile', $trabajo['Trabajo']['fichero_dir'], $trabajo['Trabajo']['fichero'], 'fichero');
+            echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
+            ?>
+        </dd>
+
+		<dt><?php echo __('Enviado'); ?></dt>
 		<dd>
 			<?php echo h($trabajo['Trabajo']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Modificado'); ?></dt>
 		<dd>
 			<?php echo h($trabajo['Trabajo']['modified']); ?>
 			&nbsp;
@@ -39,17 +42,13 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Trabajo'), array('action' => 'edit', $trabajo['Trabajo']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Trabajo'), array('action' => 'delete', $trabajo['Trabajo']['id']), null, __('Are you sure you want to delete # %s?', $trabajo['Trabajo']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajo'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos Enunciados'), array('controller' => 'trabajos_enunciados', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajos Enunciado'), array('controller' => 'trabajos_enunciados', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Usuarios'), array('controller' => 'usuarios', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?> </li>
-	</ul>
+    <h3><?php echo __('Menu'); ?></h3>
+
+        <div id='cssmenu'>
+            <ul>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'trabajos', 'action' => 'index')); ?></li>
+            </ul>
+        </div>
+        <br />
+    <?php echo $this->element('menu'); ?>
 </div>

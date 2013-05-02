@@ -100,6 +100,7 @@ App::uses('SessionComponent', 'Controller/Component');
 $Session = new SessionComponent(new ComponentCollection());
 
 CakePlugin::load('Upload');
+CakePlugin::load('DebugKit');
 
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',

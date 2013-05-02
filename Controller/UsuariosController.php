@@ -14,9 +14,7 @@ class UsuariosController extends AppController {
  *
  *
  */
-    public $components = array('DescargasFicheros');
-
-	public function index() {
+    public function index() {
         $this->restringirAlumno();
 		$this->Usuario->recursive = 0;
 		$this->set('usuarios', $this->paginate());
@@ -46,6 +44,7 @@ class UsuariosController extends AppController {
         $this->Usuario->id = $id;
 
         //link para recibir la imagen desde componente de download
+
         $directorio = $this->Usuario->field("foto_dir");
         $url_fichero = $this->Usuario->field("foto");
         $link = array('controller' => 'usuarios', 'action' => 'downloadFile', $directorio, $url_fichero);
@@ -134,30 +133,15 @@ class UsuariosController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 
- /**
-  * downloadFile method
-  *
-  *  @param string $foto_dir    Subdirectorio donde se almacena la foto
-  *  @param string $foto        Nombre del fichero de imagen
-  *
-  *   Este método sirve imágenes de perfíl de usuario.
-  */
 
-    public function downloadFile($foto_dir, $foto) {
-        $this->layout = "ajax";
-        $mfoto = Sanitize::html($foto);
-        $mfoto_dir = Sanitize::html($foto_dir);
-        $this->DescargasFicheros->descarga('usuario',$mfoto_dir,$mfoto);
-    }
-
-
+/*
     public function beforeFilter() {
         $this->Auth->autoRedirect=FALSE;
         $this->Auth->allow('*','add');
         parent::beforeFilter();
        // $this->Auth->authenticate = array('Form');
         //$this->Auth->allow('*','add');
-    }
+    }*/
 
 
     public function login() {

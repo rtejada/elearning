@@ -57,7 +57,9 @@ class AppController extends Controller {
             'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
             'authorize' => array('Controller'),
             'authError' => 'No tiene permisos para acceder a esta sección'
-        )
+        ),
+        'DescargasFicheros',
+        'DebugKit.Toolbar'
     );
 
     public function isAuthorized($user) {
@@ -99,6 +101,25 @@ class AppController extends Controller {
             $this->Session->setFlash('No puede accder a ese área.');
             $this->redirect(array('action' => 'index'));
         }
+    }
+
+    /**
+     * downloadFile method
+     *
+     *  @param string $foto_dir    Subdirectorio donde se almacena la foto
+     *  @param string $foto        Nombre del fichero de imagen
+     *
+     *   Este método sirve imágenes de perfíl de usuario.
+     */
+
+    public function downloadFile($foto_dir, $foto, $campo='foto') {
+
+        //xdebug_break();
+        $this->layout = "ajax";
+        $mfoto = Sanitize::html($foto);
+        $mfoto_dir = Sanitize::html($foto_dir);
+        $modelo = strtolower($this->modelClass);
+        $this->DescargasFicheros->descarga($modelo,$mfoto_dir,$mfoto, $campo);
     }
 
 
