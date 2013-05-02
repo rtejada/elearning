@@ -13,35 +13,58 @@ class TrabajosController extends AppController {
  *
  * @return void
  */
+    public $components = array('Paginator');
+
 	public function index() {
 
         $tipo = $this->Auth->user('tipo');
         $user_id = $this->Auth->user('id');
         $conditions = array();
         //los alumnos sólo podrán visualizar sus propios trabajos.
+
         if ($tipo ==1 ) {
             $conditions[] = array('Trabajo.usuario_id =' => $user_id);
-            $this->paginate = array(
-                        'limit' => 20,
+
+            $trabajo = array(
+                'Trabajo' => array(
+                    'limit' => 10,
+                    'maxLimit' => 100,
+                    'conditions' => $conditions,
+                ),
+            );
+            $this->Paginator->settings = $trabajo;
+           /* $this->paginate = array(
+                        'limit' => 5,
                         'order' => array('Trabajo.id' => 'ASC'),
                         'conditions' => $conditions,
                         'contain' => array('Trabajo')
-            );
+            );*/
+
         }
 
+
 		$this->Trabajo->recursive = 0;
-		$this->set('trabajos', $this->paginate());
+		$this->set('trabajos', $this->Paginator->paginate('Trabajo'));
 
         $conditions = $this->_obtenerCondicionTrabajos();
 
-        $this->paginate = array(
-            'limit' => 20,
+        $trabajosEnunciado = array(
+            'Trabajo' => array(
+            'limit' => 10,
+            'order' => array('TrabajosEnunciado.id' => 'ASC'),
+            'conditions' => $conditions,
+            )
+        );
+
+        $this->Paginator->settings = $trabajosEnunciado;
+        /*$this->paginate = array(
+            'limit' => 10,
             'order' => array('TrabajosEnunciado.id' => 'ASC'),
             'conditions' => $conditions,
             'contain' => array('TrabajosEnunciado')
-        );
+        );*/
 
-        $this->set('trabajosEnunciados', $this->paginate('TrabajosEnunciado'));
+        $this->set('trabajosEnunciados', $this->Paginator->paginate('TrabajosEnunciado'));
 
 	}
 
@@ -97,8 +120,10 @@ class TrabajosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Trabajo->create();
 			if ($this->Trabajo->save($this->request->data)) {
+               // Debugger::dump($this->request->data);
+
 				$this->Session->setFlash(__('The trabajo has been saved'));
-				$this->redirect(array('action' => 'index'));
+				//$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The trabajo could not be saved. Please, try again.'));
 			}
