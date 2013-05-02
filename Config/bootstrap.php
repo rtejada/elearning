@@ -70,11 +70,10 @@ Cache::config('default', array('engine' => 'File'));
  * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call
  * Uncomment one of the lines below, as you need. make sure you read the documentation on CakePlugin to use more
  * advanced ways of loading plugins
- *
- * CakePlugin::loadAll(); // Loads all plugins at once
- * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
- *
- */
+  */
+ CakePlugin::loadAll(); // Loads all plugins at once
+ CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
+ 
 
 /**
  * You can attach event listeners to the request lifecyle as Dispatcher Filter . By Default CakePHP bundles two filters:
@@ -100,7 +99,6 @@ App::uses('SessionComponent', 'Controller/Component');
 $Session = new SessionComponent(new ComponentCollection());
 
 CakePlugin::load('Upload');
-CakePlugin::load('DebugKit');
 
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',

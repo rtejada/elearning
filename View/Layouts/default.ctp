@@ -16,9 +16,8 @@
               echo $this->fetch('script');
     ?>
 
-  <!--  <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51594bd774876484"></script>
-    -->
 </head>
 
 
@@ -76,6 +75,7 @@
 <div id="footer">
 <p>
  Eformar : &copy; 2013 Centro Privado no Homologado por la Consejer&iacute;a de Educaci&oacute;n de la Comunidad de Madrid
+ <?php echo $this->element('sql_dump'); ?>
 </p>
 </div>
 </div>
