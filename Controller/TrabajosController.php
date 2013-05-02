@@ -58,7 +58,7 @@ class TrabajosController extends AppController {
             )
         );
 
-        $this->Paginator->settings = array_merge($trabajo, $trabajosEnunciado);
+        //$this->Paginator->settings = array_merge($trabajo, $trabajosEnunciado);
         /*$this->paginate = array(
             'limit' => 10,
             'order' => array('TrabajosEnunciado.id' => 'ASC'),
