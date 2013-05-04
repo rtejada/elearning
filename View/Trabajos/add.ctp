@@ -1,12 +1,10 @@
 <div class="trabajos form">
-<?php echo $this->Form->create('Trabajo', array('type' => 'file')); ?>
+<?php echo $this->Form->create('Trabajo'); ?>
 	<fieldset>
-		<legend><?php echo __('Enviar trabajo'); ?></legend>
+		<legend><?php echo __('Add Trabajo'); ?></legend>
 	<?php
-        echo $this->Form->input('trabajos_enunciado_id', array('label'=> 'Seleccione trabajo'));
-		echo $this->Form->input('dsc', array('label'=> 'Título', 'style' => 'width: 500px'));
-        echo $this->Form->input('Trabajo.fichero', array('type' => 'file'));
-        echo $this->Form->input('Trabajo.fichero_dir', array('type' => 'hidden'));
+        echo $this->Form->input('trabajos_enunciado_id');
+		echo $this->Form->input('dsc');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
