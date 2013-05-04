@@ -84,8 +84,12 @@ class Trabajo extends AppModel {
     function beforeSave() {
         //se obtiene el ID de usuario activo
         $uid = CakeSession::read("Auth.User.id");
+        $tipo = CakeSession::read("Auth.User.tipo");
         //se establece el campo usuario_id del modelo trabajo, como el usuario activo.
+        //siempre que sea un alumno.
+        if($tipo==1) {
         $this->data['Trabajo']['usuario_id'] = $uid;
+        }
 
         return true;
     }

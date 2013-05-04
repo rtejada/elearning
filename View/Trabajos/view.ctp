@@ -13,6 +13,14 @@
 			<?php echo h($trabajo['Trabajo']['dsc']); ?>
 			&nbsp;
 		</dd>
+        <dt><?php echo __('Nota'); ?></dt>
+        <dd>
+            <?php
+            if ($trabajo['Trabajo']['nota'] > 0) {
+            echo h($trabajo['Trabajo']['nota']);
+            } ?>
+            &nbsp;
+        </dd>
         <?php if ($tipo==2) {   ?>
 		<dt><?php echo __('Usuario'); ?></dt>
 		<dd>

@@ -50,13 +50,15 @@ class TrabajosController extends AppController {
 
         $conditions = $this->_obtenerCondicionTrabajos();
 
-        $trabajosEnunciado = array(
+       /* $trabajosEnunciado = array(
             'TrabajosEnunciado' => array(
             'limit' => 10,
             'order' => array('TrabajosEnunciado.id' => 'ASC'),
             'conditions' => $conditions,
             )
-        );
+        );*/
+
+        $trabajosEnunciado = $this->Trabajo->TrabajosEnunciado->find('all', array('conditions' => $conditions));
 
         //$this->Paginator->settings = array_merge($trabajo, $trabajosEnunciado);
         /*$this->paginate = array(
@@ -68,8 +70,14 @@ class TrabajosController extends AppController {
 
         $this->Paginator->settings = $trabajo;
         $this->set('trabajos', $this->Paginator->paginate('Trabajo'));
-        $this->Paginator->settings = $trabajosEnunciado;
-        $this->set('trabajosEnunciados', $this->Paginator->paginate('TrabajosEnunciado'));
+       /* $this->Paginator->settings = $trabajosEnunciado;*/
+        //$this->set('trabajosEnunciados', $this->Paginator->paginate('TrabajosEnunciado'));
+
+        if($tipo==1) {
+            $this->set('trabajosEnunciados', $trabajosEnunciado);
+        }
+
+
 
 	}
 
@@ -177,6 +185,49 @@ class TrabajosController extends AppController {
         $this->loadModel("Nota");
 
 	}
+
+    /**
+     * Corregir trabajo (profesor)
+     *
+     * @param null $id
+     * @throws NotFoundException
+     */
+
+    public function corregir($id = null) {
+        $this->restringirAlumno();
+        if (!$this->Trabajo->exists($id)) {
+            throw new NotFoundException(__('Invalid trabajo'));
+        }
+     //   xdebug_break();
+        if ($this->request->is('post') || $this->request->is('put')) {
+            $this->Trabajo->id =  $id;
+            if($this->Trabajo->saveField('nota', $this->request->data['Trabajo']['nota'])) {
+                $this->Session->setFlash(__('The trabajo has been saved'));
+                $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash(__('The trabajo could not be saved. Please, try again.'));
+            }
+
+        } else {
+            $options = array('conditions' => array('Trabajo.' . $this->Trabajo->primaryKey => $id));
+            $this->request->data = $this->Trabajo->find('first', $options);
+        }
+
+        $tipo = $this->Auth->user('tipo');
+        $user_id = $this->Auth->user('id');
+
+        //$asignaturas = $this->Trabajo->Asignatura->find('list');
+        $trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list');
+        $usuarios = $this->Trabajo->Usuario->find('list');
+        $this->set(compact('trabajosEnunciados', 'usuarios'));
+
+        $options = array('conditions' => array('Trabajo.' . $this->Trabajo->primaryKey => $id));
+        $this->set('trabajo', $this->Trabajo->find('first', $options));
+
+    }
+
+
+
 
 /**
  * delete method

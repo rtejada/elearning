@@ -1,13 +1,23 @@
 <div class="trabajos form">
 <?php echo $this->Form->create('Trabajo'); ?>
 	<fieldset>
-		<legend><?php echo __('Editar Trabajo'); ?></legend>
+		<legend><?php echo __('Corregir Trabajo'); ?></legend>
+
+        <dl>
+            <dt><?php echo __('Descripción: '); ?></dt>
+            <dd>
+                <?php echo h($trabajo['Trabajo']['dsc']); ?>
+                &nbsp;
+            </dd>
+            <dt><?php echo __('Alumno: '); ?></dt>
+            <dd>
+                <?php h($trabajo['Usuario']['login']); ?>
+                &nbsp;
+            </dd>
+        </dl>
+
 	<?php
-		//echo $this->Form->input('id');
-        echo $this->Form->input('trabajos_enunciado_id', array('label'=> 'Seleccione trabajo'));
-        echo $this->Form->input('dsc', array('label'=> 'Título', 'style' => 'width: 500px'));
-        echo $this->Form->input('Trabajo.fichero', array('type' => 'file'));
-        echo $this->Form->input('Trabajo.fichero_dir', array('type' => 'hidden'));
+        echo $this->Form->input('nota', array('label'=> 'Nota', 'style' => 'width: 100px'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
