@@ -103,8 +103,14 @@ body {
 }
 
 #im {
-	background: transparent url('images/eLearning.jpg') no-repeat;
+	background: transparent url('images/sss.jpg') no-repeat;
 }
+
+#im2 {
+	background: transparent url('images/Ss.jpg') no-repeat;
+}
+
+
 #im1{
 	padding: 5px 140px 5px 140px;
 }
