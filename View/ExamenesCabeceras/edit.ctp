@@ -1,12 +1,13 @@
 <div class="examenesCabeceras form">
 <?php echo $this->Form->create('ExamenesCabecera'); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Examenes Cabecera'); ?></legend>
+		<legend><?php echo __('Editar Examen'); ?></legend>
 	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('dsc');
-		echo $this->Form->input('asignaturas_id');
-		echo $this->Form->input('enunciado');
+        echo $this->Form->input('dsc', array('label' => 'Título'));
+        echo $this->Form->input('asignatura_id');
+        echo $this->Form->input('enunciado');
+        echo $this->Form->input('dia_examen', array('label' => 'Fecha del examen', 'dateFormat' => 'DMY'));
+        echo $this->Form->input('activo', array('type' => 'checkbox'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

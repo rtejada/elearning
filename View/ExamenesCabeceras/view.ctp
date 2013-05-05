@@ -13,7 +13,7 @@
 		</dd>
 		<dt><?php echo __('Asignaturas Id'); ?></dt>
 		<dd>
-			<?php echo h($examenesCabecera['ExamenesCabecera']['asignaturas_id']); ?>
+			<?php echo h($examenesCabecera['ExamenesCabecera']['asignatura_id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>

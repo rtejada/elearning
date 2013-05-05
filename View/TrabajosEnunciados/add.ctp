@@ -6,7 +6,7 @@
 		echo $this->Form->input('dsc', array('label' => 'Título'));
 		echo $this->Form->input('enunciado');
 		echo $this->Form->input('asignatura_id');
-        echo $this->Form->input('fecha_tope', array('label' => 'Fecha máxima de entrega'));
+        echo $this->Form->input('fecha_tope', array('label' => 'Fecha máxima de entrega', 'dateFormat' => 'DMY'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

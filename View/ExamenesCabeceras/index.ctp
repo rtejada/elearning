@@ -1,24 +1,25 @@
 <div class="examenesCabeceras index">
-	<h2><?php echo __('Examenes Cabeceras'); ?></h2>
+	<h2><?php echo __('Exámenes'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('dsc'); ?></th>
-			<th><?php echo $this->Paginator->sort('asignaturas_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th><?php echo $this->Paginator->sort('enunciado'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th><?php echo $this->Paginator->sort('dsc', 'Titulo'); ?></th>
+			<th><?php echo $this->Paginator->sort('asignatura_id', 'Asignatura'); ?></th>
+            <th><?php echo $this->Paginator->sort('dia_examen', 'Dia examen'); ?></th>
+            <th><?php echo $this->Paginator->sort('activo', 'Activo'); ?></th>
+			<th><?php echo $this->Paginator->sort('created', 'Creado'); ?></th>
+			<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php
 	foreach ($examenesCabeceras as $examenesCabecera): ?>
 	<tr>
 		<td><?php echo h($examenesCabecera['ExamenesCabecera']['id']); ?>&nbsp;</td>
 		<td><?php echo h($examenesCabecera['ExamenesCabecera']['dsc']); ?>&nbsp;</td>
-		<td><?php echo h($examenesCabecera['ExamenesCabecera']['asignaturas_id']); ?>&nbsp;</td>
-		<td><?php echo h($examenesCabecera['ExamenesCabecera']['created']); ?>&nbsp;</td>
-		<td><?php echo h($examenesCabecera['ExamenesCabecera']['modified']); ?>&nbsp;</td>
-		<td><?php echo h($examenesCabecera['ExamenesCabecera']['enunciado']); ?>&nbsp;</td>
+		<td><?php echo h($examenesCabecera['Asignatura']['dsc']); ?>&nbsp;</td>
+        <td><?php echo h($this->Time->format('d/m/Y',$examenesCabecera['ExamenesCabecera']['dia_examen'])); ?>&nbsp;</td>
+        <td><?php if($examenesCabecera['ExamenesCabecera']['activo']==1)
+                echo h('Si'); ?>&nbsp;</td>
+		<td><?php echo h($this->Time->format('d/m/Y H:i:s',$examenesCabecera['ExamenesCabecera']['created'])); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $examenesCabecera['ExamenesCabecera']['id'])); ?>
@@ -42,32 +43,15 @@
 	?>
 	</div>
 </div>
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-<li><?php echo $this->Html->link(__('List Usuario'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('New Usuario'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Asignaturas'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Cursos'), array('controller' => 'cursos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Cursos'), array('controller' => 'cursos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos'), array('controller' => 'trabajos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajos'), array('controller' => 'trabajos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Trabajos Adjuntos'), array('controller' => 'trabajos_adjuntos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Trabajos Adjuntos'), array('controller' => 'trabajos_adjuntos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Examenes Detalles'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Examenes Detalles'), array('controller' => 'examenes_detalles', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Contenidos'), array('controller' => 'contenidos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Contenidos'), array('controller' => 'contenidos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Contenidos Temarios'), array('controller' => 'contenidos_temarios', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Contenidos Temarios'), array('controller' => 'contenidos_temarios', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Notas'), array('controller' => 'notas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Notas'), array('controller' => 'notas', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Examenes Adjuntos'), array('controller' => 'examenes_adjuntos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Examenes Adjuntos'), array('controller' => 'examenes_adjuntos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Examenes Cabeceras'), array('controller' => 'examenes_cabeceras', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Examenes Cabeceras'), array('controller' => 'examenes_cabeceras', 'action' => 'add')); ?> </li>
-	</ul>
+    <h3><?php echo __('Menu'); ?></h3>
+    <div id='cssmenu'>
+        <ul>
+                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'examenes_cabeceras', 'action' => 'index')); ?></li>
+                <li><?php echo $this->Html->link(__('Crear Examen'), array('controller' => 'examenes_cabeceras', 'action' => 'add')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
+        </ul>
+    </div>
+    <?php echo $this->element('menu'); ?>
 </div>

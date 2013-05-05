@@ -288,7 +288,7 @@ fieldset fieldset div {
 	margin: 0 20px;
 }
 form div {
-	clear: both;
+	/*clear: both;*/
 	margin-bottom: 1em;
 	padding: .5em;
 	vertical-align: text-top;
@@ -306,8 +306,8 @@ form .required label:after {
 }
 form div.submit {
 	border: 0;
-	clear: both;
-	margin-top: 10px;
+	/*clear: both;*/
+	/*margin-top: 10px;*/
 }
 label {
 	display: block;

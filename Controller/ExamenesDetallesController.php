@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Controller', 'AlumnosAsignaturas');
 /**
  * ExamenesDetalles Controller
  *
@@ -7,15 +8,68 @@ App::uses('AppController', 'Controller');
  */
 class ExamenesDetallesController extends AppController {
 
+    public $components = array('Paginator', 'DescargasFicheros');
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
-		$this->ExamenesDetalle->recursive = 0;
-		$this->set('examenesDetalles', $this->paginate());
+
+        $tipo = $this->Auth->user('tipo');
+        $user_id = $this->Auth->user('id');
+        $conditions = array();
+        $examen = array();
+
+        //los alumnos sólo podrán visualizar sus propios exámenes
+
+        if ($tipo ==1 ) {
+            $conditions[] = array('ExamenesDetalle.usuario_id =' => $user_id);
+
+            $examen = array(
+                'Examen' => array(
+                    'limit' => 5,
+                    'maxLimit' => 100,
+                    'order' => array('ExamenesDetalle.id' => 'ASC'),
+                    'conditions' => $conditions,
+                ),
+            );
+
+            $this->Paginator->settings = $examen;
+
+        }
+
+        $this->ExamenesDetalle->recursive = 0;
+
+        $this->set('examenesDetalles', $this->Paginator->paginate());
+
+        if($tipo==1) {
+            $condiciones_examenes_cabecera = $this->_obtenerCondicionExamenes();
+            $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('all', array('conditions' => $condiciones_examenes_cabecera));
+            $this->set('examenesCabeceras', $examenesCabeceras);
+        }
+
 	}
+
+
+    /**
+     * obtener sólo el listado de examenes para las asignaturas
+     * en las que está matriculado el alumno
+     *
+     * @return array
+     */
+
+    private function _obtenerCondicionExamenes() {
+        $user_id = $this->Auth->user('id');
+        $AlumnosAsignaturas = new AlumnosAsignaturasController();
+        $asignaturas_del_alumno = $AlumnosAsignaturas->obtenerAsignaturasAlumno($user_id);
+
+        $conditions = array();
+        $conditions[] = array('ExamenesCabecera.asignatura_id' => $asignaturas_del_alumno);
+        $conditions[] = array('ExamenesCabecera.dia_examen =' => date('Y-m-d'));
+
+        return $conditions;
+    }
 
 /**
  * view method

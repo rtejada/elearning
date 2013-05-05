@@ -19,7 +19,7 @@
             <ul>
                 <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
                 <li><?php echo $this->Html->link(__('Nueva Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?></li>
-                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'pages', 'action' => 'index')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), '/'); ?></li>
             </ul>
         </div>
     <?php } ?>

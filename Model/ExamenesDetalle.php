@@ -41,25 +41,4 @@ class ExamenesDetalle extends AppModel {
 		)
 	);
 
-/**
- * hasMany associations
- *
- * @var array
- */
-	public $hasMany = array(
-		'ExamenesAdjunto' => array(
-			'className' => 'ExamenesAdjunto',
-			'foreignKey' => 'examenes_detalle_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
-
 }

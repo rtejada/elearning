@@ -1,7 +1,10 @@
 <div class="alumnosAsignaturas index">
-	<h2><?php echo __('Lista de Asignaturas'); ?></h2>
 
-    <?php if ($tipo==2) { ?>
+
+    <?php if ($tipo==1) { ?>
+    <h2><?php echo __('Lista de Asignaturas en las que ud. está matriculado'); ?></h2>
+    <?php } elseif ($tipo==2) { ?>
+    <h2><?php echo __('Relación Alumno - Asignatura'); ?></h2>
     <div>
         <?php echo $this->Form->create('Basica');?>
         <?php echo $this->Form->input('asignaturas', array('div'=>false, 'empty' => true));?>
@@ -17,7 +20,6 @@
 
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
             <?php if ($tipo==2) { ?>
             <th><?php echo $this->Paginator->sort('usuario_id'); ?></th>
@@ -29,7 +31,7 @@
 	<?php
 	foreach ($alumnosAsignaturas as $alumnosAsignatura): ?>
 	<tr>
-		<td><?php echo h($alumnosAsignatura['AlumnosAsignatura']['id']); ?>&nbsp;</td>
+
         <td>
             <?php echo $this->Html->link($alumnosAsignatura['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $alumnosAsignatura['Asignatura']['id'])); ?>
         </td>

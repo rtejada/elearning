@@ -11,7 +11,11 @@ class ExamenesCabecerasController extends AppController {
  * index method
  *
  * @return void
+ *
+ *
  */
+    public $helpers =  array('Session', 'Time');
+
 	public function index() {
 		$this->ExamenesCabecera->recursive = 0;
 		$this->set('examenesCabeceras', $this->paginate());
@@ -47,6 +51,10 @@ class ExamenesCabecerasController extends AppController {
 				$this->Session->setFlash(__('The examenes cabecera could not be saved. Please, try again.'));
 			}
 		}
+
+        $usuario_id = $this->Auth->user('id');
+        $asignaturas = $this->ExamenesCabecera->Asignatura->find('list', array('conditions' => array('Asignatura.usuario_id' => $usuario_id)));
+        $this->set('asignaturas', $asignaturas);
 	}
 
 /**
@@ -71,6 +79,9 @@ class ExamenesCabecerasController extends AppController {
 		} else {
 			$this->request->data = $this->ExamenesCabecera->read(null, $id);
 		}
+        $usuario_id = $this->Auth->user('id');
+        $asignaturas = $this->ExamenesCabecera->Asignatura->find('list', array('conditions' => array('Asignatura.usuario_id' => $usuario_id)));
+        $this->set('asignaturas', $asignaturas);
 	}
 
 /**

@@ -15,6 +15,16 @@ class ExamenesCabecera extends AppModel {
  */
 	public $displayField = 'enunciado';
 
+    public $actsAs = array(
+        'Upload.Upload' => array(
+            'fichero' => array(
+                'fields' => array(
+                    'dir' => 'fichero_dir'
+                )
+            )
+        )
+    );
+
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
@@ -24,8 +34,8 @@ class ExamenesCabecera extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Asignaturas' => array(
-			'className' => 'Asignaturas',
+		'Asignatura' => array(
+			'className' => 'Asignatura',
 			'foreignKey' => 'asignatura_id',
 			'conditions' => '',
 			'fields' => '',
@@ -53,5 +63,14 @@ class ExamenesCabecera extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+
+    function beforeSave() {
+        //se obtiene el ID de usuario activo
+        $uid = CakeSession::read("Auth.User.id");
+        //se establece el campo usuario_id del modelo trabajo, como el usuario activo.
+        $this->data['ExamenesCabecera']['usuario_id'] = $uid;
+
+        return true;
+    }
 
 }
