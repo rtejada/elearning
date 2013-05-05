@@ -22,6 +22,7 @@
 		 </br>
 		  </br>
 			<div id='im1'>
+				<div id='im2'>
                 <p>
                          <i> Si deseas obtener informaci&oacute;n adicional, resolver cualquier duda o sugerirnos cualquier tipo de mejora, puedes ponerte en contacto con nosotros en la siguiente direcci&oacute;n:</i></p> 
 							</br>
@@ -35,6 +36,7 @@
                             </ul>
 			
 				</p>
+				</div>	
 			</div>	
 </body>
 </html>
