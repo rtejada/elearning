@@ -121,14 +121,18 @@ CakeLog::config('error', array(
 ));
 
 
-Configure::write('Route.default', array('controller' => 'pages', 'action' => 'display', 'home'));
+//Configure::write('Route.default', array('controller' => 'pages', 'action' => 'display', 'home'));
 
 //configurar distintas rutas si el usuario está autentificado o no:
-/*
+
 if ($Session->read('Auth.User')) {
-    Configure::write('Route.default', array('controller' => 'pages', 'action' => 'display', 'home'));
+    $tipo = $Session->read('Auth.User.tipo');
+    if($tipo=='1') {
+            Configure::write('Route.default', array('controller' => 'alumnos_asignaturas', 'action' => 'index'));
+    } else {
+        Configure::write('Route.default', array('controller' => 'asignaturas', 'action' => 'index'));
+    }
 } else {
-    Configure::write('Route.default', array('controller' => 'paginas', 'action' => 'display', 'index'));
+    Configure::write('Route.default', array('controller' => 'pages', 'action' => 'display', 'home'));
 }
-*/
 

@@ -26,7 +26,7 @@ class ExamenesCabecera extends AppModel {
 	public $belongsTo = array(
 		'Asignaturas' => array(
 			'className' => 'Asignaturas',
-			'foreignKey' => 'asignaturas_id',
+			'foreignKey' => 'asignatura_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
