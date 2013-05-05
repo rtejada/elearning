@@ -21,9 +21,9 @@
                 echo h('Si'); ?>&nbsp;</td>
 		<td><?php echo h($this->Time->format('d/m/Y H:i:s',$examenesCabecera['ExamenesCabecera']['created'])); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $examenesCabecera['ExamenesCabecera']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $examenesCabecera['ExamenesCabecera']['id']), null, __('Are you sure you want to delete # %s?', $examenesCabecera['ExamenesCabecera']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $examenesCabecera['ExamenesCabecera']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $examenesCabecera['ExamenesCabecera']['id']), null, __('Are you sure you want to delete # %s?', $examenesCabecera['ExamenesCabecera']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

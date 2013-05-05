@@ -34,11 +34,11 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Examenes Cabecera'), array('action' => 'edit', $examenesCabecera['ExamenesCabecera']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Examenes Cabecera'), array('action' => 'delete', $examenesCabecera['ExamenesCabecera']['id']), null, __('Are you sure you want to delete # %s?', $examenesCabecera['ExamenesCabecera']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Examenes Cabeceras'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Examenes Cabecera'), array('action' => 'add')); ?> </li>
-	</ul>
+    <h3><?php echo __('Menu'); ?></h3>
+    <div id='cssmenu'>
+        <ul>
+            <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'examenes_cabeceras', 'action' => 'index')); ?></li>
+        </ul>
+    </div>
+    <?php echo $this->element('menu'); ?>
 </div>
