@@ -57,7 +57,7 @@
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Dsc'); ?></th>
-		<th><?php echo __('Asignaturas Id'); ?></th>
+		<th><?php echo __('Asignatura'); ?></th>
 		<th><?php echo __('Created'); ?></th>
 		<th><?php echo __('Modified'); ?></th>
 		<th><?php echo __('Enunciado'); ?></th>
@@ -69,7 +69,7 @@
 		<tr>
 			<td><?php echo $examenesCabecera['id']; ?></td>
 			<td><?php echo $examenesCabecera['dsc']; ?></td>
-			<td><?php echo $examenesCabecera['asignaturas_id']; ?></td>
+			<td><?php echo $examenesCabecera['asignatura_id']; ?></td>
 			<td><?php echo $examenesCabecera['created']; ?></td>
 			<td><?php echo $examenesCabecera['modified']; ?></td>
 			<td><?php echo $examenesCabecera['enunciado']; ?></td>

@@ -9,6 +9,7 @@ App::import('Controller', 'AlumnosAsignaturas');
 class ExamenesDetallesController extends AppController {
 
     public $components = array('Paginator', 'DescargasFicheros');
+    public $helpers =  array('Session', 'Time');
 /**
  * index method
  *
@@ -67,6 +68,7 @@ class ExamenesDetallesController extends AppController {
         $conditions = array();
         $conditions[] = array('ExamenesCabecera.asignatura_id' => $asignaturas_del_alumno);
         $conditions[] = array('ExamenesCabecera.dia_examen =' => date('Y-m-d'));
+        $conditions[] = array('ExamenesCabecera.activo =' => 1);
 
         return $conditions;
     }
@@ -101,6 +103,11 @@ class ExamenesDetallesController extends AppController {
 				$this->Session->setFlash(__('The examenes detalle could not be saved. Please, try again.'));
 			}
 		}
+
+        $conditions = $this->_obtenerCondicionExamenes();
+        $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('list', array('conditions' => $conditions));
+        $this->set('examenesCabeceras', $examenesCabeceras);
+
 	}
 
 /**

@@ -1,20 +1,25 @@
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="examenesDetalles form">
-<?php echo $this->Form->create('ExamenesDetalle'); ?>
+<?php echo $this->Form->create('ExamenesDetalle', array('type' => 'file')); ?>
 	<fieldset>
-		<legend><?php echo __('Add Examenes Detalle'); ?></legend>
+		<legend><?php echo __('Enviar examen'); ?></legend>
 	<?php
-		echo $this->Form->input('dsc');
-		echo $this->Form->input('usuario_id');
-		echo $this->Form->input('examenes_cabecera_id');
-		echo $this->Form->input('nota');
+		echo $this->Form->input('dsc', array('label'=>'Título'));
+		echo $this->Form->input('examenes_cabecera_id', array('label'=>'Examen'));
+        echo $this->Form->input('ExamenesDetalle.fichero', array('type' => 'file'));
+        echo $this->Form->input('ExamenesDetalle.fichero_dir', array('type' => 'hidden'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+    <h3><?php echo __('Menu'); ?></h3>
 
-		<li><?php echo $this->Html->link(__('List Examenes Detalles'), array('action' => 'index')); ?></li>
-	</ul>
+    <div id='cssmenu'>
+        <ul>
+            <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?></li>
+        </ul>
+    </div>
+    <br />
+    <?php echo $this->element('menu'); ?>
 </div>

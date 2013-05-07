@@ -12,10 +12,10 @@
         foreach ($examenesCabeceras as $examenesCabecera): ?>
             <tr>
                 <td><?php echo h($examenesCabecera['ExamenesCabecera']['dsc']); ?>&nbsp;</td>
-                <td><?php echo h($examenesCabecera['ExamenesCabecera']['asignaturas_id']); ?>&nbsp;</td>
-                <td><?php echo h($examenesCabecera['ExamenesCabecera']['dia_examen']); ?>&nbsp;</td>
+                <td><?php echo h($examenesCabecera['Asignatura']['dsc']); ?>&nbsp;</td>
+                <td><?php echo h($this->Time->format('d/m/Y',$examenesCabecera['ExamenesCabecera']['dia_examen'])); ?>&nbsp;</td>
                 <td class="actions">
-                    <?php echo $this->Html->link(__('View'), array('action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
+                    <?php echo $this->Html->link(__('View'), array('controller'=> 'examenes_cabeceras', 'action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
                 </td>
             </tr>
         <?php endforeach; ?>

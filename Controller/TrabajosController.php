@@ -143,8 +143,8 @@ class TrabajosController extends AppController {
         $conditions = $this->_obtenerCondicionTrabajos();
 
 		$trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list', array('conditions' => $conditions));
-		$usuarios = $this->Trabajo->Usuario->find('list');
-		$this->set(compact('trabajosEnunciados', 'usuarios'));
+		//$usuarios = $this->Trabajo->Usuario->find('list');
+		$this->set(compact('trabajosEnunciados'));
 	}
 
 /**
