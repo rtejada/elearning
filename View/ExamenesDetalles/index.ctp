@@ -47,6 +47,8 @@
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['created']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $examenesDetalle['ExamenesDetalle']['id']));
+            $link = array('action' => 'downloadFile', $examenesDetalle['ExamenesDetalle']['fichero_dir'], $examenesDetalle['ExamenesDetalle']['fichero'], 'fichero');
+            echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
              if ($tipo==1) {
 			    echo $this->Html->link(__('Edit'), array('action' => 'edit', $examenesDetalle['ExamenesDetalle']['id']));
                 echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $examenesDetalle['ExamenesDetalle']['id']), null, __('Are you sure you want to delete # %s?', $examenesDetalle['ExamenesDetalle']['id']));

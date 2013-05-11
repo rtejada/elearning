@@ -114,11 +114,13 @@ class AppController extends Controller {
 
     public function downloadFile($foto_dir, $foto, $campo='foto') {
 
-        //xdebug_break();
         $this->layout = "ajax";
         $mfoto = Sanitize::html($foto);
         $mfoto_dir = Sanitize::html($foto_dir);
         $modelo = strtolower($this->modelClass);
+        if($modelo=='examenesdetalle')
+            $modelo = 'examenes_detalle';
+
         $this->DescargasFicheros->descarga($modelo,$mfoto_dir,$mfoto, $campo);
     }
 
