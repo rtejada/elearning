@@ -12,6 +12,7 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
+
 <?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">
     <h3><?php echo __('Menu'); ?></h3>

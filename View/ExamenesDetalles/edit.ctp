@@ -1,16 +1,14 @@
 <div class="examenesDetalles form">
 <?php echo $this->Form->create('ExamenesDetalle', array('type' => 'file')); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Examenes Detalle'); ?></legend>
+		<legend><?php echo __('Editar Examen'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('dsc');
-		echo $this->Form->input('usuario_id');
+		echo $this->Form->input('dsc', array('label' => 'Descripción'));
 		echo $this->Form->input('examenes_cabecera_id');
-		echo $this->Form->input('nota');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

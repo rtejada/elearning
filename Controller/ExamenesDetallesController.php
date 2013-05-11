@@ -105,7 +105,8 @@ class ExamenesDetallesController extends AppController {
 		}
 
         $conditions = $this->_obtenerCondicionExamenes();
-        $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('list', array('conditions' => $conditions));
+        $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('list',
+            array('fields' => array('ExamenesCabecera.id', 'ExamenesCabecera.dsc'), 'conditions' => $conditions));
         $this->set('examenesCabeceras', $examenesCabeceras);
 
 	}
@@ -118,10 +119,23 @@ class ExamenesDetallesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+        $tipo = $this->Auth->user('tipo');
+        $user_id = $this->Auth->user('id');
 		$this->ExamenesDetalle->id = $id;
+
 		if (!$this->ExamenesDetalle->exists()) {
 			throw new NotFoundException(__('Invalid examenes detalle'));
 		}
+        //los alumnos sólo podrán editar sus propios exámenes.
+        if(($this->ExamenesDetalle->field('usuario_id') != $user_id) and
+          ($tipo==1)) {
+            $this->restringirAlumno();
+        }
+        //si el examen ya estaba corregido tampoco editar
+        if(($tipo==1) and ($this->ExamenesDetalle->field('corregido')==1)) {
+            $this->restringirAlumno();
+        }
+
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->ExamenesDetalle->save($this->request->data)) {
 				$this->Session->setFlash(__('The examenes detalle has been saved'));
@@ -132,6 +146,8 @@ class ExamenesDetallesController extends AppController {
 		} else {
 			$this->request->data = $this->ExamenesDetalle->read(null, $id);
 		}
+
+
 	}
 
 /**
@@ -143,10 +159,25 @@ class ExamenesDetallesController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+        $tipo = $this->Auth->user('tipo');
+        $user_id = $this->Auth->user('id');
+
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
 		$this->ExamenesDetalle->id = $id;
+
+        //los alumnos sólo podrán eliminar sus propios exámenes, siempre
+        //que no estén corregidos
+        if(($this->ExamenesDetalle->field('usuario_id') != $user_id) and
+            ($tipo==1)) {
+            $this->restringirAlumno();
+        }
+        //si el examen ya estaba corregido tampoco borrar
+        if(($tipo==1) and ($this->ExamenesDetalle->field('corregido')==1)) {
+            $this->restringirAlumno();
+        }
+
 		if (!$this->ExamenesDetalle->exists()) {
 			throw new NotFoundException(__('Invalid examenes detalle'));
 		}
@@ -157,4 +188,39 @@ class ExamenesDetallesController extends AppController {
 		$this->Session->setFlash(__('Examenes detalle was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+
+
+    /**
+     * edit method
+     *
+     * @throws NotFoundException
+     * @param string $id
+     * @return void
+     */
+    public function corregir($id = null) {
+        $tipo = $this->Auth->user('tipo');
+        $user_id = $this->Auth->user('id');
+        $this->ExamenesDetalle->id = $id;
+        if (!$this->ExamenesDetalle->exists()) {
+            throw new NotFoundException(__('Examen no válido'));
+        }
+
+        $this->restringirAlumno();
+
+        if ($this->request->is('post') || $this->request->is('put')) {
+            $this->ExamenesDetalle->id =  $id;
+            if($this->ExamenesDetalle->saveField('nota', $this->request->data['ExamenesDetalle']['nota'])) {
+                $this->Session->setFlash(__('El examen ha sido corregido satisfactoriamente'));
+                $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash(__('El examen no ha podido ser guardado, inténtelo otra vez.'));
+            }
+        } else {
+            $this->request->data = $this->ExamenesDetalle->read(null, $id);
+        }
+
+        $this->set('examenesDetalle', $this->ExamenesDetalle->read(null, $id));
+    }
+
+
 }

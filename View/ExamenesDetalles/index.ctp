@@ -1,6 +1,8 @@
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="examenesDetalles index">
 
-    <h2><?php echo __('Examenes Cabeceras'); ?></h2>
+    <?php if ($tipo==1) {  ?>
+    <h2><?php echo __('Examenes activos'); ?></h2>
     <table cellpadding="0" cellspacing="0">
         <tr>
             <th><?php echo __('Descripción'); ?></th>
@@ -20,9 +22,10 @@
             </tr>
         <?php endforeach; ?>
     </table>
+    <?php }  ?>
 
 
-	<h2><?php echo __('Examenes Detalles'); ?></h2>
+	<h2><?php echo __('Examenes enviados'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -43,9 +46,13 @@
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['nota']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['created']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $examenesDetalle['ExamenesDetalle']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $examenesDetalle['ExamenesDetalle']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $examenesDetalle['ExamenesDetalle']['id']), null, __('Are you sure you want to delete # %s?', $examenesDetalle['ExamenesDetalle']['id'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $examenesDetalle['ExamenesDetalle']['id']));
+             if ($tipo==1) {
+			    echo $this->Html->link(__('Edit'), array('action' => 'edit', $examenesDetalle['ExamenesDetalle']['id']));
+                echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $examenesDetalle['ExamenesDetalle']['id']), null, __('Are you sure you want to delete # %s?', $examenesDetalle['ExamenesDetalle']['id']));
+             } elseif($tipo==2) {
+                echo $this->Html->link(__('Corregir'), array('action' => 'corregir', $examenesDetalle['ExamenesDetalle']['id']));
+             }  ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -65,7 +72,7 @@
 	?>
 	</div>
 </div>
-<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
+
 <div class="actions">
     <h3><?php echo __('Menu'); ?></h3>
 
