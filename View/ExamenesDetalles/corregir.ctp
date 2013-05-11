@@ -33,10 +33,11 @@
 <?php echo $this->Form->end(__('Enviar nota')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('ExamenesDetalle.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('ExamenesDetalle.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Examenes Detalles'), array('action' => 'index')); ?></li>
-	</ul>
+    <h3><?php echo __('Menu'); ?></h3>
+    <div id='cssmenu'>
+        <ul>
+            <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?></li>
+        </ul>
+    </div>
+    <?php echo $this->element('menu'); ?>
 </div>

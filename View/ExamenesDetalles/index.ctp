@@ -41,8 +41,8 @@
 	<tr>
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['id']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['dsc']); ?>&nbsp;</td>
-		<td><?php echo h($examenesDetalle['ExamenesDetalle']['usuario_id']); ?>&nbsp;</td>
-		<td><?php echo h($examenesDetalle['ExamenesDetalle']['examenes_cabecera_id']); ?>&nbsp;</td>
+		<td><?php echo h($examenesDetalle['Usuario']['nombre']).' '.($examenesDetalle['Usuario']['apellidos']); ?>&nbsp;</td>
+		<td><?php echo h($examenesDetalle['ExamenesCabecera']['dsc']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['nota']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['created']); ?>&nbsp;</td>
 		<td class="actions">
