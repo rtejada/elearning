@@ -75,7 +75,7 @@
 <div id="footer">
 <p>
  Eformar : &copy; 2013 Centro Privado no Homologado por la Consejer&iacute;a de Educaci&oacute;n de la Comunidad de Madrid
- <?php echo $this->element('sql_dump'); ?>
+
 </p>
 </div>
 </div>

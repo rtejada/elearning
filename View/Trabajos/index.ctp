@@ -1,7 +1,6 @@
 <?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="trabajos index">
 
-
     <?php if ($tipo==1) {  ?>
     <h2><?php echo __('Trabajos pendientes');   ?></h2>
     <table cellpadding="0" cellspacing="0">
@@ -32,18 +31,36 @@
 
     <div>
         <?php echo $this->Form->create('Basica');?>
+        <table border="0" class="tabla_filter">
+            <tr>
+                <td>
+                    <label>Exámenes</label>
+                    <?php
+                    echo $this->Chosen->select('Enunciado', $enunciados,
+                        array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
+                    ?>
+                </td>
+                <td>
 
-        <?php
-        echo $this->Chosen->select('Enunciado', $enunciados);
-        ?>
 
-        <?php echo $this->Form->input('Enunciado', array('div'=>false, 'empty' => true));?>
-        <?php if ($tipo==2)
-            echo $this->Form->input('alumnos', array('div'=>false, 'empty' => true));?>
-        <span style="margin-left: 50px">
-            <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
-            <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
-        </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <?php if ($tipo==2) {
+                        echo "<label>Alumno</label>";
+                        echo $this->Chosen->select('alumnos', $alumnos, array('data-placeholder' => 'Seleccione...',
+                            'deselect' => true, 'style' => 'min-width: 200px;'));
+                    } ?>
+                </td>
+                <td>
+                    <span style="margin-left: 50px">
+                        <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
+                        <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
+                    </span>
+                </td>
+            </tr>
+        </table>
         <?php echo $this->Form->end();?>
         <br />
     </div>
