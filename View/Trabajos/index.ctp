@@ -34,14 +34,17 @@
         <table border="0" class="tabla_filter">
             <tr>
                 <td>
-                    <label>Exámenes</label>
+                    <label>Trabajos</label>
                     <?php
                     echo $this->Chosen->select('Enunciado', $enunciados,
                         array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
                     ?>
                 </td>
                 <td>
-
+                    <label>Mostrar </label>
+                    <?php
+                    echo $this->Chosen->select('corregidos', $opciones, array('data-placeholder' => 'Seleccione...',
+                    'deselect' => true, 'style' => 'min-width: 200px;')); ?>
 
                 </td>
             </tr>
@@ -62,10 +65,14 @@
             </tr>
         </table>
         <?php echo $this->Form->end();?>
-        <br />
     </div>
 
-	<h2><?php echo __('Trabajos enviados'); ?></h2>
+	<h2><?php if($tipo==1) {
+                echo __('Trabajos enviados');
+              } else {
+                echo __('Trabajos recibidos');
+              }
+        ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>

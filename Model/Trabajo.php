@@ -88,7 +88,9 @@ class Trabajo extends AppModel {
         //se establece el campo usuario_id del modelo trabajo, como el usuario activo.
         //siempre que sea un alumno.
         if($tipo==1) {
-        $this->data['Trabajo']['usuario_id'] = $uid;
+            $this->data['Trabajo']['usuario_id'] = $uid;
+        } elseif ($tipo == 2) {
+            $this->data['Trabajo']['corregido'] = 1;
         }
 
         return true;

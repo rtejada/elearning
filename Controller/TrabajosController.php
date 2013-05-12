@@ -35,6 +35,14 @@ class TrabajosController extends AppController {
                 $txtdsc = $this->params['data']['Basica']['alumnos'];
                 $conditions_form[] = array('Trabajo.usuario_id =' => $txtdsc);
             }
+
+            if (!empty($this->params['data']['Basica']['corregidos']) or
+                 ($this->params['data']['Basica']['corregidos']!='')) {
+                $txtdsc = $this->params['data']['Basica']['corregidos'];
+                if($txtdsc!= '2') {
+                    $conditions_form[] = array('Trabajo.corregido =' => $txtdsc);
+                }
+            }
         }
 
         //los alumnos sólo podrán visualizar sus propios trabajos.
@@ -74,6 +82,7 @@ class TrabajosController extends AppController {
         $alumnos = $this->Trabajo->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
         $this->set('enunciados', $trabajos);
         $this->set('alumnos', $alumnos);
+        $this->set('opciones', array(0 => 'Sin corregir', 1 => 'Corregidos', 2=> 'Todos'));
 
 	}
 
