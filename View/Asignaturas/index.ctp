@@ -18,8 +18,7 @@
 			<th><?php echo $this->Paginator->sort('dsc', 'Nombre'); ?></th>
 			<th><?php echo $this->Paginator->sort('curso_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('usuario_id', 'Profesor'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo $this->Paginator->sort('creado'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($asignaturas as $asignatura): ?>
@@ -32,8 +31,8 @@
 		<td>
 			<?php echo $this->Html->link($asignatura['Usuario']['login'], array('controller' => 'usuarios', 'action' => 'view', $asignatura['Usuario']['id'])); ?>
 		</td>
-		<td><?php echo h($asignatura['Asignatura']['created']); ?>&nbsp;</td>
-		<td><?php echo h($asignatura['Asignatura']['modified']); ?>&nbsp;</td>
+		<td><?php echo h($this->Time->format('d/m/Y',$asignatura['Asignatura']['created'])); ?>&nbsp;</td>
+
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $asignatura['Asignatura']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $asignatura['Asignatura']['id'])); ?>

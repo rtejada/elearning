@@ -16,14 +16,14 @@
 			<?php echo h($examenesCabecera['ExamenesCabecera']['asignatura_id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Creado'); ?></dt>
 		<dd>
-			<?php echo h($examenesCabecera['ExamenesCabecera']['created']); ?>
+			<?php echo h($this->Time->format('d/m/Y',$examenesCabecera['ExamenesCabecera']['created'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Modificado'); ?></dt>
 		<dd>
-			<?php echo h($examenesCabecera['ExamenesCabecera']['modified']); ?>
+			<?php echo h($this->Time->format('d/m/Y',$examenesCabecera['ExamenesCabecera']['modified'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Enunciado'); ?></dt>

@@ -11,7 +11,7 @@
             </dd>
             <dt><?php echo __('Alumno: '); ?></dt>
             <dd>
-                <?php h($trabajo['Usuario']['login']); ?>
+                <?php h($trabajo['Usuario']['nombre']); ?>
                 &nbsp;
             </dd>
         </dl>
