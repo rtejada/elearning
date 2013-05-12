@@ -27,6 +27,9 @@ class ExamenesCabecerasController extends AppController {
                 $conditions[] = array('ExamenesCabecera.asignatura_id =' => $txtdsc);
             }
         }
+        $this->paginate = array(
+            'limit' => 20,
+            'conditions' => $conditions	);
 
         $asignaturas = $this->ExamenesCabecera->Asignatura->find("list");
         $this->set('asignaturas', $asignaturas);
