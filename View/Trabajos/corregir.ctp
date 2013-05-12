@@ -11,7 +11,7 @@
             </dd>
             <dt><?php echo __('Alumno: '); ?></dt>
             <dd>
-                <?php h($trabajo['Usuario']['nombre']); ?>
+                <?php h($trabajo['Usuario']['nombre'].' '.$trabajo['Usuario']['apellidos']); ?>
                 &nbsp;
             </dd>
         </dl>

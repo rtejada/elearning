@@ -19,8 +19,8 @@
                 <td>
                     <?php echo $this->Html->link($trabajosEnunciado['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $trabajosEnunciado['Asignatura']['id'])); ?>
                 </td>
-                <td><?php echo h($trabajosEnunciado['TrabajosEnunciado']['created']); ?>&nbsp;</td>
-                <td><?php echo h($trabajosEnunciado['TrabajosEnunciado']['fecha_tope']); ?>&nbsp;</td>
+                <td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['created'])); ?>&nbsp;</td>
+                <td><?php echo h($this->Time->format('d/m/Y H:i:s',$trabajosEnunciado['TrabajosEnunciado']['fecha_tope'])); ?>&nbsp;</td>
                 <td class="actions">
                     <?php echo $this->Html->link(__('View'), array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
                 </td>
@@ -48,7 +48,7 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
             <th><?php echo $this->Paginator->sort('trabajos_enunciado_id', 'Enunciado'); ?></th>
-			<th><?php echo $this->Paginator->sort('dsc', ' '); ?></th>
+			<th><?php echo $this->Paginator->sort('dsc', 'Título '); ?></th>
 			<th><?php echo $this->Paginator->sort('usuario_id', 'Alumno'); ?></th>
             <th><?php echo $this->Paginator->sort('nota', 'Nota'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Enviado'); ?></th>
@@ -62,11 +62,11 @@
 		</td>
         <td><?php echo h($trabajo['Trabajo']['dsc']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($trabajo['Usuario']['login'], array('controller' => 'usuarios', 'action' => 'view', $trabajo['Usuario']['id'])); ?>
+			<?php echo $this->Html->link($trabajo['Usuario']['nombre'].' '.$trabajo['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $trabajo['Usuario']['id'])); ?>
 		</td>
         <td><?php  if ($trabajo['Trabajo']['nota'] > 0)
                    echo h($trabajo['Trabajo']['nota']);  ?>&nbsp;</td>
-		<td><?php echo h($trabajo['Trabajo']['created']); ?>&nbsp;</td>
+		<td><?php echo h($this->Time->format('d/m/Y',$trabajo['Trabajo']['created'])); ?>&nbsp;</td>
 		<td class="actions">
             <?php
             $link = array('action' => 'downloadFile', $trabajo['Trabajo']['fichero_dir'], $trabajo['Trabajo']['fichero'], 'fichero');

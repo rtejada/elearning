@@ -14,6 +14,23 @@ class TrabajosEnunciadosController extends AppController {
  */
 	public function index() {
 
+        $tipo = $this->Auth->user('tipo');
+        $user_id = $this->Auth->user('id');
+        $conditions = array();
+
+        if (isset($this->params['data']['submit'])) {
+            if (!empty($this->params['data']['Basica']['asignaturas'])) {
+                $txtdsc = $this->params['data']['Basica']['asignaturas'];
+                $conditions[] = array('TrabajosEnunciado.asignatura_id =' => $txtdsc);
+            }
+
+
+        }
+
+        $asignaturas = $this->TrabajosEnunciado->Asignatura->find("list");
+        $this->set('asignaturas', $asignaturas);
+
+
         $this->restringirAlumno();
         $usuario_id = $this->Auth->user('id');
         $conditions[] = array('TrabajosEnunciado.usuario_id =' => $usuario_id);
