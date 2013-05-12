@@ -32,6 +32,11 @@
 
     <div>
         <?php echo $this->Form->create('Basica');?>
+
+        <?php
+        echo $this->Chosen->select('Enunciado');
+        ?>
+
         <?php echo $this->Form->input('Enunciado', array('div'=>false, 'empty' => true));?>
         <?php if ($tipo==2)
             echo $this->Form->input('alumnos', array('div'=>false, 'empty' => true));?>

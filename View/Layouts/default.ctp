@@ -5,7 +5,7 @@
 		<?php echo $this->Html->charset('UTF-8'); ?>
 	<meta name="description" content="Plataforma de estudios a distancia" />
 	<meta name="keywords" content="formacion, modulo, distancia" />
-	<meta name="author" content="Fran�ois ACTIS-GASTOU" />
+
         <?php
               echo $this->Html->meta('icon');
               echo $this->Html->css('cake.generic', 'stylesheet', array("media"=>"all" ));
@@ -14,10 +14,9 @@
               echo $this->fetch('meta');
               echo $this->fetch('css');
               echo $this->fetch('script');
+              echo $this->Html->script('jquery');
     ?>
 
-    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51594bd774876484"></script>
 </head>
 
 

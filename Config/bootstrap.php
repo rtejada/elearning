@@ -98,6 +98,7 @@ App::uses('SessionComponent', 'Controller/Component');
 // now create new SessionComponent instance
 $Session = new SessionComponent(new ComponentCollection());
 
+CakePlugin::load('Chosen');
 CakePlugin::load('Upload');
 
 Configure::write('Dispatcher.filters', array(
