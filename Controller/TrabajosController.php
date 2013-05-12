@@ -28,7 +28,7 @@ class TrabajosController extends AppController {
         if (isset($this->params['data']['submit'])) {
             if (!empty($this->params['data']['Basica']['Enunciado'])) {
                 $txtdsc = $this->params['data']['Basica']['Enunciado'];
-                $conditions_form[] = array('Trabajo.examenes_cabecera_id =' => $txtdsc);
+                $conditions_form[] = array('Trabajo.trabajos_enunciado_id =' => $txtdsc);
             }
 
             if (!empty($this->params['data']['Basica']['alumnos'])) {
@@ -41,18 +41,19 @@ class TrabajosController extends AppController {
 
         if ($tipo ==1 ) {
             $conditions[] = array('Trabajo.usuario_id =' => $user_id);
-
-            $trabajo = array(
-                'Trabajo' => array(
-                    'limit' => 5,
-                    'maxLimit' => 100,
-                    'order' => array('Trabajo.id' => 'ASC'),
-                    'conditions' => $conditions,
-                ),
-            );
-
+            $conditions[] = array_merge($conditions, $conditions_form);
+        } elseif($tipo==2) {
+            $conditions = $conditions_form;
         }
 
+        $trabajo = array(
+            'Trabajo' => array(
+                'limit' => 5,
+                'maxLimit' => 100,
+                'order' => array('Trabajo.id' => 'ASC'),
+                'conditions' => $conditions,
+            ),
+        );
 		$this->Trabajo->recursive = 1;
 
         $conditions_alumno = $this->_obtenerCondicionTrabajos();

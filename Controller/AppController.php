@@ -34,7 +34,7 @@ App::uses('Sanitize', 'Utility');
  */
 class AppController extends Controller {
 
-    var $helpers = array('Session');
+    var $helpers = array('Session', 'Chosen.Chosen');
 
     public $components = array(
         'Session',
@@ -61,6 +61,8 @@ class AppController extends Controller {
         'DescargasFicheros',
         'DebugKit.Toolbar'
     );
+
+
 
     public function isAuthorized($user) {
         // Los profesores pueden acceder a todo.
