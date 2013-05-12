@@ -20,27 +20,26 @@
 
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('Alumno'); ?></th>
             <?php if ($tipo==2) { ?>
-            <th><?php echo $this->Paginator->sort('usuario_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created');  ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+            <th><?php echo $this->Paginator->sort('Asignatura'); ?></th>
+			<th><?php echo $this->Paginator->sort('creado');  ?></th>
+
 			<th class="actions"><?php echo __('Actions'); ?></th>
            <?php } ?>
 	</tr>
 	<?php
 	foreach ($alumnosAsignaturas as $alumnosAsignatura): ?>
 	<tr>
-
+        <td>
+            <?php echo $this->Html->link($alumnosAsignatura['Usuario']['nombre'].' '.$alumnosAsignatura['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $alumnosAsignatura['Usuario']['id'])); ?>
+        </td>
         <td>
             <?php echo $this->Html->link($alumnosAsignatura['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $alumnosAsignatura['Asignatura']['id'])); ?>
         </td>
         <?php if ($tipo==2) { ?>
-		<td>
-			<?php echo $this->Html->link($alumnosAsignatura['Usuario']['login'], array('controller' => 'usuarios', 'action' => 'view', $alumnosAsignatura['Usuario']['id'])); ?>
-		</td>
-		<td><?php echo h($alumnosAsignatura['AlumnosAsignatura']['created']); ?>&nbsp;</td>
-		<td><?php echo h($alumnosAsignatura['AlumnosAsignatura']['modified']); ?>&nbsp;</td>
+
+		<td><?php echo h($this->Time->format('d/m/Y',$alumnosAsignatura['AlumnosAsignatura']['created'])); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>

@@ -39,12 +39,12 @@
 
 		<dt><?php echo __('Enviado'); ?></dt>
 		<dd>
-			<?php echo h($trabajo['Trabajo']['created']); ?>
+			<?php echo h($this->Time->format('d/m/Y',$trabajo['Trabajo']['created'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Modificado'); ?></dt>
 		<dd>
-			<?php echo h($trabajo['Trabajo']['modified']); ?>
+			<?php echo h($this->Time->format('d/m/Y',$trabajo['Trabajo']['modified'])); ?>
 			&nbsp;
 		</dd>
 	</dl>

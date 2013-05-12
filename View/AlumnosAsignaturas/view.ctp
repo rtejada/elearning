@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Usuario'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($alumnosAsignatura['Usuario']['login'], array('controller' => 'usuarios', 'action' => 'view', $alumnosAsignatura['Usuario']['id'])); ?>
+			<?php echo $this->Html->link($alumnosAsignatura['Usuario']['nombre'].' '.$alumnosAsignatura['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $alumnosAsignatura['Usuario']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Asignatura'); ?></dt>
@@ -16,28 +16,24 @@
 			<?php echo $this->Html->link($alumnosAsignatura['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $alumnosAsignatura['Asignatura']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Creado'); ?></dt>
 		<dd>
-			<?php echo h($alumnosAsignatura['AlumnosAsignatura']['created']); ?>
+			<?php echo h($this->Time->format('d/m/Y',$alumnosAsignatura['AlumnosAsignatura']['created'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Modificado'); ?></dt>
 		<dd>
-			<?php echo h($alumnosAsignatura['AlumnosAsignatura']['modified']); ?>
+			<?php echo h($this->Time->format('d/m/Y',$alumnosAsignatura['AlumnosAsignatura']['modified'])); ?>
 			&nbsp;
 		</dd>
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Alumnos Asignatura'), array('action' => 'edit', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Alumnos Asignatura'), array('action' => 'delete', $alumnosAsignatura['AlumnosAsignatura']['id']), null, __('Are you sure you want to delete # %s?', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Alumnos Asignaturas'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Alumnos Asignatura'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Usuarios'), array('controller' => 'usuarios', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-	</ul>
+    <h3><?php echo __('Menu'); ?></h3>
+    <div id='cssmenu'>
+        <ul>
+            <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?></li>
+        </ul>
+    </div>
+    <?php echo $this->element('menu'); ?>
 </div>
