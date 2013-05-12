@@ -11,10 +11,11 @@
               echo $this->Html->css('cake.generic', 'stylesheet', array("media"=>"all" ));
               echo $this->Html->css('nautica02liquid', 'stylesheet', array("media"=>"all" ));
               echo $this->Html->css('menu', 'stylesheet', array("media"=>"all" ));
+              echo $this->Html->script('jquery');
               echo $this->fetch('meta');
               echo $this->fetch('css');
               echo $this->fetch('script');
-              echo $this->Html->script('jquery');
+
     ?>
 
 </head>

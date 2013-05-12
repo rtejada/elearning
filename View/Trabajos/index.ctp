@@ -34,7 +34,7 @@
         <?php echo $this->Form->create('Basica');?>
 
         <?php
-        echo $this->Chosen->select('Enunciado');
+        echo $this->Chosen->select('Enunciado', $enunciados);
         ?>
 
         <?php echo $this->Form->input('Enunciado', array('div'=>false, 'empty' => true));?>
