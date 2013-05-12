@@ -44,7 +44,7 @@
 		<td><?php echo h($examenesDetalle['Usuario']['nombre']).' '.($examenesDetalle['Usuario']['apellidos']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['ExamenesCabecera']['dsc']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['nota']); ?>&nbsp;</td>
-		<td><?php echo h($examenesDetalle['ExamenesDetalle']['created']); ?>&nbsp;</td>
+		<td><?php echo h($this->Time->format('d/m/Y',$examenesDetalle['ExamenesDetalle']['created'])); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $examenesDetalle['ExamenesDetalle']['id']));
             $link = array('action' => 'downloadFile', $examenesDetalle['ExamenesDetalle']['fichero_dir'], $examenesDetalle['ExamenesDetalle']['fichero'], 'fichero');

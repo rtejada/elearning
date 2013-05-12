@@ -1,6 +1,16 @@
 <div class="trabajosEnunciados index">
+    <div>
+        <?php echo $this->Form->create('Basica');?>
+        <?php echo $this->Form->input('asignaturas', array('div'=>false, 'empty' => true));?>
+        <span style="margin-left: 50px">
+            <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
+            <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
+        </span>
+        <?php echo $this->Form->end();?>
+        <br />
+    </div>
 	<h2><?php echo __('Trabajos Enunciados'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+    <table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('dsc', 'Título'); ?></th>

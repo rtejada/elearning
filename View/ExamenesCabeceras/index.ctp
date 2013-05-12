@@ -1,4 +1,16 @@
 <div class="examenesCabeceras index">
+    <div>
+        <?php echo $this->Form->create('Basica');?>
+
+        <?php echo $this->Chosen->select('asignaturas', $asignaturas, array('div'=>false, 'empty' => true));?>
+
+        <span style="margin-left: 50px">
+            <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
+            <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
+        </span>
+        <?php echo $this->Form->end();?>
+        <br />
+    </div>
 	<h2><?php echo __('Exámenes'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>

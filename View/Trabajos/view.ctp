@@ -24,7 +24,7 @@
         <?php if ($tipo==2) {   ?>
 		<dt><?php echo __('Usuario'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($trabajo['Usuario']['login'], array('controller' => 'usuarios', 'action' => 'view', $trabajo['Usuario']['id'])); ?>
+			<?php echo $this->Html->link($trabajo['Usuario']['nombre'].' '.$trabajo['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $trabajo['Usuario']['id'])); ?>
 			&nbsp;
 		</dd>
         <?php }   ?>

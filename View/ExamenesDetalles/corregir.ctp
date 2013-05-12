@@ -15,7 +15,7 @@
         </dd>
         <dt><?php echo __('Enviado'); ?></dt>
         <dd>
-            <?php echo h($examenesDetalle['ExamenesDetalle']['created']); ?>
+            <?php echo h($this->Time->format('d/m/Y',$examenesDetalle['ExamenesDetalle']['created'])); ?>
             &nbsp;
         </dd>
         <dt><?php echo __('Fichero'); ?></dt>
@@ -27,7 +27,7 @@
         </dd>
     </dl>
 	<?php
-		echo $this->Form->input('nota', array('style' => 'width: 50px'));
+		echo $this->Form->input('nota', array('style' => 'width: 80px'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Enviar nota')); ?>

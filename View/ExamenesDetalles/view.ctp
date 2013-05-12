@@ -28,7 +28,7 @@
 		</dd>
 		<dt><?php echo __('Enviado'); ?></dt>
 		<dd>
-			<?php echo h($examenesDetalle['ExamenesDetalle']['created']); ?>
+			<?php echo h($this->Time->format('d/m/Y',$examenesDetalle['ExamenesDetalle']['created'])); ?>
 			&nbsp;
 		</dd>
 

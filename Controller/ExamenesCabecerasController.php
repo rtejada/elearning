@@ -17,6 +17,22 @@ class ExamenesCabecerasController extends AppController {
     public $helpers =  array('Session', 'Time');
 
 	public function index() {
+        $tipo = $this->Auth->user('tipo');
+        $user_id = $this->Auth->user('id');
+        $conditions = array();
+
+        if (isset($this->params['data']['submit'])) {
+            if (!empty($this->params['data']['Basica']['asignaturas'])) {
+                $txtdsc = $this->params['data']['Basica']['asignaturas'];
+                $conditions[] = array('ExamenesCabecera.asignatura_id =' => $txtdsc);
+            }
+        }
+        $this->paginate = array(
+            'limit' => 20,
+            'conditions' => $conditions	);
+
+        $asignaturas = $this->ExamenesCabecera->Asignatura->find("list");
+        $this->set('asignaturas', $asignaturas);
 		$this->ExamenesCabecera->recursive = 0;
 		$this->set('examenesCabeceras', $this->paginate());
 	}
