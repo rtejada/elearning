@@ -11,7 +11,7 @@
 #cssmenu > ul {
     display: block;
     position: relative;
-    width: 200px;
+    width: 150px;
 }
 
 /* The list elements which contain the links */
@@ -20,7 +20,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 150px;
 }
 
 /* General link styling */
@@ -30,21 +30,21 @@
     position: relative;
     margin: 0;
     border-top: 1px dotted #fff;
-    border-bottom: 1px solid #fffff;
+    border-bottom: 1px dotted #d9d9d9;
     padding: 11px 20px;
-    width: 150px;
+    width: 110px;
 
     /* Typography */
-    font-family: trebuchet ms, verdana, arial, tahoma;
-    color: #5b8fbe;
+    font-family:  Helvetica, Arial, sans-serif;
+    color: #3dafea;
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: 0 1px 0 #fff;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 300;
 
     /* Background & effects */
-    background: #fffff;
+    background: #eaeaea;
 }
 
 /* Rounded corners for the first link of the menu/submenus */
@@ -64,14 +64,13 @@
 
 /* The hover state of the menu/submenu links */
 #cssmenu > ul li>a:hover, #cssmenu > ul li:hover>a {
-    color: #5b8fbe;
+    color: #fff;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
-	text-align:center;
-    background: #fffff;
-    background: -webkit-linear-gradient(bottom, #fffff, #fffff);
-    background: -ms-linear-gradient(bottom, #fffff, #fffff);
-    background: -moz-linear-gradient(bottom, #fffff, #fffff);
-    background: -o-linear-gradient(bottom, #fffff, #fffff);
+    background: #54cdf1;
+    background: -webkit-linear-gradient(bottom, #54cdf1, #74d7f3);
+    background: -ms-linear-gradient(bottom, #54cdf1, #74d7f3);
+    background: -moz-linear-gradient(bottom, #54cdf1, #74d7f3);
+    background: -o-linear-gradient(bottom, #54cdf1, #74d7f3);
     border-color: transparent;
 }
 

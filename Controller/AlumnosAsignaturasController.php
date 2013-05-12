@@ -37,9 +37,9 @@ class AlumnosAsignaturasController extends AppController {
                     }
 
                     $asignaturas = $this->AlumnosAsignatura->Asignatura->find("list");
-                    $usuarios = $this->AlumnosAsignatura->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
+                    $alumnos = $this->AlumnosAsignatura->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
                     $this->set('asignaturas', $asignaturas);
-                    $this->set('alumnos', $usuarios);
+                    $this->set('alumnos', $alumnos);
                     break;
         }
 

@@ -20,7 +20,23 @@ class TrabajosController extends AppController {
         $tipo = $this->Auth->user('tipo');
         $user_id = $this->Auth->user('id');
         $conditions = array();
+        $conditions_form = array();
+        $conditions_alumno = array();
         $trabajo = array();
+
+
+        if (isset($this->params['data']['submit'])) {
+            if (!empty($this->params['data']['Basica']['Enunciado'])) {
+                $txtdsc = $this->params['data']['Basica']['Enunciado'];
+                $conditions_form[] = array('Trabajo.examenes_cabecera_id =' => $txtdsc);
+            }
+
+            if (!empty($this->params['data']['Basica']['alumnos'])) {
+                $txtdsc = $this->params['data']['Basica']['alumnos'];
+                $conditions_form[] = array('Trabajo.usuario_id =' => $txtdsc);
+            }
+        }
+
         //los alumnos sólo podrán visualizar sus propios trabajos.
 
         if ($tipo ==1 ) {
@@ -34,50 +50,29 @@ class TrabajosController extends AppController {
                     'conditions' => $conditions,
                 ),
             );
-           // $this->Paginator->settings = $trabajo;
-           /* $this->paginate = array(
-                        'limit' => 5,
-                        'order' => array('Trabajo.id' => 'ASC'),
-                        'conditions' => $conditions,
-                        'contain' => array('Trabajo')
-            );*/
 
         }
-
 
 		$this->Trabajo->recursive = 1;
 
+        $conditions_alumno = $this->_obtenerCondicionTrabajos();
+        $conditions = array_merge($conditions_alumno, $conditions_form);
 
-        $conditions = $this->_obtenerCondicionTrabajos();
-
-       /* $trabajosEnunciado = array(
-            'TrabajosEnunciado' => array(
-            'limit' => 10,
-            'order' => array('TrabajosEnunciado.id' => 'ASC'),
-            'conditions' => $conditions,
-            )
-        );*/
-
-        $trabajosEnunciado = $this->Trabajo->TrabajosEnunciado->find('all', array('conditions' => $conditions));
-
-        //$this->Paginator->settings = array_merge($trabajo, $trabajosEnunciado);
-        /*$this->paginate = array(
-            'limit' => 10,
-            'order' => array('TrabajosEnunciado.id' => 'ASC'),
-            'conditions' => $conditions,
-            'contain' => array('TrabajosEnunciado')
-        );*/
+        $trabajosEnunciado = $this->Trabajo->TrabajosEnunciado->find('all', array('conditions' => $conditions_alumno));
 
         $this->Paginator->settings = $trabajo;
         $this->set('trabajos', $this->Paginator->paginate('Trabajo'));
-       /* $this->Paginator->settings = $trabajosEnunciado;*/
-        //$this->set('trabajosEnunciados', $this->Paginator->paginate('TrabajosEnunciado'));
 
         if($tipo==1) {
             $this->set('trabajosEnunciados', $trabajosEnunciado);
+            $trabajos = $this->Trabajo->TrabajosEnunciado->find("list", array('conditions' => $conditions_alumno));
+        } elseif($tipo==2) {
+            $trabajos = $this->Trabajo->TrabajosEnunciado->find("list");
         }
 
-
+        $alumnos = $this->Trabajo->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
+        $this->set('enunciados', $trabajos);
+        $this->set('alumnos', $alumnos);
 
 	}
 
