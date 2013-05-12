@@ -120,4 +120,9 @@ class AsignaturasController extends AppController {
 		$this->Session->setFlash(__('Asignatura was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+
+    public function obtenerAsignaturasProfesor($id = null, $tipo_query = 'list') {
+        $asignaturas = $this->Asignatura->find($tipo_query, array('fields' => 'Asignatura.id', 'conditions' => array('Asignatura.usuario_id' => $id)));
+        return $asignaturas;
+    }
 }

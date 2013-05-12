@@ -66,6 +66,8 @@ class ExamenesDetalle extends AppModel {
         //siempre que sea un alumno.
         if($tipo==1) {
             $this->data['ExamenesDetalle']['usuario_id'] = $uid;
+        } elseif($tipo==2) {
+            $this->data['ExamenesDetalle']['corregido'] = 1;
         }
 
         return true;

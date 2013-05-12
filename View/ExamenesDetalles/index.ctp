@@ -25,7 +25,54 @@
     <?php }  ?>
 
 
-	<h2><?php echo __('Examenes enviados'); ?></h2>
+    <div>
+        <?php echo $this->Form->create('Basica');?>
+        <table border="0" class="tabla_filter">
+            <tr>
+                <?php if($tipo==2) { ?>
+                <td>
+                    <label>Examenes</label>
+                    <?php
+                    echo $this->Chosen->select('Enunciado', $enunciados,
+                        array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
+                    ?>
+                </td>
+                <?php } ?>
+                <td>
+                    <label>Mostrar </label>
+                    <?php
+                    echo $this->Chosen->select('corregidos', $opciones, array('data-placeholder' => 'Seleccione...',
+                        'deselect' => true, 'style' => 'min-width: 200px;')); ?>
+
+                </td>
+            </tr>
+            <tr>
+                <?php if($tipo==2) { ?>
+                <td>
+                    <?php
+                        echo "<label>Alumno</label>";
+                        echo $this->Chosen->select('alumnos', $alumnos, array('data-placeholder' => 'Seleccione...',
+                            'deselect' => true, 'style' => 'min-width: 200px;'));
+                    ?>
+                </td>
+                <?php } ?>
+                <td>
+                    <span style="margin-left: 50px">
+                        <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
+                        <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
+                    </span>
+                </td>
+            </tr>
+        </table>
+        <?php echo $this->Form->end();?>
+    </div>
+
+	<h2><?php
+        if($tipo==1) {
+            echo __('Examenes enviados');
+        } else {
+            echo __('Examenes recibidos');
+        }?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>

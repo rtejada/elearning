@@ -2,7 +2,9 @@
     <div>
         <?php echo $this->Form->create('Basica');?>
 
-        <?php echo $this->Chosen->select('asignaturas', $asignaturas, array('div'=>false, 'empty' => true));?>
+        <label>Asignaturas</label>
+        <?php echo $this->Chosen->select('asignaturas', $asignaturas,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?>
 
         <span style="margin-left: 50px">
             <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>

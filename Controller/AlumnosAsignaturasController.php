@@ -88,7 +88,7 @@ class AlumnosAsignaturasController extends AppController {
 				$this->Session->setFlash(__('The alumnos asignatura could not be saved. Please, try again.'));
 			}
 		}
-		$usuarios = $this->AlumnosAsignatura->Usuario->find('list');
+		$usuarios = $this->AlumnosAsignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
 		$asignaturas = $this->AlumnosAsignatura->Asignatura->find('list');
 		$this->set(compact('usuarios', 'asignaturas'));
 	}
@@ -117,7 +117,7 @@ class AlumnosAsignaturasController extends AppController {
 		} else {
 			$this->request->data = $this->AlumnosAsignatura->read(null, $id);
 		}
-		$usuarios = $this->AlumnosAsignatura->Usuario->find('list');
+		$usuarios = $this->AlumnosAsignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
 		$asignaturas = $this->AlumnosAsignatura->Asignatura->find('list');
 		$this->set(compact('usuarios', 'asignaturas'));
 	}

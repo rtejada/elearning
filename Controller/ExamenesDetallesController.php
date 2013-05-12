@@ -1,6 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
 App::import('Controller', 'AlumnosAsignaturas');
+App::import('Controller', 'Asignaturas');
 /**
  * ExamenesDetalles Controller
  *
@@ -20,35 +21,64 @@ class ExamenesDetallesController extends AppController {
         $tipo = $this->Auth->user('tipo');
         $user_id = $this->Auth->user('id');
         $conditions = array();
+        $conditions_form = array();
         $examen = array();
 
-        //los alumnos sólo podrán visualizar sus propios exámenes
+        if (isset($this->params['data']['submit'])) {
+            if (!empty($this->params['data']['Basica']['Enunciado'])) {
+                $txtdsc = $this->params['data']['Basica']['Enunciado'];
+                $conditions_form[] = array('ExamenesDetalle.examenes_cabecera_id =' => $txtdsc);
+            }
 
+            if (!empty($this->params['data']['Basica']['alumnos'])) {
+                $txtdsc = $this->params['data']['Basica']['alumnos'];
+                $conditions_form[] = array('ExamenesDetalle.usuario_id =' => $txtdsc);
+            }
+
+            if (!empty($this->params['data']['Basica']['corregidos']) or
+                ($this->params['data']['Basica']['corregidos']!='')) {
+                $txtdsc = $this->params['data']['Basica']['corregidos'];
+                if($txtdsc!= '2') {
+                    $conditions_form[] = array('ExamenesDetalle.corregido =' => $txtdsc);
+                }
+            }
+        }
+
+        //los alumnos sólo podrán visualizar sus propios exámenes
         if ($tipo ==1 ) {
             $conditions[] = array('ExamenesDetalle.usuario_id =' => $user_id);
-
-            $examen = array(
-                'Examen' => array(
-                    'limit' => 5,
-                    'maxLimit' => 100,
-                    'order' => array('ExamenesDetalle.id' => 'ASC'),
-                    'conditions' => $conditions,
-                ),
-            );
-
-            $this->Paginator->settings = $examen;
-
         }
+
+        $conditions = array_merge($conditions, $conditions_form);
+        $examen = array(
+            'ExamenesDetalle' => array(
+                'limit' => 5,
+                'maxLimit' => 100,
+                'order' => array('ExamenesDetalle.id' => 'ASC'),
+                'conditions' => $conditions,
+            ),
+        );
+
+        $this->Paginator->settings = $examen;
 
         $this->ExamenesDetalle->recursive = 0;
 
-        $this->set('examenesDetalles', $this->Paginator->paginate());
+        $this->set('examenesDetalles', $this->Paginator->paginate('ExamenesDetalle'));
+
+        $condiciones_examenes_cabecera = $this->_obtenerCondicionExamenes();
+        $condiciones_examenes_profesor = $this->_obtenerCondicionExamenesProfesor();
 
         if($tipo==1) {
-            $condiciones_examenes_cabecera = $this->_obtenerCondicionExamenes();
             $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('all', array('conditions' => $condiciones_examenes_cabecera));
             $this->set('examenesCabeceras', $examenesCabeceras);
         }
+
+        $enunciados = $this->ExamenesDetalle->ExamenesCabecera->find('list', array('fields' => array('ExamenesCabecera.id', 'ExamenesCabecera.dsc'), 'conditions' => $condiciones_examenes_profesor));
+        $this->set('enunciados', $enunciados);
+
+        $alumnos = $this->ExamenesDetalle->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
+        $this->set('alumnos', $alumnos);
+        $this->set('opciones', array(0 => 'Sin corregir', 1 => 'Corregidos', 2=> 'Todos'));
 
 	}
 
@@ -69,6 +99,22 @@ class ExamenesDetallesController extends AppController {
         $conditions[] = array('ExamenesCabecera.asignatura_id' => $asignaturas_del_alumno);
         $conditions[] = array('ExamenesCabecera.dia_examen =' => date('Y-m-d'));
         $conditions[] = array('ExamenesCabecera.activo =' => 1);
+
+        return $conditions;
+    }
+
+    /**
+     * obtiene las condiciones para que el profesor pueda ver todos los examenes enviados
+     * de las asignaturas que tiene relacionadas.
+     *
+     */
+
+    private function _obtenerCondicionExamenesProfesor() {
+        $user_id = $this->Auth->user('id');
+        $Asignaturas = new AsignaturasController();
+        $asignaturas_profesor = $Asignaturas->obtenerAsignaturasProfesor($user_id, 'list');
+        $conditions = array();
+        $conditions[] = array('ExamenesCabecera.asignatura_id' => $asignaturas_profesor);
 
         return $conditions;
     }
