@@ -93,7 +93,7 @@
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['nota']); ?>&nbsp;</td>
 		<td><?php echo h($this->Time->format('d/m/Y',$examenesDetalle['ExamenesDetalle']['created'])); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $examenesDetalle['ExamenesDetalle']['id']));
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $examenesDetalle['ExamenesDetalle']['id']));
             $link = array('action' => 'downloadFile', $examenesDetalle['ExamenesDetalle']['fichero_dir'], $examenesDetalle['ExamenesDetalle']['fichero'], 'fichero');
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
              if ($tipo==1) {

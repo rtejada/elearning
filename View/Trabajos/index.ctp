@@ -81,7 +81,7 @@
 			<th><?php echo $this->Paginator->sort('usuario_id', 'Alumno'); ?></th>
             <th><?php echo $this->Paginator->sort('nota', 'Nota'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Enviado'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php foreach ($trabajos as $trabajo): ?>
 	<tr>

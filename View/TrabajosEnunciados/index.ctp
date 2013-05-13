@@ -1,7 +1,11 @@
 <div class="trabajosEnunciados index">
     <div>
         <?php echo $this->Form->create('Basica');?>
-        <?php echo $this->Form->input('asignaturas', array('div'=>false, 'empty' => true));?>
+
+        <label>Asignaturas</label>
+        <?php echo $this->Chosen->select('asignaturas', $asignaturas,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?>
+
         <span style="margin-left: 50px">
             <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
             <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
@@ -17,7 +21,7 @@
 			<th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Creado'); ?></th>
 			<th><?php echo $this->Paginator->sort('fecha_tope', 'Fecha tope entrega'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php foreach ($trabajosEnunciados as $trabajosEnunciado): ?>
 	<tr>
@@ -27,11 +31,11 @@
 			<?php echo $this->Html->link($trabajosEnunciado['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $trabajosEnunciado['Asignatura']['id'])); ?>
 		</td>
 		<td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['created'])); ?>&nbsp;</td>
-		<td><?php echo h($this->Time->format('d/m/Y H:i:s',$trabajosEnunciado['TrabajosEnunciado']['fecha_tope'])); ?>&nbsp;</td>
+		<td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['fecha_tope'])); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $trabajosEnunciado['TrabajosEnunciado']['id']), null, __('Are you sure you want to delete # %s?', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $trabajosEnunciado['TrabajosEnunciado']['id']), null, __('Are you sure you want to delete # %s?', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

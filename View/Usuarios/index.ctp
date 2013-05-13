@@ -10,9 +10,9 @@
 			<th><?php echo $this->Paginator->sort('telefono'); ?></th>
 			<th><?php echo $this->Paginator->sort('login'); ?></th>
 			<th><?php echo $this->Paginator->sort('tipo'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th><?php echo $this->Paginator->sort('creado'); ?></th>
+			<th><?php echo $this->Paginator->sort('modificado'); ?></th>
+			<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php foreach ($usuarios as $usuario): ?>
 	<tr>
@@ -30,12 +30,12 @@
                 echo "Profesor";
             }
             ?>&nbsp;</td>
-		<td><?php echo h($usuario['Usuario']['created']); ?>&nbsp;</td>
-		<td><?php echo h($usuario['Usuario']['modified']); ?>&nbsp;</td>
+		<td><?php echo h($this->Time->format('d/m/Y',$usuario['Usuario']['created'])); ?>&nbsp;</td>
+		<td><?php echo h($this->Time->format('d/m/Y',$usuario['Usuario']['modified'])); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $usuario['Usuario']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $usuario['Usuario']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $usuario['Usuario']['id']), null, __('Are you sure you want to delete # %s?', $usuario['Usuario']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $usuario['Usuario']['id'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $usuario['Usuario']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $usuario['Usuario']['id']), null, __('Are you sure you want to delete # %s?', $usuario['Usuario']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
