@@ -40,7 +40,7 @@
 	foreach ($alumnosAsignaturas as $alumnosAsignatura): ?>
 	<tr>
         <td>
-            <?php echo $this->Html->link($alumnosAsignatura['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $alumnosAsignatura['Asignatura']['id'])); ?>
+            <?php echo $this->Html->link($alumnosAsignatura['Asignatura']['dsc'], array('controller' => 'contenidos', 'action' => 'temario', $alumnosAsignatura['Asignatura']['id'])); ?>
         </td>
         <?php if ($tipo==2) { ?>
 
