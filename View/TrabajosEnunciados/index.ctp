@@ -16,7 +16,6 @@
 	<h2><?php echo __('Trabajos Enunciados'); ?></h2>
     <table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('dsc', 'Título'); ?></th>
 			<th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Creado'); ?></th>
@@ -25,7 +24,6 @@
 	</tr>
 	<?php foreach ($trabajosEnunciados as $trabajosEnunciado): ?>
 	<tr>
-		<td><?php echo h($trabajosEnunciado['TrabajosEnunciado']['id']); ?>&nbsp;</td>
 		<td><?php echo h($trabajosEnunciado['TrabajosEnunciado']['dsc']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($trabajosEnunciado['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $trabajosEnunciado['Asignatura']['id'])); ?>

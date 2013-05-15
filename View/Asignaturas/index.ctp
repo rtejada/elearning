@@ -16,16 +16,14 @@
     <div class="CSSTableGenerator" >
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('dsc', 'Nombre'); ?></th>
 			<th><?php echo $this->Paginator->sort('curso_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('usuario_id', 'Profesor'); ?></th>
 			<th><?php echo $this->Paginator->sort('creado'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php foreach ($asignaturas as $asignatura): ?>
 	<tr>
-		<td><?php echo h($asignatura['Asignatura']['id']); ?>&nbsp;</td>
 		<td><?php echo h($asignatura['Asignatura']['dsc']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($asignatura['Curso']['dsc'], array('controller' => 'cursos', 'action' => 'view', $asignatura['Curso']['id'])); ?>
@@ -36,9 +34,9 @@
 		<td><?php echo h($this->Time->format('d/m/Y',$asignatura['Asignatura']['created'])); ?>&nbsp;</td>
 
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $asignatura['Asignatura']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $asignatura['Asignatura']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $asignatura['Asignatura']['id']), null, __('Are you sure you want to delete # %s?', $asignatura['Asignatura']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $asignatura['Asignatura']['id'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $asignatura['Asignatura']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $asignatura['Asignatura']['id']), null, __('Are you sure you want to delete # %s?', $asignatura['Asignatura']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

@@ -10,7 +10,7 @@
             <th><?php echo __('Asignatura'); ?></th>
             <th><?php echo __('Creado'); ?></th>
             <th><?php echo __('Fecha tope entrega'); ?></th>
-            <th class="Acciones"></th>
+            <th class="actions"><?php echo __('Acciones'); ?></th>
         </tr>
         <?php foreach ($trabajosEnunciados as $trabajosEnunciado): ?>
             <tr>
@@ -20,7 +20,7 @@
                 </td>
                 <td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['created'])); ?>&nbsp;</td>
                 <td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['fecha_tope'])); ?>&nbsp;</td>
-                <td class="Acciones">
+                <td class="actions">
                     <?php echo $this->Html->link(__('Ver'), array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
                 </td>
             </tr>
@@ -66,7 +66,7 @@
         </table>
         <?php echo $this->Form->end();?>
     </div>
-
+    <br>
 	<h2><?php if($tipo==1) {
                 echo __('Trabajos enviados');
               } else {
