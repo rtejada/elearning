@@ -27,8 +27,9 @@
 
 	<table cellpadding="0" cellspacing="0">
 	<tr>
+        <?php if ($tipo==1) { ?>
 			<th><?php echo $this->Paginator->sort('Asignaturas'); ?></th>
-
+        <?php } ?>
             <?php if ($tipo==2) { ?>
             <th><?php echo $this->Paginator->sort('Asignatura'); ?></th>
 			<th><?php echo $this->Paginator->sort('creado');  ?></th>
