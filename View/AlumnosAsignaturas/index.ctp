@@ -27,8 +27,7 @@
 
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('Alumno'); ?></th>
-            <th><?php echo $this->Paginator->sort('Asignatura'); ?></th>
+			<th><?php echo $this->Paginator->sort('Asignaturas'); ?></th>
 
             <?php if ($tipo==2) { ?>
             <th><?php echo $this->Paginator->sort('Asignatura'); ?></th>
@@ -40,9 +39,6 @@
 	<?php
 	foreach ($alumnosAsignaturas as $alumnosAsignatura): ?>
 	<tr>
-        <td>
-            <?php echo $this->Html->link($alumnosAsignatura['Usuario']['nombre'].' '.$alumnosAsignatura['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $alumnosAsignatura['Usuario']['id'])); ?>
-        </td>
         <td>
             <?php echo $this->Html->link($alumnosAsignatura['Asignatura']['dsc'], array('controller' => 'asignaturas', 'action' => 'view', $alumnosAsignatura['Asignatura']['id'])); ?>
         </td>
