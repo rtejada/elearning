@@ -13,7 +13,6 @@
 
     <br />
 
-    <div class="CSSTableGenerator" >
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('dsc', 'Nombre'); ?></th>
@@ -41,7 +40,6 @@
 	</tr>
 <?php endforeach; ?>
 	</table>
-    </div>
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(

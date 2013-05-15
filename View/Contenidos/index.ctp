@@ -1,5 +1,5 @@
 <div class="contenidosTemarios index">
-	<h2><?php echo __('Contenidos Temarios'); ?></h2>
+	<h2><?php echo __('Contenidos'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
             <th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
