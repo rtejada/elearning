@@ -24,7 +24,7 @@
 	</tr>
 	<?php foreach ($asignaturas as $asignatura): ?>
 	<tr>
-		<td><?php echo h($asignatura['Asignatura']['dsc']); ?>&nbsp;</td>
+		<td><?php echo $this->Html->link($asignatura['Asignatura']['dsc'], array('controller' => 'contenidos', 'action' => 'temario', $asignatura['Curso']['id'])); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($asignatura['Curso']['dsc'], array('controller' => 'cursos', 'action' => 'view', $asignatura['Curso']['id'])); ?>
 		</td>
