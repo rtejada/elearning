@@ -12,6 +12,8 @@
         <?php echo $this->Form->end();?>
 
     <br />
+
+    <div class="CSSTableGenerator" >
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -41,6 +43,7 @@
 	</tr>
 <?php endforeach; ?>
 	</table>
+    </div>
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(

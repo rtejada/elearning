@@ -97,8 +97,8 @@
             $link = array('action' => 'downloadFile', $examenesDetalle['ExamenesDetalle']['fichero_dir'], $examenesDetalle['ExamenesDetalle']['fichero'], 'fichero');
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
              if ($tipo==1) {
-			    echo $this->Html->link(__('Edit'), array('action' => 'edit', $examenesDetalle['ExamenesDetalle']['id']));
-                echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $examenesDetalle['ExamenesDetalle']['id']), null, __('Are you sure you want to delete # %s?', $examenesDetalle['ExamenesDetalle']['id']));
+			    echo $this->Html->link(__('Editar'), array('action' => 'edit', $examenesDetalle['ExamenesDetalle']['id']));
+                echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $examenesDetalle['ExamenesDetalle']['id']), null, __('Are you sure you want to delete # %s?', $examenesDetalle['ExamenesDetalle']['id']));
              } elseif($tipo==2) {
                 echo $this->Html->link(__('Corregir'), array('action' => 'corregir', $examenesDetalle['ExamenesDetalle']['id']));
              }  ?>

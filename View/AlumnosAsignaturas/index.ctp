@@ -3,6 +3,7 @@
 
     <?php if ($tipo==1) { ?>
     <h2><?php echo __('Lista de Asignaturas en las que ud. está matriculado'); ?></h2>
+
     <?php } elseif ($tipo==2) { ?>
     <h2><?php echo __('Relación Alumno - Asignatura'); ?></h2>
     <div>
@@ -27,6 +28,8 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('Alumno'); ?></th>
+            <th><?php echo $this->Paginator->sort('Asignatura'); ?></th>
+
             <?php if ($tipo==2) { ?>
             <th><?php echo $this->Paginator->sort('Asignatura'); ?></th>
 			<th><?php echo $this->Paginator->sort('creado');  ?></th>

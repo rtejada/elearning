@@ -168,10 +168,10 @@ a:link, a:visited { color: #5b8fbe; text-decoration: none; }
 a:hover{ color: #666; text-decoration: none; }
 
 /* tables */
-
+/*
 table {  
   width: 100%;   
-  border: 1px solid #003d4c; 
+
   color:#333; 
   background-color: #fff;
   clear:both;    
@@ -197,7 +197,7 @@ table tr td {
 table tr.altRow td {
   background: #f4f4f4;
 }
-
+*/
 .addthis_toolbox {
     position: absolute;
     top: 1;
