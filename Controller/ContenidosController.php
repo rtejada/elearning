@@ -1,7 +1,8 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Controller', 'Asignaturas');
 /**
- * Contenidoss Controller
+ * Contenidos Controller
  *
  * @property Contenido $Contenido
  */
@@ -15,16 +16,42 @@ class ContenidosController extends AppController {
 
     public $components = array('DescargasFicheros');
 
-	public function index() {
+    /**
+     * Este método se usará sólo para el profesor
+     */
+    public function index() {
+
+        $this->restringirAlumno();
 
         $this->paginate = array(
-            'conditions' => array('Recipe.title LIKE' => 'a%'),
+            'conditions' => $this->_obtenerCondicionAsignaturasProfesor(),
             'limit' => 10
         );
 
+        $asignaturas = $this->_obtenerListaAsignaturasProfesor();
 		$this->Contenido->recursive = 1;
+        $this->set('asignaturas', $asignaturas);
 		$this->set('contenidos', $this->paginate());
+
+
 	}
+
+    /**
+     * Método temario. Este método se usará por los alumnos para visualizar el contenido.
+     * Usa la misma view que index.
+     *
+     * @param null $asignatura_id
+     * @return void
+     */
+    public function temario($asignatura_id = NULL) {
+
+        if ($asignatura_id == NULL) {
+            throw new NotFoundException(__('Asignatura incorrecta'));
+        }
+
+        //usa la misma view que método index.
+        $this->render('index');
+    }
 
 /**
  * view method
@@ -115,4 +142,34 @@ class ContenidosController extends AppController {
 		$this->Session->setFlash(__('Contenidos temario was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+
+    /**
+     * Obtiene las asignaturas asignadas al profesor, y genera el array
+     * con la condición
+     *
+     * @return array
+     */
+    private function _obtenerCondicionAsignaturasProfesor() {
+        $user_id = $this->Auth->user('id');
+        $Asignaturas = new AsignaturasController();
+        $asignaturas_profesor = $Asignaturas->obtenerAsignaturasProfesor($user_id, 'list');
+        $conditions = array();
+        $conditions[] = array('Contenido.asignatura_id' => $asignaturas_profesor);
+
+        return $conditions;
+    }
+
+    /**
+     * Obtiene las asignaturas asignadas al profesor en formato list
+     * para usar con los combos
+     *
+     * @return array
+     */
+    private function _obtenerListaAsignaturasProfesor() {
+        $user_id = $this->Auth->user('id');
+        $Asignaturas = new AsignaturasController();
+        $asignaturas_profesor = $Asignaturas->obtenerAsignaturasProfesor($user_id, 'list');
+
+        return $asignaturas_profesor;
+    }
 }
