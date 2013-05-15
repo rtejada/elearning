@@ -1,6 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
 App::import('Controller', 'Asignaturas');
+App::import('Controller', 'AlumnosAsignaturas');
 /**
  * Contenidos Controller
  *
@@ -49,6 +50,21 @@ class ContenidosController extends AppController {
             throw new NotFoundException(__('Asignatura incorrecta'));
         }
 
+        $user_id = $this->Auth->user('id');
+        $AlumnosAsignaturas = new AlumnosAsignaturasController();
+        //si el alumno no tiene asignada la asignatura que se pasa como parámetro,
+        //dar error.
+        if($AlumnosAsignaturas->comprobarAsignaturaAlumno($user_id, $asignatura_id)==FALSE) {
+            $this->restringirAlumno();
+        }
+
+        $this->paginate = array(
+            'conditions' => array('Contenido.asignatura_id' => $asignatura_id),
+            'limit' => 10
+        );
+
+        $this->Contenido->recursive = 1;
+        $this->set('contenidos', $this->paginate());
         //usa la misma view que método index.
         $this->render('index');
     }
@@ -172,4 +188,6 @@ class ContenidosController extends AppController {
 
         return $asignaturas_profesor;
     }
+
+
 }

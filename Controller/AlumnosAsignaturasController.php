@@ -161,6 +161,24 @@ class AlumnosAsignaturasController extends AppController {
 
     }
 
+    /**
+     * Comprueba que un alumno tiene asignada una asignatura. Devuelve
+     * TRUE/FALSE
+     *
+     * @param $usuario_id           alumno
+     * @param $asignatura_id        asignatura a comprobar
+     * @return bool
+     */
+    public function comprobarAsignaturaAlumno($usuario_id, $asignatura_id) {
+        $asignaturas = $this->AlumnosAsignatura->find('count', array('fields' => 'AlumnosAsignatura.id', 'conditions' => array('AlumnosAsignatura.usuario_id' => $usuario_id, 'AlumnosAsignatura.asignatura_id' => $asignatura_id)));
+        if ($asignaturas>0) {
+            $ret = TRUE;
+        } else {
+            $ret = FALSE;
+        }
+        return $ret;
+    }
+
 
     public function isAuthorized($user) {
         return true;
