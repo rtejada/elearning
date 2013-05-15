@@ -1,3 +1,4 @@
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="contenidos view">
 <h2><?php  echo __('Contenido'); ?></h2>
 	<dl>
@@ -16,6 +17,13 @@
             <?php echo h($contenido['Contenido']['dsc']); ?>
             &nbsp;
         </dd>
+        <?php if ($tipo==2) { ?>
+        <dt><?php echo __('Orden'); ?></dt>
+        <dd>
+            <?php echo h($contenido['Contenido']['orden']); ?>
+            &nbsp;
+        </dd>
+        <?php } ?>
 		<dt><?php echo __('Fichero'); ?></dt>
 		<dd>
 			<?php  $link = array('action' => 'downloadFile', $contenido['Contenido']['fichero_dir'], $contenido['Contenido']['fichero'], 'fichero');

@@ -24,9 +24,23 @@ class ContenidosController extends AppController {
 
         $this->restringirAlumno();
 
+        if (isset($this->params['data']['submit'])) {
+            if (!empty($this->params['data']['Basica']['asignaturas'])) {
+                $txtdsc = $this->params['data']['Basica']['asignaturas'];
+                $conditions[] = array('Contenido.asignatura_id =' => $txtdsc);
+            }
+        } else {
+                $conditions = $this->_obtenerCondicionAsignaturasProfesor();
+        }
+
         $this->paginate = array(
-            'conditions' => $this->_obtenerCondicionAsignaturasProfesor(),
-            'limit' => 10
+            'conditions' => $conditions,
+            'limit' => 10,
+            'order' => array(
+                'Contenido.asignatura_id' => 'asc',
+                'Contenido.orden' => 'asc',
+                'Contenido.dsc' => 'asc',
+            )
         );
 
         $asignaturas = $this->_obtenerListaAsignaturasProfesor();
@@ -60,7 +74,11 @@ class ContenidosController extends AppController {
 
         $this->paginate = array(
             'conditions' => array('Contenido.asignatura_id' => $asignatura_id),
-            'limit' => 10
+            'limit' => 10,
+            'order' => array(
+                'Contenido.orden' => 'asc',
+                'Contenido.dsc' => 'asc',
+            )
         );
 
         $this->Contenido->recursive = 1;
@@ -101,8 +119,9 @@ class ContenidosController extends AppController {
 				$this->Session->setFlash(__('The contenidos temario could not be saved. Please, try again.'));
 			}
 		}
+
 		$usuarios = $this->Contenido->Usuario->find('list');
-		$asignaturas = $this->Contenido->Asignatura->find('list');
+        $asignaturas = $this->_obtenerListaAsignaturasProfesor();
 		$this->set(compact('usuarios', 'asignaturas'));
 	}
 
@@ -130,7 +149,7 @@ class ContenidosController extends AppController {
 			$this->request->data = $this->Contenido->read(null, $id);
 		}
 		$usuarios = $this->Contenido->Usuario->find('list');
-		$asignaturas = $this->Contenido->Asignatura->find('list');
+        $asignaturas = $this->_obtenerListaAsignaturasProfesor();
 		$this->set(compact('usuarios', 'asignaturas'));
 	}
 
@@ -184,8 +203,7 @@ class ContenidosController extends AppController {
     private function _obtenerListaAsignaturasProfesor() {
         $user_id = $this->Auth->user('id');
         $Asignaturas = new AsignaturasController();
-        $asignaturas_profesor = $Asignaturas->obtenerAsignaturasProfesor($user_id, 'list');
-
+        $asignaturas_profesor = $Asignaturas->obtenerListaAsignaturasProfesor($user_id, 'list');
         return $asignaturas_profesor;
     }
 

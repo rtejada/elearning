@@ -122,7 +122,12 @@ class AsignaturasController extends AppController {
 	}
 
     public function obtenerAsignaturasProfesor($id = null, $tipo_query = 'list') {
-        $asignaturas = $this->Asignatura->find($tipo_query, array('fields' => 'Asignatura.id', 'conditions' => array('Asignatura.usuario_id' => $id)));
+        $asignaturas = $this->Asignatura->find($tipo_query, array('fields' => array('Asignatura.id'), 'conditions' => array('Asignatura.usuario_id' => $id)));
+        return $asignaturas;
+    }
+
+    public function obtenerListaAsignaturasProfesor($id = null, $tipo_query = 'list') {
+        $asignaturas = $this->Asignatura->find($tipo_query, array('fields' => array('Asignatura.id', 'Asignatura.dsc'), 'conditions' => array('Asignatura.usuario_id' => $id)));
         return $asignaturas;
     }
 }
