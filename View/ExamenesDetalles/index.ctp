@@ -17,7 +17,7 @@
                 <td><?php echo h($examenesCabecera['Asignatura']['dsc']); ?>&nbsp;</td>
                 <td><?php echo h($this->Time->format('d/m/Y',$examenesCabecera['ExamenesCabecera']['dia_examen'])); ?>&nbsp;</td>
                 <td class="actions">
-                    <?php echo $this->Html->link(__('View'), array('controller'=> 'examenes_cabeceras', 'action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
+                    <?php echo $this->Html->link(__('Ver'), array('controller'=> 'examenes_cabeceras', 'action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -38,6 +38,7 @@
                     ?>
                 </td>
                 <?php } ?>
+                <br>
                 <td>
                     <label>Mostrar </label>
                     <?php
@@ -66,6 +67,7 @@
         </table>
         <?php echo $this->Form->end();?>
     </div>
+    <br>
 
 	<h2><?php
         if($tipo==1) {
@@ -75,8 +77,7 @@
         }?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('dsc'); ?></th>
+			<th><?php echo $this->Paginator->sort('dsc', 'Asignatura'); ?></th>
 			<th><?php echo $this->Paginator->sort('usuario_id', 'Alumno'); ?></th>
 			<th><?php echo $this->Paginator->sort('examenes_cabecera_id', 'Examen'); ?></th>
 			<th><?php echo $this->Paginator->sort('nota', 'Nota'); ?></th>
@@ -86,7 +87,6 @@
 	<?php
 	foreach ($examenesDetalles as $examenesDetalle): ?>
 	<tr>
-		<td><?php echo h($examenesDetalle['ExamenesDetalle']['id']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['ExamenesDetalle']['dsc']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['Usuario']['nombre']).' '.($examenesDetalle['Usuario']['apellidos']); ?>&nbsp;</td>
 		<td><?php echo h($examenesDetalle['ExamenesCabecera']['dsc']); ?>&nbsp;</td>
