@@ -10,7 +10,7 @@
             <th><?php echo __('Asignatura'); ?></th>
             <th><?php echo __('Creado'); ?></th>
             <th><?php echo __('Fecha tope entrega'); ?></th>
-            <th class="actions"></th>
+            <th class="Acciones"></th>
         </tr>
         <?php foreach ($trabajosEnunciados as $trabajosEnunciado): ?>
             <tr>
@@ -75,8 +75,7 @@
         ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-            <th><?php echo $this->Paginator->sort('trabajos_enunciado_id', 'Enunciado'); ?></th>
+			<th><?php echo $this->Paginator->sort('trabajos_enunciado_id', 'Enunciado'); ?></th>
 			<th><?php echo $this->Paginator->sort('dsc', 'Título '); ?></th>
 			<th><?php echo $this->Paginator->sort('usuario_id', 'Alumno'); ?></th>
             <th><?php echo $this->Paginator->sort('nota', 'Nota'); ?></th>
@@ -85,7 +84,6 @@
 	</tr>
 	<?php foreach ($trabajos as $trabajo): ?>
 	<tr>
-		<td><?php echo h($trabajo['Trabajo']['id']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($trabajo['TrabajosEnunciado']['dsc'], array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajo['TrabajosEnunciado']['id'])); ?>
 		</td>
