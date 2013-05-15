@@ -1,12 +1,15 @@
 <div class="contenidosTemarios index">
+    <?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 	<h2><?php echo __('Contenidos Temarios'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
+        <?php if ($tipo==2) { ?>
             <th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
+        <?php } ?>
             <th><?php echo $this->Paginator->sort('dsc', 'Titulo'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Enviado'); ?></th>
-
 			<th class="actions"><?php echo __('Acciones'); ?></th>
+
 	</tr>
 	<?php
 	foreach ($contenidos as $contenido): ?>
@@ -21,8 +24,10 @@
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $contenido['Contenido']['id']));
             $link = array('action' => 'downloadFile', $contenido['Contenido']['fichero_dir'], $contenido['Contenido']['fichero'], 'fichero');
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button')); ?>
-            <?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $contenido['Contenido']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $contenido['Contenido']['id']), null, __('Are you sure you want to delete # %s?', $contenido['Contenido']['id'])); ?>
+            <?php if ($tipo==2) { ?>
+                <?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $contenido['Contenido']['id'])); ?>
+			    <?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $contenido['Contenido']['id']), null, __('Are you sure you want to delete # %s?', $contenido['Contenido']['id'])); ?>
+            <?php } ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
