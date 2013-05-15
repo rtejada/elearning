@@ -49,4 +49,11 @@ class Contenido extends AppModel {
 			'order' => ''
 		)
 	);
+
+    function beforeSave() {
+        //se obtiene el ID de usuario activo
+        $uid = CakeSession::read("Auth.User.id");
+        $this->data['Contenido']['usuario_id'] = $uid;
+        return true;
+    }
 }

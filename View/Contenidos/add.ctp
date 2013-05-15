@@ -1,12 +1,12 @@
 <div class="contenidosTemarios form">
-<?php echo $this->Form->create('ContenidosTemario'); ?>
+<?php echo $this->Form->create('Contenido', array('type' => 'file')); ?>
 	<fieldset>
-		<legend><?php echo __('Add Contenidos'); ?></legend>
+		<legend><?php echo __('Agregar contenido'); ?></legend>
 	<?php
-		echo $this->Form->input('archivo');
-		echo $this->Form->input('archivo_dir');
-		echo $this->Form->input('usuario_id');
+        echo $this->Form->input('dsc', array('label' => 'Título'));
 		echo $this->Form->input('asignatura_id');
+        echo $this->Form->input('Contenido.fichero', array('type' => 'file'));
+        echo $this->Form->input('Contenido.fichero_dir', array('type' => 'hidden'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

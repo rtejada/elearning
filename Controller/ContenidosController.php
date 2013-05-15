@@ -12,8 +12,17 @@ class ContenidosController extends AppController {
  *
  * @return void
  */
+
+    public $components = array('DescargasFicheros');
+
 	public function index() {
-		$this->Contenido->recursive = 0;
+
+        $this->paginate = array(
+            'conditions' => array('Recipe.title LIKE' => 'a%'),
+            'limit' => 10
+        );
+
+		$this->Contenido->recursive = 1;
 		$this->set('contenidos', $this->paginate());
 	}
 
@@ -29,6 +38,7 @@ class ContenidosController extends AppController {
 		if (!$this->Contenido->exists()) {
 			throw new NotFoundException(__('Invalid contenidos temario'));
 		}
+
 		$this->set('contenido', $this->Contenido->read(null, $id));
 	}
 
@@ -38,8 +48,8 @@ class ContenidosController extends AppController {
  * @return void
  */
 	public function add() {
+        $this->restringirAlumno();
 		if ($this->request->is('post')) {
-            $this->restringirAlumno();
 			$this->Contenido->create();
 			if ($this->Contenido->save($this->request->data)) {
 				$this->Session->setFlash(__('The contenidos temario has been saved'));
@@ -61,11 +71,11 @@ class ContenidosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+        $this->restringirAlumno();
 		$this->Contenido->id = $id;
 		if (!$this->Contenido->exists()) {
 			throw new NotFoundException(__('Invalid contenidos temario'));
 		}
-        $this->restringirAlumno();
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Contenido->save($this->request->data)) {
 				$this->Session->setFlash(__('The contenidos temario has been saved'));
@@ -90,10 +100,10 @@ class ContenidosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+        $this->restringirAlumno();
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
-        $this->restringirAlumno();
 		$this->Contenido->id = $id;
 		if (!$this->Contenido->exists()) {
 			throw new NotFoundException(__('Invalid contenidos temario'));
