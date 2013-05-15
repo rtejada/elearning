@@ -1,13 +1,13 @@
 <div class="alumnosAsignaturas form">
 <?php echo $this->Form->create('AlumnosAsignatura'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Alumnos Asignatura'); ?></legend>
+		<legend><?php echo __('Asignar Asignaturas a Alumnos'); ?></legend>
 	<?php
 		echo $this->Form->input('usuario_id');
 		echo $this->Form->input('asignatura_id');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 
 <?php $tipo = $this->Session->read('Auth.User.tipo'); ?>

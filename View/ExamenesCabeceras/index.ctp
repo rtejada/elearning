@@ -16,7 +16,6 @@
 	<h2><?php echo __('Exámenes'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('dsc', 'Titulo'); ?></th>
 			<th><?php echo $this->Paginator->sort('asignatura_id', 'Asignatura'); ?></th>
             <th><?php echo $this->Paginator->sort('dia_examen', 'Dia examen'); ?></th>
@@ -27,7 +26,6 @@
 	<?php
 	foreach ($examenesCabeceras as $examenesCabecera): ?>
 	<tr>
-		<td><?php echo h($examenesCabecera['ExamenesCabecera']['id']); ?>&nbsp;</td>
 		<td><?php echo h($examenesCabecera['ExamenesCabecera']['dsc']); ?>&nbsp;</td>
 		<td><?php echo h($examenesCabecera['Asignatura']['dsc']); ?>&nbsp;</td>
         <td><?php echo h($this->Time->format('d/m/Y',$examenesCabecera['ExamenesCabecera']['dia_examen'])); ?>&nbsp;</td>

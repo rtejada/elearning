@@ -1,12 +1,15 @@
 <div class="contenidosTemarios index">
-	<h2><?php echo __('Contenidos'); ?></h2>
+	<h2><?php echo __('Contenidos Temarios'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
+        <?php if ($tipo==2) { ?>
             <th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
+        <?php } ?>
             <th><?php echo $this->Paginator->sort('dsc', 'Titulo'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Enviado'); ?></th>
 
 			<th class="actions"><?php echo __('Acciones'); ?></th>
+
 	</tr>
 	<?php
 	foreach ($contenidos as $contenido): ?>

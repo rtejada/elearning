@@ -3,16 +3,21 @@
         <?php echo $this->Form->create('Basica');?>
 
         <label>Asignaturas</label>
-        <?php echo $this->Chosen->select('asignaturas', $asignaturas,
-            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?>
+        <?php echo $this->Form->create('Basica');?>
+        <?php echo $this->Form->input('dsc', array('style' => 'width: 300px',
+        'div' => array('class' => 'input text float-left'), 'label' => '')); ?>
 
-        <span style="margin-left: 50px">
-            <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
-            <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
-        </span>
+            <?php echo $this->Form->submit(__('Filtrar'), array('name'=>'submit', 'class' => 'button' ,
+            'div' => array('class' => 'submit float-left'))); ?>
+            <?php echo $this->Form->submit(__('Limpiar'), array('name'=>'clear', 'class' => 'button',
+            'div' => array('class' => 'submit float-left'))); ?>
+
+
         <?php echo $this->Form->end();?>
         <br />
     </div>
+    <br />
+    <div>
 	<h2><?php echo __('Trabajos Enunciados'); ?></h2>
     <table cellpadding="0" cellspacing="0">
 	<tr>
@@ -38,6 +43,7 @@
 	</tr>
 <?php endforeach; ?>
 	</table>
+    </div>
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
