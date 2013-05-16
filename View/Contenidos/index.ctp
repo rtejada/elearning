@@ -87,6 +87,7 @@
     <div id='cssmenu'>
         <ul>
             <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?></li>
+            <li><?php echo $this->Html->link(__('Nuevo Contenido'), array('controller' => 'contenidos', 'action' => 'add')); ?></li>
         </ul>
     </div>
 

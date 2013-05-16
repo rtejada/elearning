@@ -2,15 +2,13 @@
 	<h2><?php echo __('Modulos'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('nombre curso'); ?></th>
-			<th><?php echo $this->Paginator->sort('creado'); ?></th>
-			<th><?php echo $this->Paginator->sort('modificado'); ?></th>
+			<th><?php echo $this->Paginator->sort('dsc','nombre curso'); ?></th>
+			<th><?php echo $this->Paginator->sort('created', 'creado'); ?></th>
+			<th><?php echo $this->Paginator->sort('modified', 'modificado'); ?></th>
 			<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	<?php foreach ($modulos as $modulo): ?>
 	<tr>
-		<td><?php echo h($modulo['Modulo']['id']); ?>&nbsp;</td>
 		<td><?php echo h($modulo['Modulo']['dsc']); ?>&nbsp;</td>
 		<td><?php echo h($this->Time->format('d/m/Y',$modulo['Modulo']['created'])); ?>&nbsp;</td>
 		<td><?php echo h($this->Time->format('d/m/Y',$modulo['Modulo']['modified'])); ?>&nbsp;</td>
@@ -43,7 +41,7 @@
             <ul>
                 <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?></li>
                 <li><?php echo $this->Html->link(__('Nueva Relación'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>
-                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'pages', 'action' => 'index')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'Asignaturas', 'action' => 'index')); ?></li>
             </ul>
         </div>
 

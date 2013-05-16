@@ -9,7 +9,7 @@
         echo $this->Form->input('Trabajo.fichero_dir', array('type' => 'hidden'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 <?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">

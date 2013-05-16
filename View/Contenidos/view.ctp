@@ -38,22 +38,23 @@
 		</dd>
 		<dt><?php echo __('Enviado'); ?></dt>
 		<dd>
-			<?php echo h($contenido['Contenido']['created']); ?>
+			<?php echo h($this->Time->format('d/m/Y',$contenido['Contenido']['created'])); ?>
 			&nbsp;
 		</dd>
 
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Contenidos Temario'), array('action' => 'edit', $contenido['Contenido']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Contenidos Temario'), array('action' => 'delete', $contenido['Contenido']['id']), null, __('Are you sure you want to delete # %s?', $contenido['Contenido']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Contenidos Temarios'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Contenidos Temario'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Usuarios'), array('controller' => 'usuarios', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Asignaturas'), array('controller' => 'asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?> </li>
-	</ul>
+    <h3><?php echo __('Menu'); ?></h3>
+
+    <div id='cssmenu'>
+        <ul>
+            <?php if ($tipo==2) { ?>
+            <li class='active'><?php echo $this->Html->link(__('Volver'), array('controller' => 'Contenidos', 'action' => 'index')); ?></li>
+            <?php } ?>
+        </ul>
+    </div>
+
+    <?php echo $this->element('menu'); ?>
+
 </div>

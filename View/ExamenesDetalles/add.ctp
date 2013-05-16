@@ -5,12 +5,19 @@
 		<legend><?php echo __('Enviar examen'); ?></legend>
 	<?php
 		echo $this->Form->input('dsc', array('label'=>'Título'));
-		echo $this->Form->input('examenes_cabecera_id', array('label'=>'Examen'));
+    ?>
+		<label>Examen</label>
+        <?php
+        echo $this->Chosen->select('examenes_cabecera_id', $examenesCabeceras,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
         echo $this->Form->input('ExamenesDetalle.fichero', array('type' => 'file'));
         echo $this->Form->input('ExamenesDetalle.fichero_dir', array('type' => 'hidden'));
+
+
+
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 <div class="actions">
     <h3><?php echo __('Menu'); ?></h3>
