@@ -1,7 +1,7 @@
 <div class="trabajos form">
 <?php echo $this->Form->create('Trabajo', array('type' => 'file')); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Trabajo'); ?></legend>
+		<legend><?php echo __('Editar Trabajo'); ?></legend>
 	<?php
 		//echo $this->Form->input('id');
         echo $this->Form->input('trabajos_enunciado_id', array('label'=> 'Seleccione trabajo'));
@@ -10,7 +10,7 @@
         echo $this->Form->input('Trabajo.fichero_dir', array('type' => 'hidden'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 
 <?php $tipo = $this->Session->read('Auth.User.tipo'); ?>

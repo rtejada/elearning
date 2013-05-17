@@ -24,7 +24,7 @@
 
 	</fieldset>
 
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 <?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">
@@ -35,7 +35,7 @@
             <ul>
                 <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
                 <li><?php echo $this->Html->link(__('Nuevo Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?></li>
-                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'pages', 'action' => 'index')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
             </ul>
         </div>
     <?php } ?>

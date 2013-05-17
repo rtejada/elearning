@@ -16,9 +16,10 @@
         <?php echo $this->Form->end();?>
         <br />
     </div>
-    <br />
+    <br /><br />
     <div>
-	<h2><?php echo __('Trabajos Enunciados'); ?></h2>
+        <h2><?php echo __('Trabajos Enunciados'); ?></h2>
+    </div>
     <table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('dsc', 'Título'); ?></th>
@@ -43,7 +44,7 @@
 	</tr>
 <?php endforeach; ?>
 	</table>
-    </div>
+
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(

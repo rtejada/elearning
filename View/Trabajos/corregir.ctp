@@ -4,12 +4,12 @@
 		<legend><?php echo __('Corregir Trabajo'); ?></legend>
 
         <dl>
-            <dt><?php echo __('Descripción: '); ?></dt>
+            <dt><?php echo __('Descripción'); ?></dt>
             <dd>
                 <?php echo h($trabajo['Trabajo']['dsc']); ?>
                 &nbsp;
             </dd>
-            <dt><?php echo __('Alumno: '); ?></dt>
+            <dt><?php echo __('Alumno'); ?></dt>
             <dd>
                 <?php h($trabajo['Usuario']['nombre'].' '.$trabajo['Usuario']['apellidos']); ?>
                 &nbsp;
@@ -20,7 +20,7 @@
         echo $this->Form->input('nota', array('label'=> 'Nota', 'style' => 'width: 100px'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 <?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="actions">

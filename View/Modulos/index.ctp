@@ -39,9 +39,8 @@
 
           <div id='cssmenu'>
             <ul>
-                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?></li>
-                <li><?php echo $this->Html->link(__('Nueva Relación'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>
-                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'Asignaturas', 'action' => 'index')); ?></li>
+                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Nuevo Modulo'), array('controller' => 'modulos', 'action' => 'add')); ?></li>
             </ul>
         </div>
 

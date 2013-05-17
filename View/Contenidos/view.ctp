@@ -48,6 +48,7 @@
     <h3><?php echo __('Menu'); ?></h3>
 
     <div id='cssmenu'>
+
         <ul>
             <?php if ($tipo==2) { ?>
             <li class='active'><?php echo $this->Html->link(__('Volver'), array('controller' => 'Contenidos', 'action' => 'index')); ?></li>

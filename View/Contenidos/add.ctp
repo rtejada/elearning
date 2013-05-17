@@ -4,7 +4,11 @@
 		<legend><?php echo __('Agregar contenido'); ?></legend>
 	<?php
         echo $this->Form->input('dsc', array('label' => 'Título'));
-		echo $this->Form->input('asignatura_id');
+        echo $this->Form->create('Basica');?>
+        <label>Asignatura</label>
+        <?php
+        echo $this->Chosen->select('asignaturas', $asignaturas,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
         echo $this->Form->input('orden', array('style' => 'width: 50px;'));
         echo $this->Form->input('Contenido.fichero', array('type' => 'file'));
         echo $this->Form->input('Contenido.fichero_dir', array('type' => 'hidden'));

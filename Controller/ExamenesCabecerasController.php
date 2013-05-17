@@ -58,6 +58,8 @@ class ExamenesCabecerasController extends AppController {
  * @return void
  */
 	public function add() {
+
+        $this->restringirAlumno();
 		if ($this->request->is('post')) {
 			$this->ExamenesCabecera->create();
 			if ($this->ExamenesCabecera->save($this->request->data)) {
@@ -81,6 +83,8 @@ class ExamenesCabecerasController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+
+        $this->restringirAlumno();
 		$this->ExamenesCabecera->id = $id;
 		if (!$this->ExamenesCabecera->exists()) {
 			throw new NotFoundException(__('Invalid examenes cabecera'));
@@ -109,6 +113,8 @@ class ExamenesCabecerasController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+
+        $this->restringirAlumno();
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}

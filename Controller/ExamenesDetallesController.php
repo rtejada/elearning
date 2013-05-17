@@ -24,6 +24,7 @@ class ExamenesDetallesController extends AppController {
         $conditions_form = array();
         $examen = array();
 
+
         if (isset($this->params['data']['submit'])) {
             if (!empty($this->params['data']['Basica']['Enunciado'])) {
                 $txtdsc = $this->params['data']['Basica']['Enunciado'];
