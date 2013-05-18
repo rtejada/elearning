@@ -121,11 +121,23 @@ class AsignaturasController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 
+    /**
+     * Este método se usa para obtener la condición de búsqueda para las asignaturas de profesor
+     * @param $id
+     * @param string $tipo_query
+     * @return array
+     */
     public function obtenerAsignaturasProfesor($id = null, $tipo_query = 'list') {
         $asignaturas = $this->Asignatura->find($tipo_query, array('fields' => array('Asignatura.id'), 'conditions' => array('Asignatura.usuario_id' => $id)));
         return $asignaturas;
     }
 
+    /**
+     * Este método se usa para obtener el listado de asignaturas de profesor válido para combo select
+     * @param null $id
+     * @param string $tipo_query
+     * @return array
+     */
     public function obtenerListaAsignaturasProfesor($id = null, $tipo_query = 'list') {
         $asignaturas = $this->Asignatura->find($tipo_query, array('fields' => array('Asignatura.id', 'Asignatura.dsc'), 'conditions' => array('Asignatura.usuario_id' => $id)));
         return $asignaturas;

@@ -52,6 +52,8 @@
         <ul>
             <?php if ($tipo==2) { ?>
             <li class='active'><?php echo $this->Html->link(__('Volver'), array('controller' => 'Contenidos', 'action' => 'index')); ?></li>
+            <?php } elseif($tipo==1) { ?>
+                <li class='active'><?php echo $this->Html->link(__('Volver'), array('controller' => 'Contenidos', 'action' => 'temario', $asignatura_id)); ?></li>
             <?php } ?>
         </ul>
     </div>

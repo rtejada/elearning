@@ -1,6 +1,5 @@
 <?php
 App::uses('AppController', 'Controller');
-App::import('Controller', 'Asignaturas');
 App::import('Controller', 'AlumnosAsignaturas');
 /**
  * Contenidos Controller
@@ -30,7 +29,7 @@ class ContenidosController extends AppController {
                 $conditions[] = array('Contenido.asignatura_id =' => $txtdsc);
             }
         } else {
-                $conditions = $this->_obtenerCondicionAsignaturasProfesor();
+                $conditions = $this->_obtenerCondicionAsignaturasProfesor('Contenido');
         }
 
         $this->paginate = array(
@@ -40,12 +39,12 @@ class ContenidosController extends AppController {
                 'Contenido.asignatura_id' => 'asc',
                 'Contenido.orden' => 'asc',
                 'Contenido.dsc' => 'asc',
-            )
-        );
+            ));
 
         $asignaturas = $this->_obtenerListaAsignaturasProfesor();
 		$this->Contenido->recursive = 1;
         $this->set('asignaturas', $asignaturas);
+        $this->set('asignatura_id', NULL);
 		$this->set('contenidos', $this->paginate());
 
 
@@ -83,6 +82,7 @@ class ContenidosController extends AppController {
 
         $this->Contenido->recursive = 1;
         $this->set('contenidos', $this->paginate());
+        $this->set('asignatura_id', $asignatura_id);
         //usa la misma view que método index.
         $this->render('index');
     }
@@ -90,16 +90,23 @@ class ContenidosController extends AppController {
 /**
  * view method
  *
+ * Si el que visualiza es el alumno, deberá recibir el segundo parámetro
+ * asignatura_id, para poder volver al action temario/asignatura_id
+ *
  * @throws NotFoundException
- * @param string $id
+ * @param string $id                id del documento a visualizar
+ * @param string $asignatura_id     id de la asignatura para volver a su temario (alumnos)
  * @return void
  */
-	public function view($id = null) {
+	public function view($id = null, $asignatura_id = NULL) {
 		$this->Contenido->id = $id;
 		if (!$this->Contenido->exists()) {
 			throw new NotFoundException(__('Invalid contenidos temario'));
 		}
 
+        if($asignatura_id != NULL) {
+            $this->set('asignatura_id', $asignatura_id);
+        }
 		$this->set('contenido', $this->Contenido->read(null, $id));
 	}
 
@@ -178,34 +185,6 @@ class ContenidosController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 
-    /**
-     * Obtiene las asignaturas asignadas al profesor, y genera el array
-     * con la condición
-     *
-     * @return array
-     */
-    private function _obtenerCondicionAsignaturasProfesor() {
-        $user_id = $this->Auth->user('id');
-        $Asignaturas = new AsignaturasController();
-        $asignaturas_profesor = $Asignaturas->obtenerAsignaturasProfesor($user_id, 'list');
-        $conditions = array();
-        $conditions[] = array('Contenido.asignatura_id' => $asignaturas_profesor);
-
-        return $conditions;
-    }
-
-    /**
-     * Obtiene las asignaturas asignadas al profesor en formato list
-     * para usar con los combos
-     *
-     * @return array
-     */
-    private function _obtenerListaAsignaturasProfesor() {
-        $user_id = $this->Auth->user('id');
-        $Asignaturas = new AsignaturasController();
-        $asignaturas_profesor = $Asignaturas->obtenerListaAsignaturasProfesor($user_id, 'list');
-        return $asignaturas_profesor;
-    }
 
 
 }

@@ -37,7 +37,7 @@ class AlumnosAsignaturasController extends AppController {
                     }
 
                     $asignaturas = $this->AlumnosAsignatura->Asignatura->find("list");
-                    $alumnos = $this->AlumnosAsignatura->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
+                    $alumnos = $this->obtenerAlumnos();
                     $this->set('asignaturas', $asignaturas);
                     $this->set('alumnos', $alumnos);
                     break;
@@ -53,7 +53,16 @@ class AlumnosAsignaturasController extends AppController {
         $this->set('tipo', $tipo);
 	}
 
-/**
+    /**
+     * @return array
+     */
+    public function obtenerAlumnos()
+    {
+        $alumnos = $this->AlumnosAsignatura->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
+        return $alumnos;
+    }
+
+    /**
  * view method
  *
  * @throws NotFoundException

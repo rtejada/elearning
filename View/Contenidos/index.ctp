@@ -53,7 +53,7 @@
 		<td><?php echo h($this->Time->format('d/m/Y',$contenido['Contenido']['created'])); ?>&nbsp;</td>
 
 		<td class="actions">
-			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $contenido['Contenido']['id']));
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $contenido['Contenido']['id'], $asignatura_id));
             $link = array('action' => 'downloadFile', $contenido['Contenido']['fichero_dir'], $contenido['Contenido']['fichero'], 'fichero');
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
             if($tipo==2) {
@@ -87,7 +87,10 @@
     <div id='cssmenu'>
         <ul>
             <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?></li>
+            <?php if ($tipo==2) { ?>
             <li><?php echo $this->Html->link(__('Nuevo Contenido'), array('controller' => 'contenidos', 'action' => 'add')); ?></li>
+            <?php } ?>
+
         </ul>
     </div>
 

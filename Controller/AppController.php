@@ -126,5 +126,37 @@ class AppController extends Controller {
         $this->DescargasFicheros->descarga($modelo,$mfoto_dir,$mfoto, $campo);
     }
 
+    /**
+     * obtiene un array de condiciones que se podrá usar en todos los controladores
+     * donde haya que filtrar la tabla asignaturas según el user_id del profesor actual
+     *
+     * @param string $modelo            Nombre del modelo
+     * @return array                    Array de condiciones para $this->paginate();
+     */
+    protected function _obtenerCondicionAsignaturasProfesor($modelo = '') {
+        $user_id = $this->Auth->user('id');
+        App::import('Controller','Asignaturas');
+        $Asignaturas = new AsignaturasController();
+        $asignaturas_profesor = $Asignaturas->obtenerAsignaturasProfesor($user_id, 'list');
+        $conditions = array();
+        $conditions[] = array($modelo.'.asignatura_id' => $asignaturas_profesor);
+
+        return $conditions;
+    }
+
+    /**
+     * Obtiene las asignaturas asignadas al profesor en formato list
+     * para usar con los combos
+     *
+     * @return array
+     */
+    protected function _obtenerListaAsignaturasProfesor() {
+        App::import('Controller','Asignaturas');
+        $user_id = $this->Auth->user('id');
+        $Asignaturas = new AsignaturasController();
+        $asignaturas_profesor = $Asignaturas->obtenerListaAsignaturasProfesor($user_id, 'list');
+        return $asignaturas_profesor;
+    }
+
 
 }

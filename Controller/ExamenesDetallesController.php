@@ -67,7 +67,7 @@ class ExamenesDetallesController extends AppController {
         $this->set('examenesDetalles', $this->Paginator->paginate('ExamenesDetalle'));
 
         $condiciones_examenes_cabecera = $this->_obtenerCondicionExamenes();
-        $condiciones_examenes_profesor = $this->_obtenerCondicionExamenesProfesor();
+        $condiciones_examenes_profesor = $this->_obtenerCondicionAsignaturasProfesor('ExamenesCabecera');
 
         if($tipo==1) {
             $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('all', array('conditions' => $condiciones_examenes_cabecera));
@@ -110,7 +110,7 @@ class ExamenesDetallesController extends AppController {
      *
      */
 
-    private function _obtenerCondicionExamenesProfesor() {
+    /*private function _obtenerCondicionExamenesProfesor() {
         $user_id = $this->Auth->user('id');
         $Asignaturas = new AsignaturasController();
         $asignaturas_profesor = $Asignaturas->obtenerAsignaturasProfesor($user_id, 'list');
@@ -118,7 +118,7 @@ class ExamenesDetallesController extends AppController {
         $conditions[] = array('ExamenesCabecera.asignatura_id' => $asignaturas_profesor);
 
         return $conditions;
-    }
+    }*/
 
 /**
  * view method

@@ -1,24 +1,76 @@
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="notas index">
+
+    <h2><?php echo __('Sus Asignaturas'); ?></h2>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <th><?php echo __('Nota'); ?></th>
+            <th><?php echo __('Curso'); ?></th>
+            <th class="actions"><?php echo __('Acciones'); ?></th>
+        </tr>
+        <?php foreach ($asignaturas_profesor as $asignatura_profesor): ?>
+            <tr>
+                <td><?php echo $this->Html->link($asignatura['Asignatura']['dsc'], array('controller' => 'contenidos', 'action' => 'temario', $asignatura['Curso']['id'])); ?>&nbsp;</td>
+                <td>
+                    <?php echo $this->Html->link($asignatura['Curso']['dsc'], array('controller' => 'cursos', 'action' => 'view', $asignatura['Curso']['id'])); ?>
+                </td>
+                <td class="actions">
+                    <?php echo $this->Html->link(__('Ver'), array('action' => 'view', $asignatura['Asignatura']['id'])); ?>
+                    <?php echo $this->Html->link(__('Calificar'), array('action' => 'edit', $asignatura['Asignatura']['id'])); ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+
+
 	<h2><?php echo __('Notas'); ?></h2>
+
+
+
+    <div>
+        <?php echo $this->Form->create('Basica');?>
+
+        <?php
+            if ($tipo==2) {
+            echo '<label>Asignatura</label>';
+            echo $this->Chosen->select('asignatura', $asignaturas,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
+
+            echo '<label>Alumno</label>';
+            echo $this->Chosen->select('alumno', $alumnos,
+                    array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
+            }
+
+            echo '<label>Evaluación</label>';
+            echo $this->Chosen->select('tipo_nota', array(0 => '', 1=> 'Primera Evaluación', 2=> 'Segunda Evaluación',
+        3=>'Tercera Evaluación', 4=>'Final Junio', 5=> 'Recuperación Septiembre'),
+        array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?>
+
+        <span style="margin-left: 50px">
+                <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
+            <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
+            </span>
+        <?php echo $this->Form->end();?>
+        <br />
+    </div>
+
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('nota'); ?></th>
-			<th><?php echo $this->Paginator->sort('alumnos_asignatura_id'); ?></th>
+            <th><?php echo $this->Paginator->sort('usuario_id'); ?></th>
+            <th><?php echo $this->Paginator->sort('asignatura_id'); ?></th>
+            <th><?php echo $this->Paginator->sort('tipo_nota'); ?></th>
+            <th><?php echo $this->Paginator->sort('nota'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
 	foreach ($notas as $nota): ?>
 	<tr>
-		<td><?php echo h($nota['Nota']['id']); ?>&nbsp;</td>
+        <td><?php echo h($nota['Usuario']['nombre'].' '.$nota['Usuario']['apellidos']); ?>&nbsp;</td>
+        <td><?php echo h($nota['Asignatura']['dsc']); ?>&nbsp;</td>
+        <td><?php echo h($nota['Nota']['tipo_nota']); ?>&nbsp;</td>
 		<td><?php echo h($nota['Nota']['nota']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($nota['AlumnosAsignatura']['asignatura_id'], array('controller' => 'alumnos_asignaturas', 'action' => 'view', $nota['AlumnosAsignatura']['id'])); ?>
-		</td>
 		<td><?php echo h($nota['Nota']['created']); ?>&nbsp;</td>
-		<td><?php echo h($nota['Nota']['modified']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $nota['Nota']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $nota['Nota']['id'])); ?>
