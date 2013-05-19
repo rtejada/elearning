@@ -1,5 +1,5 @@
 <div class="examenesCabeceras form">
-<?php echo $this->Form->create('ExamenesCabecera'); ?>
+<?php echo $this->Form->create('ExamenesCabecera', array('type' => 'file')); ?>
 	<fieldset>
 		<legend><?php echo __('Agregar examen'); ?></legend>
 	<?php
@@ -11,7 +11,9 @@
         echo $this->Chosen->select('asignaturas', $asignaturas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 		echo $this->Form->input('enunciado');
-        echo $this->Form->input('dia_examen', array('label' => 'Fecha del examen', 'dateFormat' => 'DMY'));
+        echo $this->Form->input('dia_examen', array('label' => 'Fecha del examen ', 'dateFormat' => 'DMY'));
+        echo $this->Form->input('ExamenesCabecera.fichero', array('type' => 'file'));
+        echo $this->Form->input('ExamenesCabecera.fichero_dir', array('type' => 'hidden'));
         echo $this->Form->input('activo', array('type' => 'checkbox'));
 	?>
 	</fieldset>

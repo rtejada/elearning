@@ -35,6 +35,10 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $examenesCabecera['ExamenesCabecera']['id'])); ?>
+            <?php
+            $link = array('action' => 'downloadFile', $examenesCabecera['ExamenesCabecera']['fichero_dir'], $examenesCabecera['ExamenesCabecera']['fichero'], 'fichero');
+            echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
+            ?>
 			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $examenesCabecera['ExamenesCabecera']['id']), null, __('Are you sure you want to delete # %s?', $examenesCabecera['ExamenesCabecera']['id'])); ?>
 		</td>
 	</tr>
