@@ -1,7 +1,8 @@
+<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
 <div class="notas form">
 <?php echo $this->Form->create('Nota'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Nota'); ?></legend>
+		<legend><?php echo __('Agregar Nota'); ?></legend>
 
 	<?php
 
@@ -21,14 +22,19 @@
 
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+    <h3><?php echo __('Menu'); ?></h3>
 
-		<li><?php echo $this->Html->link(__('List Notas'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Alumnos Asignaturas'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Alumnos Asignatura'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?> </li>
-	</ul>
+    <?php if ($tipo==2) { ?>
+    <div id='cssmenu'>
+        <ul>
+            <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'notas', 'action' => 'index')); ?></li>
+        </ul>
+    </div>
+    <?php } ?>
+
+    <?php echo $this->element('menu'); ?>
 </div>
+

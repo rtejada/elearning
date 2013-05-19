@@ -63,7 +63,7 @@
             <th><?php echo $this->Paginator->sort('nota'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Creado'); ?></th>
         <?php if($tipo==2) { ?>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th class="actions"><?php echo __('Acciones'); ?></th>
         <?php } ?>
 	</tr>
 	<?php
@@ -75,7 +75,7 @@
         <td><?php echo h($nota['Asignatura']['dsc']); ?>&nbsp;</td>
         <td><?php echo h($tipo_notas[$nota['Nota']['tipo_nota']]); ?>&nbsp;</td>
 		<td><?php echo h($nota['Nota']['nota']); ?>&nbsp;</td>
-		<td><?php echo h($nota['Nota']['created']); ?>&nbsp;</td>
+		<td><?php echo h($this->Time->format('d/m/Y',$nota['Nota']['created'])); ?>&nbsp;</td>
         <?php if($tipo==2) { ?>
 		<td class="actions">
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $nota['Nota']['id'])); ?>
