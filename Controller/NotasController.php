@@ -52,8 +52,10 @@ class NotasController extends AppController {
 		$this->Nota->recursive = 1;
 
         $asignaturas_profesor = $this->Nota->Asignatura->find('all', array('conditions' => array('Asignatura.id' => $user_id) ));
-        $alumnos = $this->Nota->Usuario->find('all', array('conditions' => array('Usuario.tipo' => 1)));
+        $asignaturas_profesor_combo = $this->Nota->Asignatura->find('list', array('conditions' => array('Asignatura.id' => $user_id) ));
+        $alumnos = $this->Nota->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
         $this->set('asignaturas_profesor', $asignaturas_profesor);
+        $this->set('asignaturas_profesor_combo', $asignaturas_profesor_combo);
         $this->set('alumnos', $alumnos);
 		$this->set('notas', $this->paginate());
 	}
@@ -98,7 +100,7 @@ class NotasController extends AppController {
 
         //obtener los datos de los alumnos de la asignatura en formato para rellenar el combo
         $alumnos = $this->Nota->Usuario->find('list',
-            array('conditions' => array('Usuario.usuario_id' => $lista_alumnos_asignatura)));
+            array('conditions' => array('Usuario.id' => $lista_alumnos_asignatura)));
 
         $asignaturas = $this->_obtenerListaAsignaturasProfesor();
 
@@ -116,9 +118,9 @@ class NotasController extends AppController {
      * @return mixed
      */
     private function _obtenerAlumnosRelacionadosAsignatura($asignatura_id)  {
-        $this->loadModel('AlumnoAsignatura');
-        $lista_alumnos_asignatura = $this->AlumnoAsignatura->find('list',
-            array('fields' => array('AlumnosAsignatura.usuario.id'),
+        $this->loadModel('AlumnosAsignatura');
+        $lista_alumnos_asignatura = $this->AlumnosAsignatura->find('list',
+            array('fields' => array('AlumnosAsignatura.usuario_id'),
                 'conditions' => array('AlumnosAsignatura.asignatura_id' => $asignatura_id)));
         return $lista_alumnos_asignatura;
     }

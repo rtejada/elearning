@@ -4,19 +4,19 @@
     <h2><?php echo __('Sus Asignaturas'); ?></h2>
     <table cellpadding="0" cellspacing="0">
         <tr>
-            <th><?php echo __('Nota'); ?></th>
+            <th><?php echo __('Asignatura'); ?></th>
             <th><?php echo __('Curso'); ?></th>
             <th class="actions"><?php echo __('Acciones'); ?></th>
         </tr>
         <?php foreach ($asignaturas_profesor as $asignatura_profesor): ?>
             <tr>
-                <td><?php echo $this->Html->link($asignatura['Asignatura']['dsc'], array('controller' => 'contenidos', 'action' => 'temario', $asignatura['Curso']['id'])); ?>&nbsp;</td>
+                <td><?php echo $this->Html->link($asignatura_profesor['Asignatura']['dsc'], array('controller' => 'contenidos', 'action' => 'temario', $asignatura_profesor['Curso']['id'])); ?>&nbsp;</td>
                 <td>
-                    <?php echo $this->Html->link($asignatura['Curso']['dsc'], array('controller' => 'cursos', 'action' => 'view', $asignatura['Curso']['id'])); ?>
+                    <?php echo $this->Html->link($asignatura_profesor['Curso']['dsc'], array('controller' => 'cursos', 'action' => 'view', $asignatura_profesor['Curso']['id'])); ?>
                 </td>
                 <td class="actions">
-                    <?php echo $this->Html->link(__('Ver'), array('action' => 'view', $asignatura['Asignatura']['id'])); ?>
-                    <?php echo $this->Html->link(__('Calificar'), array('action' => 'edit', $asignatura['Asignatura']['id'])); ?>
+                    <?php echo $this->Html->link(__('Ver'), array('action' => 'view', $asignatura_profesor['Asignatura']['id'])); ?>
+                    <?php echo $this->Html->link(__('Calificar'), array('action' => 'edit', $asignatura_profesor['Asignatura']['id'])); ?>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -33,7 +33,7 @@
         <?php
             if ($tipo==2) {
             echo '<label>Asignatura</label>';
-            echo $this->Chosen->select('asignatura', $asignaturas,
+            echo $this->Chosen->select('asignatura', $asignaturas_profesor_combo,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 
             echo '<label>Alumno</label>';
