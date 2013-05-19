@@ -1,23 +1,3 @@
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<title><?php echo $title_for_layout?></title>
-		<?php echo $this->Html->charset('UTF-8'); ?>
-	<meta name="description" content="Plataforma de estudios a distancia" />
-	<meta name="keywords" content="formacion, modulo, distancia" />
-	<meta name="author" content="Fran?ois ACTIS-GASTOU" />
-        <?php
-              echo $this->Html->meta('icon');
-              echo $this->Html->css('cake.generic', 'stylesheet', array("media"=>"all" ));
-              echo $this->Html->css('nautica02liquid', 'stylesheet', array("media"=>"all" ));
-              echo $this->Html->css('menu', 'stylesheet', array("media"=>"all" ));
-              echo $this->fetch('meta');
-              echo $this->fetch('css');
-              echo $this->fetch('script');
-    ?>
-</head>
-<body>
-	
         </br>
 		 </br>
 		  </br>
@@ -33,7 +13,4 @@
 				</br>
 				</br>
 				</div>
-				
-				
-</body>
-</html>
+
