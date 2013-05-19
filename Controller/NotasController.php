@@ -162,7 +162,7 @@ class NotasController extends AppController {
 
         //obtener los datos de los alumnos de la asignatura en formato para rellenar el combo
         $alumnos = $this->Nota->Usuario->find('list',
-            array('conditions' => array('Usuario.usuario_id' => $lista_alumnos_asignatura)));
+            array('conditions' => array('Usuario.id' => $lista_alumnos_asignatura)));
 
         $asignaturas = $this->_obtenerListaAsignaturasProfesor();
 
