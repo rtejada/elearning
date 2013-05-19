@@ -23,7 +23,7 @@
                 <td class="actions">
                     <?php echo $this->Html->link(__('Ver'), array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
                     <?php
-                    $link = array('action' => 'downloadFile', $trabajosEnunciado['TrabajosEnunciado']['fichero_dir'], $trabajosEnunciado['TrabajosEnunciado']['fichero'], 'fichero');
+                    $link = array('action' => 'downloadFile', $trabajosEnunciado['TrabajosEnunciado']['fichero_dir'], $trabajosEnunciado['TrabajosEnunciado']['fichero'], 'fichero', 'trabajos_enunciado');
                     echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
                     ?>
                 </td>

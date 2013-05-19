@@ -119,12 +119,14 @@ class AppController extends Controller {
      *
      *   Este método sirve imágenes de perfíl de usuario.
      */
-    public function downloadFile($foto_dir, $foto, $campo='foto') {
+    public function downloadFile($foto_dir, $foto, $campo='foto', $modelo='') {
 
         $this->layout = "ajax";
         $mfoto = Sanitize::html($foto);
         $mfoto_dir = Sanitize::html($foto_dir);
-        $modelo = strtolower($this->modelClass);
+        if($modelo=='') {
+            $modelo = strtolower($this->modelClass);
+        }
         if($modelo=='examenesdetalle')
             $modelo = 'examenes_detalle';
         if($modelo=='trabajosenunciado')
