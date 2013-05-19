@@ -131,6 +131,8 @@ class AppController extends Controller {
             $modelo = 'examenes_detalle';
         if($modelo=='trabajosenunciado')
             $modelo = 'trabajos_enunciado';
+        if($modelo=='examenescabecera')
+            $modelo = 'examenes_cabecera';
 
         $this->DescargasFicheros->descarga($modelo,$mfoto_dir,$mfoto, $campo);
     }
