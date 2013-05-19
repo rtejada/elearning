@@ -104,21 +104,6 @@ class ExamenesDetallesController extends AppController {
         return $conditions;
     }
 
-    /**
-     * obtiene las condiciones para que el profesor pueda ver todos los examenes enviados
-     * de las asignaturas que tiene relacionadas.
-     *
-     */
-
-    /*private function _obtenerCondicionExamenesProfesor() {
-        $user_id = $this->Auth->user('id');
-        $Asignaturas = new AsignaturasController();
-        $asignaturas_profesor = $Asignaturas->obtenerAsignaturasProfesor($user_id, 'list');
-        $conditions = array();
-        $conditions[] = array('ExamenesCabecera.asignatura_id' => $asignaturas_profesor);
-
-        return $conditions;
-    }*/
 
 /**
  * view method

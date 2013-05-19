@@ -65,12 +65,7 @@ class AppController extends Controller {
 
 
     public function isAuthorized($user) {
-        // Los profesores pueden acceder a todo.
-        /*if (isset($user['tipo']) && $user['tipo'] === '2') {
-            return true;
-        }*/
 
-        // Default deny
         return true;
     }
 
@@ -97,6 +92,13 @@ class AppController extends Controller {
         }*/
     }
 
+    /**
+     * Este metodo sirve para restringir el acceso a los alumnos
+     * desde cualquier sitio donde se llame.
+     *
+     * @access public
+     * @autor Roxana
+     */
     public function restringirAlumno() {
         $tipo = $this->Auth->user('tipo');
         if ($tipo == 1) {
@@ -110,10 +112,13 @@ class AppController extends Controller {
      *
      *  @param string $foto_dir    Subdirectorio donde se almacena la foto
      *  @param string $foto        Nombre del fichero de imagen
+     *  @param string $foto        Nombre del campo que tiene la imagen
+     *  @access public
+     *  @author Roxana
+     *
      *
      *   Este método sirve imágenes de perfíl de usuario.
      */
-
     public function downloadFile($foto_dir, $foto, $campo='foto') {
 
         $this->layout = "ajax";
@@ -130,6 +135,8 @@ class AppController extends Controller {
      * obtiene un array de condiciones que se podrá usar en todos los controladores
      * donde haya que filtrar la tabla asignaturas según el user_id del profesor actual
      *
+     * @author Roxana
+     * @access protected
      * @param string $modelo            Nombre del modelo
      * @return array                    Array de condiciones para $this->paginate();
      */
@@ -148,6 +155,7 @@ class AppController extends Controller {
      * Obtiene las asignaturas asignadas al profesor en formato list
      * para usar con los combos
      *
+     * @access protected
      * @return array
      */
     protected function _obtenerListaAsignaturasProfesor() {

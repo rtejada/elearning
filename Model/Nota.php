@@ -40,8 +40,28 @@ class Nota extends AppModel {
             'notempty' => array(
                 'rule' => array('notempty'),
                 'message' => 'Debe seleccionar un valor',
-                //'allowEmpty' => false,
-                //'required' => false,
+                'allowEmpty' => false,
+                'required' => true,
+                //'last' => false, // Stop validation after this rule
+                //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+        'asignatura_id' => array(
+            'notempty' => array(
+                'rule' => array('notempty'),
+                'message' => 'Debe seleccionar una asignatura',
+                'allowEmpty' => false,
+                'required' => true,
+                //'last' => false, // Stop validation after this rule
+                //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+        'usuario_id' => array(
+            'notempty' => array(
+                'rule' => array('notempty'),
+                'message' => 'Debe seleccionar un alumno',
+                'allowEmpty' => false,
+                'required' => true,
                 //'last' => false, // Stop validation after this rule
                 //'on' => 'create', // Limit validation to 'create' or 'update' operations
             ),

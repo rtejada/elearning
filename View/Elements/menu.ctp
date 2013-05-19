@@ -29,7 +29,7 @@
                     <li><?php echo $this->Html->link(__('Crear'), array('controller' => 'examenes_cabeceras', 'action' => 'index')); ?></li>
                     <li class='last'><?php echo $this->Html->link(__('Ver recibidos'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?></li>
                 </ul>
-            <li><?php echo $this->Html->link(__('Notas'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>
+            <li><?php echo $this->Html->link(__('Notas'), array('controller' => 'notas', 'action' => 'index')); ?></li>
             <li class='last'><?php echo $this->Html->link(__('Admin'), array('controller' => 'admin', 'action' => 'admin')); ?></li>
         </ul>
     </div>

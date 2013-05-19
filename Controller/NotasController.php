@@ -56,6 +56,7 @@ class NotasController extends AppController {
         $alumnos = $this->Nota->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
         $this->set('asignaturas_profesor', $asignaturas_profesor);
         $this->set('asignaturas_profesor_combo', $asignaturas_profesor_combo);
+        $this->set('tipo_notas', $this->array_tipo_nota);
         $this->set('alumnos', $alumnos);
 		$this->set('notas', $this->paginate());
 	}
@@ -166,7 +167,7 @@ class NotasController extends AppController {
 	}
 
 /**
- * delete method
+ * Metodo eliminar nota
  *
  * @throws MethodNotAllowedException
  * @throws NotFoundException
