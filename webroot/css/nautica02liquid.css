@@ -80,13 +80,19 @@ body {
 
 #header div.cabecera {
 
-	margin: 0 950px;
+	/*margin: 0 950px;*/
+    text-align: left;
 	padding: 0;
 	height: 100px;
 	line-height: 3em;
 	color: #ccc;
 	font-size: 130%;
-	width: 100%;
+	/*width: 100%;*/
+}
+div.cabecera .user_top {
+    text-align: right;
+    margin-right: 50px;
+    float: right;
 }
 
 #wrapper-content {

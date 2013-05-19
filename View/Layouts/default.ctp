@@ -46,9 +46,8 @@
                         <a class="addthis_button_compact"></a>
                         <a class="addthis_counter addthis_bubble_style"></a>
                     </div>
-                    <div id="user_top">
                         <?php echo $this->element('user_top'); ?>
-                    </div>
+
                 </div>
 
             </div>
