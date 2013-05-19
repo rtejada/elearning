@@ -4,13 +4,18 @@
 		<legend><?php echo __('Agregar examen'); ?></legend>
 	<?php
 		echo $this->Form->input('dsc', array('label' => 'Título'));
-		echo $this->Form->input('asignatura_id');
+    ?>
+        <label>Asignatura</label>
+
+    <?php
+        echo $this->Chosen->select('asignaturas', $asignaturas,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 		echo $this->Form->input('enunciado');
         echo $this->Form->input('dia_examen', array('label' => 'Fecha del examen', 'dateFormat' => 'DMY'));
         echo $this->Form->input('activo', array('type' => 'checkbox'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 <div class="actions">
     <h3><?php echo __('Menu'); ?></h3>

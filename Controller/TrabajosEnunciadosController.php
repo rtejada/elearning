@@ -7,6 +7,7 @@ App::uses('AppController', 'Controller');
  */
 class TrabajosEnunciadosController extends AppController {
 
+    public $components = array('DescargasFicheros');
 /**
  * index method
  *

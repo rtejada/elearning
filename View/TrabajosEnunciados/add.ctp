@@ -1,15 +1,22 @@
 <div class="trabajosEnunciados form">
-<?php echo $this->Form->create('TrabajosEnunciado'); ?>
+<?php echo $this->Form->create('TrabajosEnunciado', array('type' => 'file')); ?>
 	<fieldset>
 		<legend><?php echo __('Agregar un nuevo trabajo'); ?></legend>
 	<?php
 		echo $this->Form->input('dsc', array('label' => 'Título'));
 		echo $this->Form->input('enunciado');
-		echo $this->Form->input('asignatura_id');
-        echo $this->Form->input('fecha_tope', array('label' => 'Fecha máxima de entrega', 'dateFormat' => 'DMY'));
+        ?>
+        <label>Asignatura</label>
+    <?php
+        echo $this->Chosen->select('asignaturas', $asignaturas,
+        array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
+        echo $this->Form->input('fecha_tope', array('label' => 'Fecha máxima de entrega ', 'dateFormat' => 'DMY'));
+        echo $this->Form->input('TrabajosEnunciado.fichero', array('type' => 'file'));
+        echo $this->Form->input('TrabajosEnunciado.fichero_dir', array('type' => 'hidden'));
+
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 
 

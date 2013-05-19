@@ -39,6 +39,10 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
+            <?php
+            $link = array('action' => 'downloadFile', $trabajosEnunciado['TrabajosEnunciado']['fichero_dir'], $trabajosEnunciado['TrabajosEnunciado']['fichero'], 'fichero');
+            echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
+            ?>
 			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $trabajosEnunciado['TrabajosEnunciado']['id']), null, __('Are you sure you want to delete # %s?', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
 		</td>
 	</tr>

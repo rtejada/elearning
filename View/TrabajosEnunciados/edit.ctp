@@ -1,18 +1,20 @@
 <div class="trabajosEnunciados form">
-<?php echo $this->Form->create('TrabajosEnunciado'); ?>
+<?php echo $this->Form->create('TrabajosEnunciado', array('type' => 'file')); ?>
 	<fieldset>
 		<legend><?php echo __('Editar Trabajos Enunciado'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('dsc', array('label' => 'Título'));
 		echo $this->Form->input('enunciado');
-        echo $this->Form->create('Basica');?>
-        <label>Asignaturas</label>
+    ?>
+           <label>Asignaturas</label>
     <?php
         echo $this->Chosen->select('asignaturas', $asignaturas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 
         echo $this->Form->input('fecha_tope', array('label' => 'Fecha máxima de entrega', 'dateFormat' => 'DMY'));
+        echo $this->Form->input('TrabajosEnunciado.fichero', array('type' => 'file'));
+        echo $this->Form->input('TrabajosEnunciado.fichero_dir', array('type' => 'hidden'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Enviar')); ?>
