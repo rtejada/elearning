@@ -16,7 +16,6 @@
                     <?php echo $this->Html->link($asignatura_profesor['Curso']['dsc'], array('controller' => 'cursos', 'action' => 'view', $asignatura_profesor['Curso']['id'])); ?>
                 </td>
                 <td class="actions">
-                    <?php echo $this->Html->link(__('Ver'), array('action' => 'view', $asignatura_profesor['Asignatura']['id'])); ?>
                     <?php echo $this->Html->link(__('Calificar'), array('controller' => 'notas', 'action' => 'add', $asignatura_profesor['Asignatura']['id'])); ?>
                 </td>
             </tr>
@@ -78,7 +77,7 @@
 		<td><?php echo h($nota['Nota']['nota']); ?>&nbsp;</td>
 		<td><?php echo h($nota['Nota']['created']); ?>&nbsp;</td>
         <?php if($tipo==2) { ?>
-		<td class="Acciones">
+		<td class="actions">
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $nota['Nota']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $nota['Nota']['id'])); ?>
 			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $nota['Nota']['id']), null, __('Are you sure you want to delete # %s?', $nota['Nota']['id'])); ?>

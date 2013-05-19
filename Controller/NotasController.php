@@ -39,6 +39,11 @@ class NotasController extends AppController {
             }
         }
 
+        //los alumnos solo podran ver sus propias notas
+        if ($tipo==1) {
+            $conditions[] = array('Nota.usuario_id' => $user_id);
+        }
+
         $this->paginate = array(
             'conditions' => $conditions,
             'limit' => 10,
