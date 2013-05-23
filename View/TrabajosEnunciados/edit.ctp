@@ -9,7 +9,7 @@
     ?>
            <label>Asignaturas</label>
     <?php
-        echo $this->Chosen->select('asignaturas', $asignaturas,
+        echo $this->Chosen->select('asignatura_id', $asignaturas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 
         echo $this->Form->input('fecha_tope', array('label' => 'Fecha máxima de entrega', 'dateFormat' => 'DMY'));

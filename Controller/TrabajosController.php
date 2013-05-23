@@ -21,8 +21,6 @@ class TrabajosController extends AppController {
         $user_id = $this->Auth->user('id');
         $conditions = array();
         $conditions_form = array();
-        $conditions_alumno = array();
-        $trabajo = array();
 
 
         if (isset($this->params['data']['submit'])) {
@@ -62,10 +60,9 @@ class TrabajosController extends AppController {
                 'conditions' => $conditions,
             ),
         );
-		$this->Trabajo->recursive = 1;
+		$this->Trabajo->recursive = 0;
 
         $conditions_alumno = $this->_obtenerCondicionTrabajos();
-        $conditions = array_merge($conditions_alumno, $conditions_form);
 
         $trabajosEnunciado = $this->Trabajo->TrabajosEnunciado->find('all', array('conditions' => $conditions_alumno));
 

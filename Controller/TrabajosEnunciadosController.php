@@ -15,29 +15,28 @@ class TrabajosEnunciadosController extends AppController {
  */
 	public function index() {
 
-        $tipo = $this->Auth->user('tipo');
-        $user_id = $this->Auth->user('id');
+        $this->restringirAlumno();
         $conditions = array();
 
         if (isset($this->params['data']['submit'])) {
-            if (!empty($this->params['data']['Basica']['asignaturas'])) {
-                $txtdsc = $this->params['data']['Basica']['asignaturas'];
-                $conditions[] = array('TrabajosEnunciado.asignatura_id =' => $txtdsc);
+            if (!empty($this->params['data']['Basica']['dsc'])) {
+                $txtdsc = $this->params['data']['Basica']['dsc'];
+                $conditions[] = array('TrabajosEnunciado.dsc LIKE' => '%'.$txtdsc.'%');
             }
 
 
         }
 
-        $asignaturas = $this->TrabajosEnunciado->Asignatura->find("list");
-        $this->set('asignaturas', $asignaturas);
+      //  $asignaturas = $this->TrabajosEnunciado->Asignatura->find("list");
+       // $this->set('asignaturas', $asignaturas);
 
 
-        $this->restringirAlumno();
+
         $usuario_id = $this->Auth->user('id');
         $conditions[] = array('TrabajosEnunciado.usuario_id =' => $usuario_id);
 
         $this->paginate = array(
-            'limit' => 20,
+            'limit' => 5,
             'conditions' => $conditions	);
 
 		$this->TrabajosEnunciado->recursive = 0;
@@ -118,7 +117,7 @@ class TrabajosEnunciadosController extends AppController {
  */
 	public function delete($id = null) {
         $this->restringirAlumno();
-		$this->TrabajosEnunciado->id = $id;
+        $this->TrabajosEnunciado->id = $id;
 		if (!$this->TrabajosEnunciado->exists()) {
 			throw new NotFoundException(__('Invalid trabajos enunciado'));
 		}

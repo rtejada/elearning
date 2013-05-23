@@ -1,8 +1,6 @@
 <div class="trabajosEnunciados index">
     <div>
-        <?php echo $this->Form->create('Basica');?>
-
-        <label>Asignaturas</label>
+        <label>Título</label>
         <?php echo $this->Form->create('Basica');?>
         <?php echo $this->Form->input('dsc', array('style' => 'width: 300px',
         'div' => array('class' => 'input text float-left'), 'label' => '')); ?>
