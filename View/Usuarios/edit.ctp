@@ -12,16 +12,17 @@
 		echo $this->Form->input('telefono');
 		echo $this->Form->input('login');
 		echo $this->Form->input('password');
-		echo $this->Form->radio('tipo', array('1' => 'Alumno','2' => ' Profesor'));
+		echo $this->Form->input('tipo', array('type'=>'radio', 'options' => array('1' => 'Alumno','2' => 'Profesor')));
         echo $this->Form->input('Usuario.foto', array('type' => 'file'));
         echo $this->Form->input('Usuario.foto_dir', array('type' => 'hidden'));
 
-        $url = $this->Html->url($link);
-        echo $this->Html->image($url);
-
         ?>
-
-
+        <div style="height: 100%; width: 100%;">
+        <?php
+        $url = $this->Html->url($link);
+        echo $this->Html->image($url, array('style' => 'width: 90%'));
+        ?>
+        </div>
 	</fieldset>
 
 <?php echo $this->Form->end(__('Enviar')); ?>
