@@ -87,9 +87,9 @@
             <?php if ($tipo==2) { ?>
                 <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
                 <li><?php echo $this->Html->link(__('Nueva Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?></li>
-                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
+
             <?php } ?>
-                <li class='last'><?php echo $this->Html->link(__('Volver'), '/'); ?></li>
+                <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
             </ul>
         </div>
 
