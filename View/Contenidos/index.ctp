@@ -58,7 +58,7 @@
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
             if($tipo==2) {
                 echo $this->Html->link(__('Editar'), array('action' => 'edit', $contenido['Contenido']['id']));
-			    echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $contenido['Contenido']['id']), null, __('Are you sure you want to delete # %s?', $contenido['Contenido']['id']));
+			    echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $contenido['Contenido']['id']), null, __('¿Está seguro que desea eliminar el contenido?', $contenido['Contenido']['id']));
             }
             ?>
 		</td>
@@ -68,7 +68,7 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	'format' => __('Página {:page} de {:pages}, mostrando {:current} registros actuales de {:count} en total, a partir del registro {:start}, que terminan en {:end}')
 	));
 	?>	</p>
 

@@ -74,7 +74,7 @@ class AlumnosAsignaturasController extends AppController {
         $this->restringirAlumno();
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
-			throw new NotFoundException(__('Invalid alumnos asignatura'));
+			throw new NotFoundException(__('El alumno no tiene asignado la asignatura'));
 		}
 		$this->set('alumnosAsignatura', $this->AlumnosAsignatura->read(null, $id));
 	}
@@ -91,10 +91,10 @@ class AlumnosAsignaturasController extends AppController {
 		if ($this->request->is('post')) {
 			$this->AlumnosAsignatura->create();
 			if ($this->AlumnosAsignatura->save($this->request->data)) {
-				$this->Session->setFlash(__('The alumnos asignatura has been saved'));
+				$this->Session->setFlash(__('La asignatura para el alumno se ha guardado correctamente.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The alumnos asignatura could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('EL alumno y su asignatura no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
 		$usuarios = $this->AlumnosAsignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
@@ -114,14 +114,14 @@ class AlumnosAsignaturasController extends AppController {
         $this->restringirAlumno();
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
-			throw new NotFoundException(__('Invalid alumnos asignatura'));
+			throw new NotFoundException(__('El alumno no tiene asignado la asignatura'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->AlumnosAsignatura->save($this->request->data)) {
-				$this->Session->setFlash(__('The alumnos asignatura has been saved'));
+				$this->Session->setFlash(__('La asignatura para el alumno se ha guardado correctamente.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The alumnos asignatura could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('EL alumno y su asignatura no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$this->request->data = $this->AlumnosAsignatura->read(null, $id);
@@ -146,13 +146,13 @@ class AlumnosAsignaturasController extends AppController {
         $this->restringirAlumno();
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
-			throw new NotFoundException(__('Invalid alumnos asignatura'));
+			throw new NotFoundException(__('El alumno no tiene asignado la asignatura'));
 		}
 		if ($this->AlumnosAsignatura->delete()) {
-			$this->Session->setFlash(__('Alumnos asignatura deleted'));
+			$this->Session->setFlash(__('El alumno, asignatura eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Alumnos asignatura was not deleted'));
+		$this->Session->setFlash(__('El alumno, asignatura no se ha eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 

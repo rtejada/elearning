@@ -101,7 +101,7 @@ class ContenidosController extends AppController {
 	public function view($id = null, $asignatura_id = NULL) {
 		$this->Contenido->id = $id;
 		if (!$this->Contenido->exists()) {
-			throw new NotFoundException(__('Invalid contenidos temario'));
+			throw new NotFoundException(__('El contenido temario es inválido'));
 		}
 
         if($asignatura_id != NULL) {
@@ -120,10 +120,10 @@ class ContenidosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Contenido->create();
 			if ($this->Contenido->save($this->request->data)) {
-				$this->Session->setFlash(__('The contenidos temario has been saved'));
+				$this->Session->setFlash(__('El contenido temario se ha guardado correctamente'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The contenidos temario could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El contenido temario no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
 
@@ -143,14 +143,14 @@ class ContenidosController extends AppController {
         $this->restringirAlumno();
 		$this->Contenido->id = $id;
 		if (!$this->Contenido->exists()) {
-			throw new NotFoundException(__('Invalid contenidos temario'));
+			throw new NotFoundException(__('Contenido temario inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Contenido->save($this->request->data)) {
-				$this->Session->setFlash(__('The contenidos temario has been saved'));
+				$this->Session->setFlash(__('El contenido temario se ha guardado correctamente'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The contenidos temario could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El contenido temario no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$this->request->data = $this->Contenido->read(null, $id);
@@ -175,13 +175,13 @@ class ContenidosController extends AppController {
 		}
 		$this->Contenido->id = $id;
 		if (!$this->Contenido->exists()) {
-			throw new NotFoundException(__('Invalid contenidos temario'));
+			throw new NotFoundException(__('Contenido temario inválido'));
 		}
 		if ($this->Contenido->delete()) {
-			$this->Session->setFlash(__('Contenidos temario deleted'));
+			$this->Session->setFlash(__('Contenido temario eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Contenidos temario was not deleted'));
+		$this->Session->setFlash(__('Contenido temario no se ha eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 

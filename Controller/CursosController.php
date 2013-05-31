@@ -26,7 +26,7 @@ class CursosController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Curso->exists($id)) {
-			throw new NotFoundException(__('Invalid curso'));
+			throw new NotFoundException(__('El curso es inválido'));
 		}
 		$options = array('conditions' => array('Curso.' . $this->Curso->primaryKey => $id));
 		$this->set('curso', $this->Curso->find('first', $options));
@@ -41,10 +41,10 @@ class CursosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Curso->create();
 			if ($this->Curso->save($this->request->data)) {
-				$this->Session->setFlash(__('The curso has been saved'));
+				$this->Session->setFlash(__('El curso se ha guardado correctamente'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The curso could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El curso no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
 
@@ -61,14 +61,14 @@ class CursosController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Curso->exists($id)) {
-			throw new NotFoundException(__('Invalid curso'));
+			throw new NotFoundException(__('El curso es inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Curso->save($this->request->data)) {
-				$this->Session->setFlash(__('The curso has been saved'));
+				$this->Session->setFlash(__('El curso se ha guardado correctamente'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The curso could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El curso no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$options = array('conditions' => array('Curso.' . $this->Curso->primaryKey => $id));
@@ -90,14 +90,14 @@ class CursosController extends AppController {
 	public function delete($id = null) {
 		$this->Curso->id = $id;
 		if (!$this->Curso->exists()) {
-			throw new NotFoundException(__('Invalid curso'));
+			throw new NotFoundException(__('El curso es inválido'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Curso->delete()) {
-			$this->Session->setFlash(__('Curso deleted'));
+			$this->Session->setFlash(__('Curso eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Curso was not deleted'));
+		$this->Session->setFlash(__('El curso no se ha eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

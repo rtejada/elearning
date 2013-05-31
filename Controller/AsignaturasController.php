@@ -42,7 +42,7 @@ class AsignaturasController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Asignatura->exists($id)) {
-			throw new NotFoundException(__('Invalid asignatura'));
+			throw new NotFoundException(__('Asignatura inválida'));
 		}
 		$options = array('conditions' => array('Asignatura.' . $this->Asignatura->primaryKey => $id));
 		$this->set('asignatura', $this->Asignatura->find('first', $options));
@@ -59,10 +59,10 @@ class AsignaturasController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Asignatura->create();
 			if ($this->Asignatura->save($this->request->data)) {
-				$this->Session->setFlash(__('The asignatura has been saved'));
+				$this->Session->setFlash(__('La asignatura se ha guardado correctamente'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The asignatura could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La asignatura no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
 		$cursos = $this->Asignatura->Curso->find('list');
@@ -84,10 +84,10 @@ class AsignaturasController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Asignatura->save($this->request->data)) {
-				$this->Session->setFlash(__('The asignatura has been saved'));
+				$this->Session->setFlash(__('La asignatura se ha guardado correctamente'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The asignatura could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La asignatura no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$options = array('conditions' => array('Asignatura.' . $this->Asignatura->primaryKey => $id));
@@ -110,14 +110,14 @@ class AsignaturasController extends AppController {
         $this->restringirAlumno();
 		$this->Asignatura->id = $id;
 		if (!$this->Asignatura->exists()) {
-			throw new NotFoundException(__('Invalid asignatura'));
+			throw new NotFoundException(__('Asignatura inválida'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Asignatura->delete()) {
-			$this->Session->setFlash(__('Asignatura deleted'));
+			$this->Session->setFlash(__('Asignatura eliminada'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Asignatura was not deleted'));
+		$this->Session->setFlash(__('La asignatura no se ha eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 

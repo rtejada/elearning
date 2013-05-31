@@ -49,7 +49,7 @@ class ExamenesCabecerasController extends AppController {
 	public function view($id = null) {
 		$this->ExamenesCabecera->id = $id;
 		if (!$this->ExamenesCabecera->exists()) {
-			throw new NotFoundException(__('Invalid examenes cabecera'));
+			throw new NotFoundException(__('Exámen inválido'));
 		}
 		$this->set('examenesCabecera', $this->ExamenesCabecera->read(null, $id));
 	}
@@ -65,10 +65,10 @@ class ExamenesCabecerasController extends AppController {
 		if ($this->request->is('post')) {
 			$this->ExamenesCabecera->create();
 			if ($this->ExamenesCabecera->save($this->request->data)) {
-				$this->Session->setFlash(__('The examenes cabecera has been saved'));
+				$this->Session->setFlash(__('El examen cabecera se ha guardado correctamente'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The examenes cabecera could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El examen cabecera no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
 
@@ -89,14 +89,14 @@ class ExamenesCabecerasController extends AppController {
         $this->restringirAlumno();
 		$this->ExamenesCabecera->id = $id;
 		if (!$this->ExamenesCabecera->exists()) {
-			throw new NotFoundException(__('Invalid examenes cabecera'));
+			throw new NotFoundException(__('Exámen inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->ExamenesCabecera->save($this->request->data)) {
-				$this->Session->setFlash(__('The examenes cabecera has been saved'));
+				$this->Session->setFlash(__('El examen cabecera se ha guardado correctamente'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The examenes cabecera could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El examen cabecera no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$this->request->data = $this->ExamenesCabecera->read(null, $id);
@@ -122,13 +122,13 @@ class ExamenesCabecerasController extends AppController {
 		}
 		$this->ExamenesCabecera->id = $id;
 		if (!$this->ExamenesCabecera->exists()) {
-			throw new NotFoundException(__('Invalid examenes cabecera'));
+			throw new NotFoundException(__('Exámen inválido'));
 		}
 		if ($this->ExamenesCabecera->delete()) {
-			$this->Session->setFlash(__('Examenes cabecera deleted'));
+			$this->Session->setFlash(__('Exámen cabecera eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Examenes cabecera was not deleted'));
+		$this->Session->setFlash(__('Exámen cabecera no se ha eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

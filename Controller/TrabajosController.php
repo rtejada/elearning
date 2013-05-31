@@ -135,10 +135,10 @@ class TrabajosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Trabajo->create();
 			if ($this->Trabajo->save($this->request->data)) {
-				$this->Session->setFlash(__('The trabajo has been saved'));
+				$this->Session->setFlash(__('El trabajo se ha guardado correctamente.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The trabajo could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El trabajo no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
 
@@ -162,10 +162,10 @@ class TrabajosController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Trabajo->save($this->request->data)) {
-				$this->Session->setFlash(__('The trabajo has been saved'));
+				$this->Session->setFlash(__('El trabajo se ha guardado correctamente.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The trabajo could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El trabajo no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$options = array('conditions' => array('Trabajo.' . $this->Trabajo->primaryKey => $id));
@@ -204,10 +204,10 @@ class TrabajosController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             $this->Trabajo->id =  $id;
             if($this->Trabajo->saveField('nota', $this->request->data['Trabajo']['nota'])) {
-                $this->Session->setFlash(__('The trabajo has been saved'));
+                $this->Session->setFlash(__('El trabajo se ha guardado correctamente.'));
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash(__('The trabajo could not be saved. Please, try again.'));
+                $this->Session->setFlash(__('El trabajo no se pudo guardar. Por favor, inténtelo de nuevo.'));
             }
 
         } else {
@@ -242,14 +242,14 @@ class TrabajosController extends AppController {
 	public function delete($id = null) {
 		$this->Trabajo->id = $id;
 		if (!$this->Trabajo->exists()) {
-			throw new NotFoundException(__('Invalid trabajo'));
+			throw new NotFoundException(__('Trabajo inválido'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Trabajo->delete()) {
-			$this->Session->setFlash(__('Trabajo deleted'));
+			$this->Session->setFlash(__('Trabajo eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Trabajo was not deleted'));
+		$this->Session->setFlash(__('El trabajo no se ha eliminado.'));
 		$this->redirect(array('action' => 'index'));
 	}
 

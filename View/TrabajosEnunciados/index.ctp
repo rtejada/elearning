@@ -41,7 +41,7 @@
             $link = array('action' => 'downloadFile', $trabajosEnunciado['TrabajosEnunciado']['fichero_dir'], $trabajosEnunciado['TrabajosEnunciado']['fichero'], 'fichero');
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
             ?>
-			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $trabajosEnunciado['TrabajosEnunciado']['id']), null, __('Are you sure you want to delete # %s?', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $trabajosEnunciado['TrabajosEnunciado']['id']), null, __('Está seguro que desea eliminar el registro?', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

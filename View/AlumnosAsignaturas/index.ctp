@@ -49,7 +49,7 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $alumnosAsignatura['AlumnosAsignatura']['id']), null, __('Are you sure you want to delete # %s?', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $alumnosAsignatura['AlumnosAsignatura']['id']), null, __('¿Está seguro que desea eliminar el registro?', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
 		</td>
         <?php } ?>
 	</tr>

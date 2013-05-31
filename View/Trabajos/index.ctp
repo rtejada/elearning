@@ -107,7 +107,7 @@
             <?php echo $this->Html->link(__('Ver'), array('action' => 'view', $trabajo['Trabajo']['id'])); ?>
 			<?php      if(($trabajo['Trabajo']['nota']==0) and ($tipo==1)) {
                             echo $this->Html->link(__('Editar'), array('action' => 'edit', $trabajo['Trabajo']['id']));
-			                echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $trabajo['Trabajo']['id']), null, __('Are you sure you want to delete # %s?', $trabajo['Trabajo']['id']));
+			                echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $trabajo['Trabajo']['id']), null, __('Está seguro que desea eliminar el registro?', $trabajo['Trabajo']['id']));
                        } elseif($tipo==2) {
                             echo $this->Html->link(__('Corregir'), array('action' => 'corregir', $trabajo['Trabajo']['id']));
                        }
