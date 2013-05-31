@@ -80,9 +80,11 @@ class ContenidosController extends AppController {
             )
         );
 
+        $asignaturas = $this->_obtenerListaAsignaturasProfesor();
         $this->Contenido->recursive = 1;
         $this->set('contenidos', $this->paginate());
         $this->set('asignatura_id', $asignatura_id);
+        $this->set('asignaturas', $asignaturas);
         //usa la misma view que método index.
         $this->render('index');
     }
