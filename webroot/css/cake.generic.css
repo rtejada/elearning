@@ -113,6 +113,11 @@ p {
 	text-align: right;
 }
 */
+#content {
+    clear: both;
+
+}
+
 /** containers **/
 div.form,
 div.index,

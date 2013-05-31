@@ -1,20 +1,22 @@
-<div class="asignaturas form">
+<div class="asignaturas form" style="padding-bottom: 100px">
 <?php echo $this->Form->create('Asignatura'); ?>
 	<fieldset>
 		<legend><?php echo __('Agregar Asignatura'); ?></legend>
 	<?php
 		echo $this->Form->input('dsc');
 	?>
+        <label>Profesor </label>
+        <?php
+        echo $this->Chosen->select('usuario_id', $usuarios,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px; height: 200px'));
+        ?>
+        <br/>
         <label>Curso </label>
         <?php
         echo $this->Chosen->select('curso_id', $cursos,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
-        ?><br/>
-        <label>Profesor </label>
-    <?php
-        echo $this->Chosen->select('usuario_id', $usuarios,
-        array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
-	?>
+        ?>
+
 	</fieldset>
 <?php echo $this->Form->end(__('Enviar')); ?>
 </div>
