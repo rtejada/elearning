@@ -58,12 +58,14 @@
 		</dd>
 		<dt><?php echo __('Foto'); ?></dt>
 		<dd>
-			<?php
+
+            <div style="height: 100%; width: 100%;">
+            <?php
             //aqui se incluye la foto
             $url = $this->Html->url($link);
-            echo $this->Html->image($url);
+            echo $this->Html->image($url, array('style' => 'width: 90%'));
              ?>
-			&nbsp;
+            </div>
 		</dd>
 		<dt><?php echo __('Creado'); ?></dt>
 		<dd>
