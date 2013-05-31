@@ -41,7 +41,7 @@ class ExamenesCabecera extends AppModel {
                 'allowEmpty' => false,
                 'required' => true,
                 //'last' => false, // Stop validation after this rule
-                //'on' => 'create', // Limit validation to 'create' or 'update' operations
+                'on' => 'create', // Limit validation to 'create' or 'update' operations
             ),
         ),
     );
@@ -97,28 +97,6 @@ class ExamenesCabecera extends AppModel {
 	);
 
 
-    public $validate = array(
-        'dsc' => array(
-            'notempty' => array(
-                'rule' => array('notempty'),
-                'message' => 'Debe introducir un valor',
-                'allowEmpty' => false,
-                'required' => true,
-                //'last' => false, // Stop validation after this rule
-                //'on' => 'create', // Limit validation to 'create' or 'update' operations
-            ),
-        ),
-        'fichero' => array(
-            'notempty' => array(
-                'rule' => array('notempty'),
-                'message' => 'Debe seleccionar un fichero',
-                'allowEmpty' => false,
-                'required' => true,
-                //'last' => false, // Stop validation after this rule
-                'on' => 'create', // Limit validation to 'create' or 'update' operations
-            ),
-        ),
-    );
 
     function beforeSave() {
         //se obtiene el ID de usuario activo
