@@ -1,9 +1,12 @@
 <div class="alumnosAsignaturas form">
 <?php echo $this->Form->create('AlumnosAsignatura'); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Alumnos Asignatura'); ?></legend>
+		<legend><?php echo __('Editar Alumnos Asignatura'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
+    ?>
+        <label>Usuario</label>
+    <?php
 		echo $this->Form->input('usuario_id');
 		echo $this->Form->input('asignatura_id');
 	?>
