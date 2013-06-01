@@ -887,8 +887,9 @@ dt.vacio:after {
 #fondo_index {
     height: 500px;
     background-image: url("images/Workers.jpg");
-    background-position: left top;
+    background-position: center top;
     background-attachment:fixed;
+    background-repeat: no-repeat;
 }
 
 #fondo_index div.users {
