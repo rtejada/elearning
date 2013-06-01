@@ -52,7 +52,6 @@ class AppController extends Controller {
                     )
                 )
             ),
-            //TODO poner aqui la página de inicio para usuarios autentificados
             'loginRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
             'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
             'authorize' => array('Controller'),
@@ -70,7 +69,7 @@ class AppController extends Controller {
     }
 
     public function beforeFilter() {
-      //TODO aqui las opciones permitidas sin que el usuario esté logueado.
+      // aqui las opciones permitidas sin que el usuario esté logueado.
       // $this->Auth->allow('index', 'view', 'add');
 
     }
@@ -102,6 +101,18 @@ class AppController extends Controller {
     public function restringirAlumno() {
         $tipo = $this->Auth->user('tipo');
         if ($tipo == 1) {
+            $this->Session->setFlash('No puede accder a ese área.');
+            $this->redirect(array('action' => 'index'));
+        }
+    }
+
+    /**
+     * Este método sirve para restringir a cualquier usuario que no
+     * sea el usuario configurado como admin.
+     */
+    public function restringirExceptoAdmin() {
+        $admin = $this->Auth->user('admin');
+        if ($admin != 1) {
             $this->Session->setFlash('No puede accder a ese área.');
             $this->redirect(array('action' => 'index'));
         }

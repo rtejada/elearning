@@ -13,6 +13,7 @@ class CursosController extends AppController {
  * @return void
  */
 	public function index() {
+        $this->restringirExceptoAdmin();
 		$this->Curso->recursive = 0;
 		$this->set('cursos', $this->paginate());
 	}
@@ -38,6 +39,7 @@ class CursosController extends AppController {
  * @return void
  */
 	public function add() {
+        $this->restringirExceptoAdmin();
 		if ($this->request->is('post')) {
 			$this->Curso->create();
 			if ($this->Curso->save($this->request->data)) {
@@ -60,6 +62,7 @@ class CursosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+        $this->restringirExceptoAdmin();
 		if (!$this->Curso->exists($id)) {
 			throw new NotFoundException(__('El curso es inválido'));
 		}
@@ -88,6 +91,7 @@ class CursosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+        $this->restringirExceptoAdmin();
 		$this->Curso->id = $id;
 		if (!$this->Curso->exists()) {
 			throw new NotFoundException(__('El curso es inválido'));

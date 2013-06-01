@@ -86,7 +86,7 @@ class AlumnosAsignaturasController extends AppController {
  */
 	public function add() {
 
-        $this->restringirAlumno();
+        $this->restringirExceptoAdmin();
 
 		if ($this->request->is('post')) {
 			$this->AlumnosAsignatura->create();
@@ -111,7 +111,7 @@ class AlumnosAsignaturasController extends AppController {
  */
 	public function edit($id = null) {
 
-        $this->restringirAlumno();
+        $this->restringirExceptoAdmin();
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
 			throw new NotFoundException(__('El alumno no tiene asignado la asignatura'));
@@ -144,7 +144,7 @@ class AlumnosAsignaturasController extends AppController {
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
-        $this->restringirAlumno();
+        $this->restringirExceptoAdmin();
 		$this->AlumnosAsignatura->id = $id;
 		if (!$this->AlumnosAsignatura->exists()) {
 			throw new NotFoundException(__('El alumno no tiene asignado la asignatura'));

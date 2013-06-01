@@ -1,4 +1,7 @@
-<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
+<?php
+$tipo = $this->Session->read('Auth.User.tipo');
+$admin = $this->Session->read('Auth.User.admin');
+?>
 <?php if ($tipo==1) { ?>
 <div id='cssmenu'>
     <ul>
@@ -30,7 +33,11 @@
                     <li class='last'><?php echo $this->Html->link(__('Ver recibidos'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?></li>
                 </ul>
             <li><?php echo $this->Html->link(__('Notas'), array('controller' => 'notas', 'action' => 'index')); ?></li>
-            <li class='last'><?php echo $this->Html->link(__('Admin'), array('controller' => 'admin', 'action' => 'admin')); ?></li>
+            <li class='last'><?php
+                if($admin==1) {
+                echo $this->Html->link(__('Admin'), array('controller' => 'admin', 'action' => 'admin'));
+                }
+            ?></li>
         </ul>
     </div>
 <?php } ?>

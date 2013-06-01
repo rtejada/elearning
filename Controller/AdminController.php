@@ -32,6 +32,6 @@ class AdminController extends AppController {
 
 
 	public function admin() {
-        $this->restringirAlumno();
+        $this->restringirExceptoAdmin();
     }
 }
