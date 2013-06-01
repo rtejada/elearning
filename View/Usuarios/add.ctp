@@ -13,6 +13,7 @@
 		echo $this->Form->input('login');
 		echo $this->Form->input('password');
         echo $this->Form->input('tipo', array('type'=>'radio', 'options' => array('1' => 'Alumno','2' => 'Profesor')));
+        echo $this->Form->input('admin', array('type'=> 'checkbox', 'label'=>'Es Admin'));
         echo $this->Form->input('Usuario.foto', array('type' => 'file'));
         echo $this->Form->input('Usuario.foto_dir', array('type' => 'hidden'));
 	?>
