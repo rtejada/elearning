@@ -13,6 +13,7 @@ class ModulosController extends AppController {
  * @return void
  */
 	public function index() {
+        $this->restringirExceptoAdmin();
 		$this->Modulo->recursive = 0;
 		$this->set('modulos', $this->paginate());
 	}
@@ -38,6 +39,7 @@ class ModulosController extends AppController {
  * @return void
  */
 	public function add() {
+        $this->restringirExceptoAdmin();
 		if ($this->request->is('post')) {
 			$this->Modulo->create();
 			if ($this->Modulo->save($this->request->data)) {
@@ -57,6 +59,7 @@ class ModulosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+        $this->restringirExceptoAdmin();
 		if (!$this->Modulo->exists($id)) {
 			throw new NotFoundException(__('Módulo Inválido'));
 		}
@@ -82,6 +85,7 @@ class ModulosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+        $this->restringirExceptoAdmin();
 		$this->Modulo->id = $id;
 		if (!$this->Modulo->exists()) {
 			throw new NotFoundException(__('Módulo Inválido'));
