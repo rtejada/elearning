@@ -80,7 +80,7 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $nota['Nota']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $nota['Nota']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $nota['Nota']['id']), null, __('Are you sure you want to delete # %s?', $nota['Nota']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $nota['Nota']['id']), null, __('Está seguro que desea eliminar el registro?', $nota['Nota']['id'])); ?>
 		</td>
         <?php } ?>
 	</tr>

@@ -15,7 +15,7 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $modulo['Modulo']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $modulo['Modulo']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $modulo['Modulo']['id']), null, __('Are you sure you want to delete # %s?', $modulo['Modulo']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $modulo['Modulo']['id']), null, __('Está seguro que desea eliminar el módulo', $modulo['Modulo']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -23,7 +23,7 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	'format' => __('Página {:page} de {:pages}, mostrando {:current} registros de {:count} total, a partir del registro {:start}, que termina en {:end}')
 	));
 	?>	</p>
 	<div class="paging">

@@ -115,7 +115,7 @@ class ExamenesDetallesController extends AppController {
 	public function view($id = null) {
 		$this->ExamenesDetalle->id = $id;
 		if (!$this->ExamenesDetalle->exists()) {
-			throw new NotFoundException(__('Invalid examenes detalle'));
+			throw new NotFoundException(__('Exámen Inválido'));
 		}
 		$this->set('examenesDetalle', $this->ExamenesDetalle->read(null, $id));
 	}
@@ -129,10 +129,10 @@ class ExamenesDetallesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->ExamenesDetalle->create();
 			if ($this->ExamenesDetalle->save($this->request->data)) {
-				$this->Session->setFlash(__('The examenes detalle has been saved'));
+				$this->Session->setFlash(__('El Exámen ha sido guardado de forma correcta'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The examenes detalle could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El exámen no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
 
@@ -156,7 +156,7 @@ class ExamenesDetallesController extends AppController {
 		$this->ExamenesDetalle->id = $id;
 
 		if (!$this->ExamenesDetalle->exists()) {
-			throw new NotFoundException(__('Invalid examenes detalle'));
+			throw new NotFoundException(__('Exámen Inválida'));
 		}
         //los alumnos sólo podrán editar sus propios exámenes.
         if(($this->ExamenesDetalle->field('usuario_id') != $user_id) and
@@ -170,10 +170,10 @@ class ExamenesDetallesController extends AppController {
 
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->ExamenesDetalle->save($this->request->data)) {
-				$this->Session->setFlash(__('The examenes detalle has been saved'));
+				$this->Session->setFlash(__('El exámen ha sido guardado de forma correcta'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The examenes detalle could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El exámen no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$this->request->data = $this->ExamenesDetalle->read(null, $id);

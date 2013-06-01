@@ -98,7 +98,7 @@
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
              if ($tipo==1) {
 			    echo $this->Html->link(__('Editar'), array('action' => 'edit', $examenesDetalle['ExamenesDetalle']['id']));
-                echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $examenesDetalle['ExamenesDetalle']['id']), null, __('Are you sure you want to delete # %s?', $examenesDetalle['ExamenesDetalle']['id']));
+                echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $examenesDetalle['ExamenesDetalle']['id']), null, __('Está seguro que desea eliminar el registro?', $examenesDetalle['ExamenesDetalle']['id']));
              } elseif($tipo==2) {
                 echo $this->Html->link(__('Corregir'), array('action' => 'corregir', $examenesDetalle['ExamenesDetalle']['id']));
              }  ?>
@@ -109,7 +109,7 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	'format' => __('Página {:page} de {:pages}, mostrando {:current} registros de {:count} total, a partir del registro {:start}, que termina en {:end}')
 	));
 	?>	</p>
 
