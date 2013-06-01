@@ -1,11 +1,19 @@
 <div class="alumnosAsignaturas form">
 <?php echo $this->Form->create('AlumnosAsignatura'); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Alumnos Asignatura'); ?></legend>
+		<legend><?php echo __('Editar Alumnos Asignatura'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('usuario_id');
-		echo $this->Form->input('asignatura_id');
+    ?>
+        <label>Usuario</label>
+    <?php
+        echo $this->Chosen->select('usuarios', $usuarios,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
+	?><br />
+        <label>Asignaturas</label>
+    <?php
+        echo $this->Chosen->select('asignaturas', $asignaturas,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Enviar')); ?>
