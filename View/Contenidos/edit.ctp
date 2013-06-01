@@ -4,7 +4,7 @@
 		<legend><?php echo __('Editar Contenidos Temario'); ?></legend>
 	<?php
         echo $this->Form->input('dsc', array('label' => 'Título'));
-    ?>
+    ?><br />
         <label>Asignaturas</label>
     <?php
         echo $this->Chosen->select('asignaturas', $asignaturas,
