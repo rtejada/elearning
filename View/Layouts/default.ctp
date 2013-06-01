@@ -38,7 +38,7 @@
             <div id="wrapper-header3">
 
                 <div class="cabecera">
-                        <?php echo $this->element('user_top'); ?>
+                        <?php /*echo $this->element('user_top');*/ ?>
                 </div>
 
             </div>

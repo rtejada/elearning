@@ -883,3 +883,19 @@ dd {
 dt.vacio:after {
     content: "";
 }
+
+#fondo_index {
+    height: 500px;
+    background-image: url("images/Workers.jpg");
+    background-position: center top;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+
+#fondo_index div.users {
+    padding: 100px;
+}
+
+#fondo_index table {
+    width: 300px;
+}

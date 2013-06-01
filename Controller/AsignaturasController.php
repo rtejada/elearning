@@ -14,8 +14,11 @@ class AsignaturasController extends AppController {
  */
 	public function index() {
 
+        $this->restringirAlumno();
         $conditions = array();
         $propiedades_paginate = array();
+        $user_id = $this->Auth->user('id');
+
         if (isset($this->params['data']['submit'])) {
 
             if (!empty($this->params['data']['Basica']['dsc'])) {
@@ -23,9 +26,10 @@ class AsignaturasController extends AppController {
                 $conditions[] = array('Asignatura.dsc LIKE' => '%'.$txtdsc.'%');
             }
 
-            $propiedades_paginate =  array('conditions' => $conditions);
         }
 
+        $conditions[] = array('Asignatura.usuario_id' => $user_id);
+        $propiedades_paginate =  array('conditions' => $conditions);
         $this->paginate = array_merge(array('limit' => 10), $propiedades_paginate);
 
 		$this->Asignatura->recursive = 0;
