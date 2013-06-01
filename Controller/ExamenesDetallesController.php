@@ -211,13 +211,13 @@ class ExamenesDetallesController extends AppController {
         }
 
 		if (!$this->ExamenesDetalle->exists()) {
-			throw new NotFoundException(__('Invalid examenes detalle'));
+			throw new NotFoundException(__('Exámen Invalido'));
 		}
 		if ($this->ExamenesDetalle->delete()) {
-			$this->Session->setFlash(__('Examenes detalle deleted'));
+			$this->Session->setFlash(__('Exámen eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Examenes detalle was not deleted'));
+		$this->Session->setFlash(__('El exámen no ha sido eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
 
