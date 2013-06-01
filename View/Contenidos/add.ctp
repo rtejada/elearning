@@ -3,11 +3,10 @@
 	<fieldset>
 		<legend><?php echo __('Agregar contenido'); ?></legend>
 	<?php
-        echo $this->Form->input('dsc', array('label' => 'Título'));
-        echo $this->Form->create('Basica');?>
+        echo $this->Form->input('dsc', array('label' => 'Título')); ?>
         <label>Asignatura</label>
         <?php
-        echo $this->Chosen->select('asignaturas', $asignaturas,
+        echo $this->Chosen->select('asignatura_id', $asignaturas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
         echo $this->Form->input('orden', array('style' => 'width: 50px;'));
         echo $this->Form->input('Contenido.fichero', array('type' => 'file'));
