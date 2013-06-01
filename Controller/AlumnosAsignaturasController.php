@@ -97,7 +97,7 @@ class AlumnosAsignaturasController extends AppController {
 				$this->Session->setFlash(__('EL alumno y su asignatura no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
-		$usuarios = $this->AlumnosAsignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
+		$usuarios = $this->_obtenerComboAlumnos();
 		$asignaturas = $this->AlumnosAsignatura->Asignatura->find('list');
 		$this->set(compact('usuarios', 'asignaturas'));
 	}
@@ -126,7 +126,8 @@ class AlumnosAsignaturasController extends AppController {
 		} else {
 			$this->request->data = $this->AlumnosAsignatura->read(null, $id);
 		}
-		$usuarios = $this->AlumnosAsignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
+
+        $usuarios = $this->_obtenerComboAlumnos();
 		$asignaturas = $this->AlumnosAsignatura->Asignatura->find('list');
 		$this->set(compact('usuarios', 'asignaturas'));
 	}
@@ -191,5 +192,19 @@ class AlumnosAsignaturasController extends AppController {
 
     public function isAuthorized($user) {
         return true;
+    }
+
+    /**
+     * Obtiene un array para llenar el combo de alumnos (con nombre y apellidos)
+     * @return array
+     */
+    private function _obtenerComboAlumnos() {
+        $usuarios = $this->AlumnosAsignatura->Usuario->find('all', array('fields'=> array('Usuario.id', 'Usuario.nombre', 'Usuario.apellidos'), 'conditions' => array('Usuario.tipo' => 1)));
+        $usuarios_list = array();
+        foreach($usuarios as $usuario) {
+            $usuarios_list[$usuario['Usuario']['id']] = $usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'];
+        }
+
+        return $usuarios_list;
     }
 }

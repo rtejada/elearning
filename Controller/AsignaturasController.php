@@ -68,8 +68,8 @@ class AsignaturasController extends AppController {
 				$this->Session->setFlash(__('La asignatura no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
-		$cursos = $this->Asignatura->Curso->find('list');
-		$usuarios = $this->Asignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 2)));
+		$cursos = $this->_obtenerComboCursos();
+        $usuarios = $this->_obtenerComboProfesores();
 		$this->set(compact('cursos', 'usuarios'));
 	}
 
@@ -96,8 +96,8 @@ class AsignaturasController extends AppController {
 			$options = array('conditions' => array('Asignatura.' . $this->Asignatura->primaryKey => $id));
 			$this->request->data = $this->Asignatura->find('first', $options);
 		}
-		$cursos = $this->Asignatura->Curso->find('list');
-        $usuarios = $this->Asignatura->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 2)));
+        $cursos = $this->_obtenerComboCursos();
+        $usuarios = $this->_obtenerComboProfesores();
 		$this->set(compact('cursos', 'usuarios'));
 	}
 
@@ -145,4 +145,35 @@ class AsignaturasController extends AppController {
         $asignaturas = $this->Asignatura->find($tipo_query, array('fields' => array('Asignatura.id', 'Asignatura.dsc'), 'conditions' => array('Asignatura.usuario_id' => $id)));
         return $asignaturas;
     }
+
+
+    /**
+     * Obtiene un array para llenar el combo de cursos.
+     * ID => Curso.dsc .' '.Modulo.dsc
+     *
+     * @return array
+     */
+    private function _obtenerComboCursos() {
+        $cursos_data = $this->Asignatura->Curso->find('all', array('fields' => array('Curso.id', 'Curso.dsc', 'Modulo.dsc')));
+        $cursos_list = array();
+        foreach($cursos_data as $curso) {
+            $cursos_list[$curso['Curso']['id']] = $curso['Curso']['dsc'].' '.$curso['Modulo']['dsc'];
+        }
+        return $cursos_list;
+    }
+
+    /**
+     * Obtiene un array para llenar el combo de profesores (con nombre y apellidos)
+     * @return array
+     */
+    private function _obtenerComboProfesores() {
+        $usuarios = $this->Asignatura->Usuario->find('all', array('fields'=> array('Usuario.id', 'Usuario.nombre', 'Usuario.apellidos'), 'conditions' => array('Usuario.tipo' => 2)));
+        $usuarios_list = array();
+        foreach($usuarios as $usuario) {
+            $usuarios_list[$usuario['Usuario']['id']] = $usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'];
+        }
+
+        return $usuarios_list;
+    }
+
 }
