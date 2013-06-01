@@ -39,7 +39,7 @@
             $link = array('action' => 'downloadFile', $examenesCabecera['ExamenesCabecera']['fichero_dir'], $examenesCabecera['ExamenesCabecera']['fichero'], 'fichero');
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
             ?>
-			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $examenesCabecera['ExamenesCabecera']['id']), null, __('Are you sure you want to delete # %s?', $examenesCabecera['ExamenesCabecera']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $examenesCabecera['ExamenesCabecera']['id']), null, __('Está seguro que desea eliminar el registro?', $examenesCabecera['ExamenesCabecera']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

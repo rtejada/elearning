@@ -26,7 +26,7 @@ class ModulosController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Modulo->exists($id)) {
-			throw new NotFoundException(__('Invalid modulo'));
+			throw new NotFoundException(__('Módulo Inválido'));
 		}
 		$options = array('conditions' => array('Modulo.' . $this->Modulo->primaryKey => $id));
 		$this->set('modulo', $this->Modulo->find('first', $options));
@@ -41,10 +41,10 @@ class ModulosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Modulo->create();
 			if ($this->Modulo->save($this->request->data)) {
-				$this->Session->setFlash(__('The modulo has been saved'));
+				$this->Session->setFlash(__('El módulo ha sido guardado de forma correcta'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The modulo could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El módulo no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
 	}
@@ -58,14 +58,14 @@ class ModulosController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Modulo->exists($id)) {
-			throw new NotFoundException(__('Invalid modulo'));
+			throw new NotFoundException(__('Módulo Inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Modulo->save($this->request->data)) {
-				$this->Session->setFlash(__('The modulo has been saved'));
+				$this->Session->setFlash(__('El módulo ha sido guardado de forma correcta'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The modulo could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El Módulo no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$options = array('conditions' => array('Modulo.' . $this->Modulo->primaryKey => $id));
@@ -84,14 +84,14 @@ class ModulosController extends AppController {
 	public function delete($id = null) {
 		$this->Modulo->id = $id;
 		if (!$this->Modulo->exists()) {
-			throw new NotFoundException(__('Invalid modulo'));
+			throw new NotFoundException(__('Módulo Inválido'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Modulo->delete()) {
-			$this->Session->setFlash(__('Modulo deleted'));
+			$this->Session->setFlash(__('Módulo Eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Modulo was not deleted'));
+		$this->Session->setFlash(__('EL Módulo no ha sido eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
 }
