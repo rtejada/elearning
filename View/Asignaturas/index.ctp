@@ -66,6 +66,7 @@
         <div id='cssmenu'>
             <ul>
                    <li><?php echo $this->Html->link(__('Nueva Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?></li>
+                    <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'admin', 'action' => 'admin')); ?></li>
             </ul>
         </div>
     <?php } ?>

@@ -100,14 +100,13 @@ class UsuariosController extends AppController {
 		   $this->request->data = $this->Usuario->find('first', $options);
 
             $this->Usuario->id = $id;
-
-            //link para recibir la imagen desde componente de download
-            $directorio = $this->Usuario->field("foto_dir");
-            $url_fichero = $this->Usuario->field("foto");
-            $link = array('controller' => 'usuarios', 'action' => 'downloadFile', $directorio, $url_fichero);
-            $this->set("link", $link);
-
 		}
+
+        //link para recibir la imagen desde componente de download
+        $directorio = $this->Usuario->field("foto_dir");
+        $url_fichero = $this->Usuario->field("foto");
+        $link = array('controller' => 'usuarios', 'action' => 'downloadFile', $directorio, $url_fichero);
+        $this->set("link", $link);
 	}
 
 /**
