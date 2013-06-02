@@ -6,15 +6,19 @@
 
     <?php } elseif ($tipo==2) { ?>
     <h2><?php echo __('Relación Alumno - Asignatura'); ?></h2>
+
     <div>
-        <?php echo $this->Form->create('Basica');?>
+
         <label>Asignaturas</label>
         <?php echo $this->Chosen->select('asignaturas', $asignaturas,
-            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?>
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?><br/><br />
 
-        <label>Alumnos</label>
-        <?php echo $this->Chosen->select('alumnos', $alumnos,
-            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?>
+        <label>Alumnos </label>
+        <?php
+        echo $this->Chosen->select('alumnos', $alumnos,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px; height: 200px'));
+        ?>
+        <br/><br/>
 
         <span style="margin-left: 50px">
             <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>

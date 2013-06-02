@@ -21,6 +21,7 @@ class ContenidosController extends AppController {
      */
     public function index() {
 
+        $admin = $this->Auth->user('admin');
         $this->restringirAlumno();
 
         if (isset($this->params['data']['submit'])) {
@@ -31,6 +32,7 @@ class ContenidosController extends AppController {
         } else {
                 $conditions = $this->_obtenerCondicionAsignaturasProfesor('Contenido');
         }
+
 
         $this->paginate = array(
             'conditions' => $conditions,

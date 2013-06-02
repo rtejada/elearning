@@ -2,10 +2,18 @@
 <?php echo $this->Form->create('AlumnosAsignatura'); ?>
 	<fieldset>
 		<legend><?php echo __('Asignar Asignaturas a Alumnos'); ?></legend>
-	<?php
-		echo $this->Form->input('usuario_id');
-		echo $this->Form->input('asignatura_id');
-	?>
+
+    <label>Usuario </label>
+        <?php
+        echo $this->Chosen->select('usuario_id', $usuarios,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px; height: 200px'));
+        ?>
+        <br/>
+    <label>Asignatura </label>
+        <?php
+        echo $this->Chosen->select('asignatura_id', $asignaturas,
+            array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
+        ?>
 	</fieldset>
 <?php echo $this->Form->end(__('Enviar')); ?>
 </div>

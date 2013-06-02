@@ -37,14 +37,15 @@ class AlumnosAsignaturasController extends AppController {
                     }
 
                     $asignaturas = $this->AlumnosAsignatura->Asignatura->find("list");
-                    $alumnos = $this->obtenerAlumnos();
+
+                    $alumnos = $this->_obtenerComboAlumnos();
                     $this->set('asignaturas', $asignaturas);
                     $this->set('alumnos', $alumnos);
                     break;
         }
 
         $this->paginate = array(
-            'limit' => 20,
+            'limit' => 10,
             'order' => array('AlumnosAsignatura.dsc' => 'ASC'),
             'conditions' => $conditions	);
 
