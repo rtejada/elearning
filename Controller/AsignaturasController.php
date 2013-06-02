@@ -14,6 +14,7 @@ class AsignaturasController extends AppController {
  */
 	public function index() {
 
+        $admin = $this->Auth->user('admin');
         $this->restringirAlumno();
         $conditions = array();
         $propiedades_paginate = array();
@@ -28,7 +29,10 @@ class AsignaturasController extends AppController {
 
         }
 
-        $conditions[] = array('Asignatura.usuario_id' => $user_id);
+        if($admin!=1) {
+            $conditions[] = array('Asignatura.usuario_id' => $user_id);
+        }
+
         $propiedades_paginate =  array('conditions' => $conditions);
         $this->paginate = array_merge(array('limit' => 10), $propiedades_paginate);
 
