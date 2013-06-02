@@ -9,10 +9,10 @@ App::uses('AppModel', 'Model');
 class Contenido extends AppModel {
 
     public $validate = array(
-        'fichero' => array(
+        'asignatura_id' => array(
             'notempty' => array(
                 'rule' => array('notempty'),
-                'message' => 'Debe seleccionar un fichero',
+                'message' => 'Debe seleccionar la asignatura',
                 'allowEmpty' => false,
                 'required' => true,
                 //'last' => false, // Stop validation after this rule
