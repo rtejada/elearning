@@ -55,11 +55,14 @@
 	</div>
 </div>
 
-<?php $tipo = $this->Session->read('Auth.User.tipo'); ?>
+<?php
+    $tipo = $this->Session->read('Auth.User.tipo');
+    $admin = $this->Session->read('Auth.User.admin');
+?>
 <div class="actions">
     <h3><?php echo __('Menu'); ?></h3>
 
-    <?php if ($tipo==2) { ?>
+    <?php if ($admin==1) { ?>
         <div id='cssmenu'>
             <ul>
                    <li><?php echo $this->Html->link(__('Nueva Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?></li>
