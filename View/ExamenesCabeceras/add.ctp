@@ -8,7 +8,7 @@
         <label>Asignatura</label>
 
     <?php
-        echo $this->Chosen->select('asignaturas', $asignaturas,
+        echo $this->Chosen->select('asignatura_id', $asignaturas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 		echo $this->Form->input('enunciado');
         echo $this->Form->input('dia_examen', array('label' => 'Fecha del examen ', 'dateFormat' => 'DMY'));

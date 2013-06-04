@@ -139,7 +139,6 @@
     <?php if ($tipo==1) { ?>
         <div id='cssmenu'>
             <ul>
-                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'trabajos', 'action' => 'index')); ?></li>
                 <li class='last'><?php echo $this->Html->link(__('Enviar trabajo'), array('controller' => 'trabajos', 'action' => 'add')); ?></li>
             </ul>
         </div>

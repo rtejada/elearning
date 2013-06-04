@@ -7,7 +7,7 @@
         echo $this->Form->create('Basica');?>
         <label>Asignatura</label>
         <?php
-        echo $this->Chosen->select('asignaturas', $asignaturas,
+        echo $this->Chosen->select('asignatura_id', $asignaturas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
         //echo $this->Form->input('asignatura_id');
         echo $this->Form->input('enunciado');

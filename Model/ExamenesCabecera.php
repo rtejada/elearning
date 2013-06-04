@@ -24,16 +24,7 @@ class ExamenesCabecera extends AppModel {
                 //'on' => 'create', // Limit validation to 'create' or 'update' operations
             ),
         ),
-        'fichero' => array(
-            'notempty' => array(
-                'rule' => array('notempty'),
-                'message' => 'Debe seleccionar un fichero',
-                'allowEmpty' => false,
-                'required' => true,
-                //'last' => false, // Stop validation after this rule
-                'on' => 'create', // Limit validation to 'create' or 'update' operations
-            ),
-        ),
+
         'enunciado' => array(
             'notempty' => array(
                 'rule' => array('notempty'),

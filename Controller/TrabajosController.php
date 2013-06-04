@@ -62,26 +62,38 @@ class TrabajosController extends AppController {
         );
 		$this->Trabajo->recursive = 0;
 
-        $conditions_alumno = $this->_obtenerCondicionTrabajos();
-
-        $trabajosEnunciado = $this->Trabajo->TrabajosEnunciado->find('all', array('conditions' => $conditions_alumno));
-
         $this->Paginator->settings = $trabajo;
         $this->set('trabajos', $this->Paginator->paginate('Trabajo'));
 
         if($tipo==1) {
+            $conditions_alumno = $this->_obtenerCondicionTrabajos();
+            $trabajosEnunciado = $this->Trabajo->TrabajosEnunciado->find('all', array('conditions' => $conditions_alumno));
             $this->set('trabajosEnunciados', $trabajosEnunciado);
             $trabajos = $this->Trabajo->TrabajosEnunciado->find("list", array('conditions' => $conditions_alumno));
         } elseif($tipo==2) {
             $trabajos = $this->Trabajo->TrabajosEnunciado->find("list");
         }
 
-        $alumnos = $this->Trabajo->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
+        $alumnos = $this->_obtenerComboAlumnos();
         $this->set('enunciados', $trabajos);
         $this->set('alumnos', $alumnos);
         $this->set('opciones', array(0 => 'Sin corregir', 1 => 'Corregidos', 2=> 'Todos'));
 
 	}
+
+    /**
+     * Obtiene un array para llenar el combo de alumnos (con nombre y apellidos)
+     * @return array
+     */
+    private function _obtenerComboAlumnos() {
+        $usuarios = $this->Trabajo->Usuario->find('all', array('fields'=> array('Usuario.id', 'Usuario.nombre', 'Usuario.apellidos'), 'conditions' => array('Usuario.tipo' => 1)));
+        $usuarios_list = array();
+        foreach($usuarios as $usuario) {
+            $usuarios_list[$usuario['Usuario']['id']] = $usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'];
+        }
+
+        return $usuarios_list;
+    }
 
     /**
      * obtener sólo el listado de trabajos para las asignaturas
@@ -143,9 +155,7 @@ class TrabajosController extends AppController {
 		}
 
         $conditions = $this->_obtenerCondicionTrabajos();
-
 		$trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list', array('conditions' => $conditions));
-		//$usuarios = $this->Trabajo->Usuario->find('list');
 		$this->set(compact('trabajosEnunciados'));
 	}
 
@@ -158,7 +168,7 @@ class TrabajosController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Trabajo->exists($id)) {
-			throw new NotFoundException(__('Invalid trabajo'));
+			throw new NotFoundException(__('Trabajo Inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Trabajo->save($this->request->data)) {
@@ -179,12 +189,9 @@ class TrabajosController extends AppController {
             $this->restringirAlumno();
         }
 
-		//$asignaturas = $this->Trabajo->Asignatura->find('list');
-		$trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list');
-		$usuarios = $this->Trabajo->Usuario->find('list');
-		$this->set(compact('trabajosEnunciados', 'usuarios'));
-
-        $this->loadModel("Nota");
+        $conditions = $this->_obtenerCondicionTrabajos();
+        $trabajosEnunciados = $this->Trabajo->TrabajosEnunciado->find('list', array('conditions' => $conditions));
+		$this->set(compact('trabajosEnunciados'));
 
 	}
 
@@ -200,7 +207,7 @@ class TrabajosController extends AppController {
         if (!$this->Trabajo->exists($id)) {
             throw new NotFoundException(__('Invalid trabajo'));
         }
-     //   xdebug_break();
+
         if ($this->request->is('post') || $this->request->is('put')) {
             $this->Trabajo->id =  $id;
             if($this->Trabajo->saveField('nota', $this->request->data['Trabajo']['nota'])) {

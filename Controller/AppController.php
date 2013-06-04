@@ -101,7 +101,7 @@ class AppController extends Controller {
     public function restringirAlumno() {
         $tipo = $this->Auth->user('tipo');
         if ($tipo == 1) {
-            $this->Session->setFlash('No puede accder a ese área.');
+            $this->Session->setFlash('No puede acceder a ese área.');
             $this->redirect(array('action' => 'index'));
         }
     }
@@ -113,7 +113,7 @@ class AppController extends Controller {
     public function restringirExceptoAdmin() {
         $admin = $this->Auth->user('admin');
         if ($admin != 1) {
-            $this->Session->setFlash('No puede accder a ese área.');
+            $this->Session->setFlash('No puede acceder a ese área.');
             $this->redirect(array('action' => 'index'));
         }
     }

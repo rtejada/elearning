@@ -77,12 +77,25 @@ class ExamenesDetallesController extends AppController {
         $enunciados = $this->ExamenesDetalle->ExamenesCabecera->find('list', array('fields' => array('ExamenesCabecera.id', 'ExamenesCabecera.dsc'), 'conditions' => $condiciones_examenes_profesor));
         $this->set('enunciados', $enunciados);
 
-        $alumnos = $this->ExamenesDetalle->Usuario->find("list", array('conditions' => array('Usuario.tipo' => 1)));
+        $alumnos = $this->_obtenerComboAlumnos();
         $this->set('alumnos', $alumnos);
         $this->set('opciones', array(0 => 'Sin corregir', 1 => 'Corregidos', 2=> 'Todos'));
 
 	}
 
+    /**
+     * Obtiene un array para llenar el combo de alumnos (con nombre y apellidos)
+     * @return array
+     */
+    private function _obtenerComboAlumnos() {
+        $usuarios = $this->ExamenesDetalle->Usuario->find('all', array('fields'=> array('Usuario.id', 'Usuario.nombre', 'Usuario.apellidos'), 'conditions' => array('Usuario.tipo' => 1)));
+        $usuarios_list = array();
+        foreach($usuarios as $usuario) {
+            $usuarios_list[$usuario['Usuario']['id']] = $usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'];
+        }
+
+        return $usuarios_list;
+    }
 
     /**
      * obtener sólo el listado de examenes para las asignaturas
@@ -205,7 +218,7 @@ class ExamenesDetallesController extends AppController {
             ($tipo==1)) {
             $this->restringirAlumno();
         }
-        //si el examen ya estaba corregido tampoco borrar
+        //si el examen ya estaba corregido tampoco se puede borrar
         if(($tipo==1) and ($this->ExamenesDetalle->field('corregido')==1)) {
             $this->restringirAlumno();
         }

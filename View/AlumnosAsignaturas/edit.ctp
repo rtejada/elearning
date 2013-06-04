@@ -7,12 +7,12 @@
     ?>
         <label>Usuario</label>
     <?php
-        echo $this->Chosen->select('usuarios', $usuarios,
+        echo $this->Chosen->select('usuario_id', $usuarios,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 	?><br />
         <label>Asignaturas</label>
     <?php
-        echo $this->Chosen->select('asignaturas', $asignaturas,
+        echo $this->Chosen->select('asignatura_id', $asignaturas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
 	?>
 	</fieldset>

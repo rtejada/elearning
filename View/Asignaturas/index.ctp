@@ -28,7 +28,7 @@
 			<?php echo $this->Html->link($asignatura['Curso']['dsc'], array('controller' => 'cursos', 'action' => 'view', $asignatura['Curso']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($asignatura['Usuario']['nombre'], $asignatura['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $asignatura['Usuario']['id'])); ?>
+			<?php echo $this->Html->link($asignatura['Usuario']['nombre'].' '. $asignatura['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $asignatura['Usuario']['id'])); ?>
 		</td>
 		<td><?php echo h($this->Time->format('d/m/Y',$asignatura['Asignatura']['created'])); ?>&nbsp;</td>
 

@@ -56,15 +56,30 @@ class NotasController extends AppController {
 
 		$this->Nota->recursive = 1;
 
-        $asignaturas_profesor = $this->Nota->Asignatura->find('all', array('conditions' => array('Asignatura.id' => $user_id) ));
-        $asignaturas_profesor_combo = $this->Nota->Asignatura->find('list', array('conditions' => array('Asignatura.id' => $user_id) ));
-        $alumnos = $this->Nota->Usuario->find('list', array('conditions' => array('Usuario.tipo' => 1)));
+        $asignaturas_profesor = $this->Nota->Asignatura->find('all', array('conditions' => array('Asignatura.usuario_id' => $user_id)));
+        $asignaturas_profesor_combo = $this->Nota->Asignatura->find('list', array('conditions' => array('Asignatura.usuario_id' => $user_id) ));
+        $alumnos = $this->_obtenerComboAlumnos();
         $this->set('asignaturas_profesor', $asignaturas_profesor);
         $this->set('asignaturas_profesor_combo', $asignaturas_profesor_combo);
         $this->set('tipo_notas', $this->array_tipo_nota);
+
         $this->set('alumnos', $alumnos);
 		$this->set('notas', $this->paginate());
 	}
+
+    /**
+     * Obtiene un array para llenar el combo de alumnos (con nombre y apellidos)
+     * @return array
+     */
+    private function _obtenerComboAlumnos() {
+        $usuarios = $this->Nota->Usuario->find('all', array('fields'=> array('Usuario.id', 'Usuario.nombre', 'Usuario.apellidos'), 'conditions' => array('Usuario.tipo' => 1)));
+        $usuarios_list = array();
+        foreach($usuarios as $usuario) {
+            $usuarios_list[$usuario['Usuario']['id']] = $usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'];
+        }
+
+        return $usuarios_list;
+    }
 
 /**
  * view method
