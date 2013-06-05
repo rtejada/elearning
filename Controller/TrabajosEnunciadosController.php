@@ -52,7 +52,7 @@ class TrabajosEnunciadosController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->TrabajosEnunciado->exists($id)) {
-			throw new NotFoundException(__('Trabajos enunciado inválido.'));
+			throw new NotFoundException(__('Trabajo inválido.'));
 		}
 		$options = array('conditions' => array('TrabajosEnunciado.' . $this->TrabajosEnunciado->primaryKey => $id));
 		$this->set('trabajosEnunciado', $this->TrabajosEnunciado->find('first', $options));
@@ -68,10 +68,10 @@ class TrabajosEnunciadosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->TrabajosEnunciado->create();
 			if ($this->TrabajosEnunciado->save($this->request->data)) {
-				$this->Session->setFlash(__('El trabajo enunciado se ha guardado correctamente.'));
+				$this->Session->setFlash(__('El trabajo se ha guardado correctamente.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('El Trabajo enunciado no se pudo guardar. Por favor, inténtelo de nuevo.'));
+				$this->Session->setFlash(__('El Trabajo no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		}
         $usuario_id = $this->Auth->user('id');
@@ -89,14 +89,14 @@ class TrabajosEnunciadosController extends AppController {
 	public function edit($id = null) {
         $this->restringirAlumno();
 		if (!$this->TrabajosEnunciado->exists($id)) {
-			throw new NotFoundException(__('Invalid trabajos enunciado'));
+			throw new NotFoundException(__('Trabajo Inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->TrabajosEnunciado->save($this->request->data)) {
-				$this->Session->setFlash(__('El trabajo enunciado se ha guardado correctamente.'));
+				$this->Session->setFlash(__('El trabajo se ha guardado correctamente.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('El trabajo enunciado no se pudo guardar. Por favor, inténtelo de nuevo.'));
+				$this->Session->setFlash(__('El trabajo no se pudo guardar. Por favor, inténtelo de nuevo.'));
 			}
 		} else {
 			$options = array('conditions' => array('TrabajosEnunciado.' . $this->TrabajosEnunciado->primaryKey => $id));
@@ -119,14 +119,14 @@ class TrabajosEnunciadosController extends AppController {
         $this->restringirAlumno();
         $this->TrabajosEnunciado->id = $id;
 		if (!$this->TrabajosEnunciado->exists()) {
-			throw new NotFoundException(__('Trabajo enunciado inválido.'));
+			throw new NotFoundException(__('Trabajo Inválido.'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->TrabajosEnunciado->delete()) {
-			$this->Session->setFlash(__('Trabajo enunciado eliminado.'));
+			$this->Session->setFlash(__('Trabajo Eliminado.'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('El trabajo enunciado no se ha eliminado.'));
+		$this->Session->setFlash(__('El trabajo no se ha eliminado.'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

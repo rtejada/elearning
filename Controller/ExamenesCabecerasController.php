@@ -30,10 +30,12 @@ class ExamenesCabecerasController extends AppController {
             }
         }
         $this->paginate = array(
-            'limit' => 20,
+            'limit' => 10,
             'conditions' => $conditions	);
 
-        $asignaturas = $this->ExamenesCabecera->Asignatura->find("list");
+        $asignaturas= $this->ExamenesCabecera->Asignatura->find('list', array('conditions' => array('Asignatura.usuario_id' => $user_id) ));
+
+
         $this->set('asignaturas', $asignaturas);
 		$this->ExamenesCabecera->recursive = 0;
 		$this->set('examenesCabeceras', $this->paginate());
