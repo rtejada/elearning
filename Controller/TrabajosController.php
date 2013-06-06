@@ -47,9 +47,14 @@ class TrabajosController extends AppController {
 
         if ($tipo ==1 ) {
             $conditions[] = array('Trabajo.usuario_id =' => $user_id);
-            $conditions[] = array_merge($conditions, $conditions_form);
+            $conditions = array_merge($conditions, $conditions_form);
         } elseif($tipo==2) {
-            $conditions = $conditions_form;
+            //el profesor solo podrá ver los trabajos enviados que correspondan con los
+            //examenes cabeceras que ha enviado el previamente.
+            $trabajos_enunciados_id = $this->Trabajo->TrabajosEnunciado->find("list",  array('fields' => array('TrabajosEnunciado.id')
+            , 'conditions' => array('TrabajosEnunciado.usuario_id = ' => $user_id)));
+            $conditions[] = array('Trabajo.trabajos_enunciado_id' => $trabajos_enunciados_id);
+            $conditions = array_merge($conditions, $conditions_form);
         }
 
         $trabajo = array(
@@ -71,7 +76,7 @@ class TrabajosController extends AppController {
             $this->set('trabajosEnunciados', $trabajosEnunciado);
             $trabajos = $this->Trabajo->TrabajosEnunciado->find("list", array('conditions' => $conditions_alumno));
         } elseif($tipo==2) {
-            $trabajos = $this->Trabajo->TrabajosEnunciado->find("list");
+            $trabajos = $this->Trabajo->TrabajosEnunciado->find("list",  array('conditions' => array('TrabajosEnunciado.usuario_id = ' => $user_id)));
         }
 
         $alumnos = $this->_obtenerComboAlumnos();
