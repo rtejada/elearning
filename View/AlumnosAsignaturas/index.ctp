@@ -8,7 +8,7 @@
     <h2><?php echo __('Relación Alumno - Asignatura'); ?></h2>
 
     <div>
-
+        <?php echo $this->Form->create('Basica');?>
         <label>Asignaturas</label>
         <?php echo $this->Chosen->select('asignaturas', $asignaturas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?><br/><br />

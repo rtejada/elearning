@@ -16,6 +16,7 @@ $admin = $this->Session->read('Auth.User.admin');
     <br />
     <div id='cssmenu'>
         <ul>
+            <?php if($admin!=1) {?>
             <li class='has-sub'><a href='#'><span>Asignaturas</span></a>
                 <ul>
                     <li class='active'><?php echo $this->Html->link(__('Ver'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
@@ -32,7 +33,7 @@ $admin = $this->Session->read('Auth.User.admin');
                     <li><?php echo $this->Html->link(__('Crear'), array('controller' => 'examenes_cabeceras', 'action' => 'index')); ?></li>
                     <li class='last'><?php echo $this->Html->link(__('Ver recibidos'), array('controller' => 'examenes_detalles', 'action' => 'index')); ?></li>
                 </ul>
-            <li><?php echo $this->Html->link(__('Notas'), array('controller' => 'notas', 'action' => 'index')); ?></li>
+            <li><?php echo $this->Html->link(__('Notas'), array('controller' => 'notas', 'action' => 'index')); ?></li><?php } ?>
             <li class='last'><?php
                 if($admin==1) {
                 echo $this->Html->link(__('Admin'), array('controller' => 'admin', 'action' => 'admin'));
