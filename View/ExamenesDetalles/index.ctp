@@ -18,6 +18,10 @@
                 <td><?php echo h($this->Time->format('d/m/Y',$examenesCabecera['ExamenesCabecera']['dia_examen'])); ?>&nbsp;</td>
                 <td class="actions">
                     <?php echo $this->Html->link(__('Ver'), array('controller'=> 'examenes_cabeceras', 'action' => 'view', $examenesCabecera['ExamenesCabecera']['id'])); ?>
+                    <?php
+                    $link = array('action' => 'downloadFile', $examenesCabecera['ExamenesCabecera']['fichero_dir'], $examenesCabecera['ExamenesCabecera']['fichero'], 'fichero', 'examenes_cabecera');
+                    echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
+                    ?>
                 </td>
             </tr>
         <?php endforeach; ?>

@@ -4,7 +4,7 @@
 		<legend><?php echo __('Editar Examen'); ?></legend>
 	<?php
         echo $this->Form->input('dsc', array('label' => 'Título'));
-        echo $this->Form->create('Basica');?>
+        ?>
         <label>Asignatura</label>
         <?php
         echo $this->Chosen->select('asignatura_id', $asignaturas,
