@@ -27,11 +27,6 @@ class TrabajosEnunciadosController extends AppController {
 
         }
 
-      //  $asignaturas = $this->TrabajosEnunciado->Asignatura->find("list");
-       // $this->set('asignaturas', $asignaturas);
-
-
-
         $usuario_id = $this->Auth->user('id');
         $conditions[] = array('TrabajosEnunciado.usuario_id =' => $usuario_id);
 
