@@ -86,8 +86,10 @@
 
     <div id='cssmenu'>
         <ul>
+            <?php if ($tipo==1) { ?>
             <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?></li>
-            <?php if ($tipo==2) { ?>
+            <?php } elseif($tipo==2) { ?>
+            <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
             <li><?php echo $this->Html->link(__('Nuevo Contenido'), array('controller' => 'contenidos', 'action' => 'add')); ?></li>
             <?php } ?>
 
