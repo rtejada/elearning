@@ -66,16 +66,22 @@ class ExamenesDetallesController extends AppController {
 
         $this->set('examenesDetalles', $this->Paginator->paginate('ExamenesDetalle'));
 
-        $condiciones_examenes_cabecera = $this->_obtenerCondicionExamenes();
-        $condiciones_examenes_profesor = $this->_obtenerCondicionAsignaturasProfesor('ExamenesCabecera');
-
         if($tipo==1) {
-            $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('all', array('conditions' => $condiciones_examenes_cabecera));
-            $this->set('examenesCabeceras', $examenesCabeceras);
-        }
+            // obtener sólo el listado de examenes para las asignaturas  en las que está matriculado el alumno
+            $condiciones_examenes_cabecera = $this->_obtenerCondicionExamenes();
 
-        $enunciados = $this->ExamenesDetalle->ExamenesCabecera->find('list', array('fields' => array('ExamenesCabecera.id', 'ExamenesCabecera.dsc'), 'conditions' => $condiciones_examenes_profesor));
-        $this->set('enunciados', $enunciados);
+            $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('all',
+            array('conditions' => $condiciones_examenes_cabecera));
+
+            $this->set('examenesCabeceras', $examenesCabeceras);
+        } elseif($tipo==2) {
+            //obtiene los examenes de examenes cabecera del profesor  (si se trata de un profesor).
+            $condiciones_examenes_profesor = $this->_obtenerCondicionAsignaturasProfesor('ExamenesCabecera');
+
+            $enunciados = $this->ExamenesDetalle->ExamenesCabecera->find('list', array('fields' => array('ExamenesCabecera.id',
+            'ExamenesCabecera.dsc'), 'conditions' => $condiciones_examenes_profesor));
+            $this->set('enunciados', $enunciados);
+        }
 
         $alumnos = $this->_obtenerComboAlumnos();
         $this->set('alumnos', $alumnos);
@@ -149,6 +155,7 @@ class ExamenesDetallesController extends AppController {
 			}
 		}
 
+        // obtener sólo el listado de examenes para las asignaturas  en las que está matriculado el alumno
         $conditions = $this->_obtenerCondicionExamenes();
         $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('list',
             array('fields' => array('ExamenesCabecera.id', 'ExamenesCabecera.dsc'), 'conditions' => $conditions));
@@ -191,6 +198,12 @@ class ExamenesDetallesController extends AppController {
 		} else {
 			$this->request->data = $this->ExamenesDetalle->read(null, $id);
 		}
+
+        // obtener sólo el listado de examenes para las asignaturas  en las que está matriculado el alumno
+        $conditions = $this->_obtenerCondicionExamenes();
+        $examenesCabeceras = $this->ExamenesDetalle->ExamenesCabecera->find('list',
+            array('fields' => array('ExamenesCabecera.id', 'ExamenesCabecera.dsc'), 'conditions' => $conditions));
+        $this->set('examenesCabeceras', $examenesCabeceras);
 
 
 	}

@@ -167,7 +167,8 @@ class AlumnosAsignaturasController extends AppController {
      */
     public function obtenerAsignaturasAlumno($usuario_id) {
 
-        $asignaturas = $this->AlumnosAsignatura->find('list', array('fields' => 'AlumnosAsignatura.asignatura_id', 'conditions' => array('AlumnosAsignatura.usuario_id' => $usuario_id)));
+        $asignaturas = $this->AlumnosAsignatura->find('list', array('fields' => 'AlumnosAsignatura.asignatura_id',
+            'conditions' => array('AlumnosAsignatura.usuario_id' => $usuario_id)));
         return $asignaturas;
 
     }

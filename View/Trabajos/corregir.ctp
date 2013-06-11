@@ -1,5 +1,5 @@
 <div class="trabajos form">
-<?php echo $this->Form->create('Trabajo'); ?>
+
 	<fieldset>
 		<legend><?php echo __('Corregir Trabajo'); ?></legend>
 
@@ -11,11 +11,11 @@
             </dd>
             <dt><?php echo __('Alumno'); ?></dt>
             <dd>
-                <?php h($trabajo['Usuario']['nombre'].' '.$trabajo['Usuario']['apellidos']); ?>
+                <?php echo h($trabajo['Usuario']['nombre'].' '.$trabajo['Usuario']['apellidos']); ?>
                 &nbsp;
             </dd>
         </dl>
-
+        <?php echo $this->Form->create('Trabajo'); ?>
 	<?php
         echo $this->Form->input('nota', array('label'=> 'Nota', 'style' => 'width: 100px'));
 	?>

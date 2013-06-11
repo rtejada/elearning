@@ -29,12 +29,18 @@ class ExamenesCabecerasController extends AppController {
                 $conditions[] = array('ExamenesCabecera.asignatura_id =' => $txtdsc);
             }
         }
+
+        $asignaturas= $this->ExamenesCabecera->Asignatura->find('list',
+            array('conditions' => array('Asignatura.usuario_id' => $user_id) ));
+
+        $id_asignaturas= $this->ExamenesCabecera->Asignatura->find('list',
+            array('fields' => 'Asignatura.id', 'conditions' => array('Asignatura.usuario_id' => $user_id) ));
+
+        $conditions[] = array('ExamenesCabecera.asignatura_id' => $id_asignaturas);
+
         $this->paginate = array(
             'limit' => 10,
             'conditions' => $conditions	);
-
-        $asignaturas= $this->ExamenesCabecera->Asignatura->find('list', array('conditions' => array('Asignatura.usuario_id' => $user_id) ));
-
 
         $this->set('asignaturas', $asignaturas);
 		$this->ExamenesCabecera->recursive = 0;

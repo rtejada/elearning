@@ -50,7 +50,7 @@ class TrabajosController extends AppController {
             $conditions = array_merge($conditions, $conditions_form);
         } elseif($tipo==2) {
             //el profesor solo podrá ver los trabajos enviados que correspondan con los
-            //examenes cabeceras que ha enviado el previamente.
+            //trabajos enunciados que ha enviado el previamente.
             $trabajos_enunciados_id = $this->Trabajo->TrabajosEnunciado->find("list",  array('fields' => array('TrabajosEnunciado.id')
             , 'conditions' => array('TrabajosEnunciado.usuario_id = ' => $user_id)));
             $conditions[] = array('Trabajo.trabajos_enunciado_id' => $trabajos_enunciados_id);
@@ -70,6 +70,7 @@ class TrabajosController extends AppController {
         $this->Paginator->settings = $trabajo;
         $this->set('trabajos', $this->Paginator->paginate('Trabajo'));
 
+        //Para los alumnos, mostrará los trabajos enunciados correspondientes a sus asignaturas.
         if($tipo==1) {
             $conditions_alumno = $this->_obtenerCondicionTrabajos();
             $trabajosEnunciado = $this->Trabajo->TrabajosEnunciado->find('all', array('conditions' => $conditions_alumno));
@@ -216,10 +217,10 @@ class TrabajosController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             $this->Trabajo->id =  $id;
             if($this->Trabajo->saveField('nota', $this->request->data['Trabajo']['nota'])) {
-                $this->Session->setFlash(__('El trabajo se ha guardado correctamente.'));
+                $this->Session->setFlash(__('La nota del alumno se ha guardado correctamente.'));
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash(__('El trabajo no se pudo guardar. Por favor, inténtelo de nuevo.'));
+                $this->Session->setFlash(__('La nota del alumno no se pudo guardar. Por favor, inténtelo de nuevo.'));
             }
 
         } else {
