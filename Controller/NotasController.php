@@ -69,10 +69,19 @@ class NotasController extends AppController {
 
     /**
      * Obtiene un array para llenar el combo de alumnos (con nombre y apellidos)
+     * Si se le pasa una asignatura, devuelve sólo los alumnos para esa asignatura.
      * @return array
      */
-    private function _obtenerComboAlumnos() {
-        $usuarios = $this->Nota->Usuario->find('all', array('fields'=> array('Usuario.id', 'Usuario.nombre', 'Usuario.apellidos'), 'conditions' => array('Usuario.tipo' => 1)));
+    private function _obtenerComboAlumnos($asignatura_id = NULL) {
+
+        if($asignatura_id != NULL) {
+        //obtener todos los ID de alumnos relacionados con la asignatura
+        $lista_alumnos_asignatura = $this->_obtenerAlumnosRelacionadosAsignatura($asignatura_id);
+            $usuarios = $this->Nota->Usuario->find('all', array('fields'=> array('Usuario.id', 'Usuario.nombre', 'Usuario.apellidos'), 'conditions' => array('Usuario.id' => $lista_alumnos_asignatura)));
+        } else {
+            $usuarios = $this->Nota->Usuario->find('all', array('fields'=> array('Usuario.id', 'Usuario.nombre', 'Usuario.apellidos'), 'conditions' => array('Usuario.tipo' => 1)));
+        }
+
         $usuarios_list = array();
         foreach($usuarios as $usuario) {
             $usuarios_list[$usuario['Usuario']['id']] = $usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'];
@@ -80,6 +89,7 @@ class NotasController extends AppController {
 
         return $usuarios_list;
     }
+
 
 /**
  * view method
@@ -115,13 +125,8 @@ class NotasController extends AppController {
 			}
 		}
 
-
-        //obtener todos los ID de alumnos relacionados con la asignatura
-        $lista_alumnos_asignatura = $this->_obtenerAlumnosRelacionadosAsignatura($asignatura_id);
-
         //obtener los datos de los alumnos de la asignatura en formato para rellenar el combo
-        $alumnos = $this->Nota->Usuario->find('list',
-            array('conditions' => array('Usuario.id' => $lista_alumnos_asignatura)));
+        $alumnos = $this->_obtenerComboAlumnos($asignatura_id);
 
         $asignaturas = $this->_obtenerListaAsignaturasProfesor();
 
@@ -131,6 +136,7 @@ class NotasController extends AppController {
         $this->set('asignaturas', $asignaturas);
 
 	}
+
 
    /**
      * obtener todos los ID de alumnos relacionados con la asignatura
