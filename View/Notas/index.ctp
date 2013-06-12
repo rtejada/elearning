@@ -23,8 +23,7 @@
     </table>
     <?php } ?>
 
-    <h2><?php echo __('Notas'); ?></h2>
-    <br>
+        <br>
 
 
     <div>
@@ -47,6 +46,7 @@
             echo $this->Chosen->select('tipo_nota', $tipo_notas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));?>
 
+
         <span style="margin-left: 50px">
                 <?php echo $this->Form->submit(__('Filtrar'), array('div'=>false, 'name'=>'submit')); ?>
             <?php echo $this->Form->submit(__('Limpiar'), array('div'=>false, 'name'=>'clear')); ?>
@@ -54,6 +54,7 @@
         <?php echo $this->Form->end();?>
         <br />
     </div>
+    <h2><?php echo __('Notas'); ?></h2>
 
 	<table cellpadding="0" cellspacing="0">
 	<tr>

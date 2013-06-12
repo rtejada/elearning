@@ -13,7 +13,7 @@
         echo '<label>Alumno</label>';
         echo $this->Chosen->select('usuario_id', $alumnos,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
-
+        echo '<br />';
         echo '<label>Evaluación</label>';
         echo $this->Chosen->select('tipo_nota', $tipo_notas,
             array('data-placeholder' => 'Seleccione...', 'deselect' => true, 'style' => 'min-width: 200px;'));
