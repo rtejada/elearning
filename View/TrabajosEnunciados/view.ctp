@@ -42,7 +42,7 @@
             <?php if ($tipo==2) { ?>
                 <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'trabajos_enunciados', 'action' => 'index')); ?></li>
             <?php } ?>
-                <li class='last'><?php echo $this->Html->link(__('Volver'),array('controller' => 'trabajos', 'action' => 'index')); ?></li>
+
             </ul>
         </div>
 

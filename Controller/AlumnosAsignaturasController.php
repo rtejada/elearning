@@ -151,10 +151,10 @@ class AlumnosAsignaturasController extends AppController {
 			throw new NotFoundException(__('El alumno no tiene asignado la asignatura'));
 		}
 		if ($this->AlumnosAsignatura->delete()) {
-			$this->Session->setFlash(__('El alumno, asignatura eliminado'));
+			$this->Session->setFlash(__('Relación Alumno y asignatura eliminado'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('El alumno, asignatura no se ha eliminado'));
+		$this->Session->setFlash(__('La Relación del alumno y la asignatura no se ha eliminado'));
 		$this->redirect(array('action' => 'index'));
 	}
 

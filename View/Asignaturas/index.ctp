@@ -1,9 +1,11 @@
 <div class="asignaturas index">
-	<h2><?php echo __('Asignaturas'); ?></h2>
+	<h1><?php echo __('Asignaturas'); ?></h1>
+    <br />
 
         <?php echo $this->Form->create('Basica');?>
         <?php echo $this->Form->input('dsc', array('style' => 'width: 300px',
          'div' => array('class' => 'input text float-left'), 'label' => '')); ?>
+
         <?php echo $this->Form->submit(__('Filtrar'), array('name'=>'submit', 'class' => 'button' ,
          'div' => array('class' => 'submit float-left'))); ?>
         <?php echo $this->Form->submit(__('Limpiar'), array('name'=>'clear', 'class' => 'button',

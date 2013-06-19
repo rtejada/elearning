@@ -37,8 +37,9 @@
             <ul>
                 <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'cursos', 'action' => 'index')); ?></li>
             </ul>
+            <?php } ?>
         </div>
-    <?php } ?>
+
 
     <?php echo $this->element('menu'); ?>
 </div>
