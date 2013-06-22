@@ -36,6 +36,7 @@
         <?php } ?>
             <?php if ($tipo==2) { ?>
             <th><?php echo $this->Paginator->sort('dsc', 'Asignatura'); ?></th>
+            <th><?php echo $this->Paginator->sort('Nombre'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'creado');  ?></th>
 
 			<th class="actions"><?php echo __('Acciones'); ?></th>
@@ -48,6 +49,7 @@
             <?php echo $this->Html->link($alumnosAsignatura['Asignatura']['dsc'], array('controller' => 'contenidos', 'action' => 'temario', $alumnosAsignatura['Asignatura']['id'])); ?>
         </td>
         <?php if ($tipo==2) { ?>
+        <td><?php echo $this->Html->link($alumnosAsignatura['Usuario']['nombre'].' '. $alumnosAsignatura['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $alumnosAsignatura['Usuario']['id'])); ?></td>
 
 		<td><?php echo h($this->Time->format('d/m/Y',$alumnosAsignatura['AlumnosAsignatura']['created'])); ?>&nbsp;</td>
 		<td class="actions">
@@ -80,7 +82,7 @@
     <?php if ($tipo==2) { ?>
     <div id='cssmenu'>
         <ul>
-            <li><?php echo $this->Html->link(__('Asignar Asignatura'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>
+            <li><?php echo $this->Html->link(__('Asignar'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>
         </ul>
     </div>
     <?php } ?>
