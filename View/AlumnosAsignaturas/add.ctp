@@ -1,4 +1,4 @@
-<div class="alumnosAsignaturas form">
+<div class="alumnosAsignaturas form" style="height: 500px">
 <?php echo $this->Form->create('AlumnosAsignatura'); ?>
 	<fieldset>
 		<legend><?php echo __('Asignar Asignaturas a Alumnos'); ?></legend>
