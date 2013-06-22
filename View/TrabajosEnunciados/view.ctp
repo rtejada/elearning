@@ -1,11 +1,6 @@
 <div class="trabajosEnunciados view">
 <h2><?php  echo __('Trabajos Enunciado'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($trabajosEnunciado['TrabajosEnunciado']['id']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Dsc'); ?></dt>
 		<dd>
 			<?php echo h($trabajosEnunciado['TrabajosEnunciado']['dsc']); ?>

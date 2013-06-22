@@ -21,7 +21,7 @@
                 <td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['created'])); ?>&nbsp;</td>
                 <td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['fecha_tope'])); ?>&nbsp;</td>
                 <td class="actions">
-                    <?php echo $this->Html->link(__('Ver'), array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
+                    <?php echo $this->Html->link(__('Ver Detalle'), array('controller' => 'trabajos_enunciados', 'action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
                     <?php
                     $link = array('action' => 'downloadFile', $trabajosEnunciado['TrabajosEnunciado']['fichero_dir'], $trabajosEnunciado['TrabajosEnunciado']['fichero'], 'fichero', 'trabajos_enunciado');
                     echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
@@ -104,7 +104,7 @@
             echo $this->Html->link(__('Descargar'), $link, array('class' => 'button'));
             ?>
 
-            <?php echo $this->Html->link(__('Ver'), array('action' => 'view', $trabajo['Trabajo']['id'])); ?>
+            <?php echo $this->Html->link(__('Ver Detalle'), array('action' => 'view', $trabajo['Trabajo']['id'])); ?>
 			<?php      if(($trabajo['Trabajo']['nota']==0) and ($tipo==1)) {
                             echo $this->Html->link(__('Editar'), array('action' => 'edit', $trabajo['Trabajo']['id']));
 			                echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $trabajo['Trabajo']['id']), null, __('Está seguro que desea eliminar el registro?', $trabajo['Trabajo']['id']));

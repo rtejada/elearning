@@ -1,11 +1,7 @@
 <div class="alumnosAsignaturas view">
 <h2><?php  echo __('Alumnos Asignatura'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($alumnosAsignatura['AlumnosAsignatura']['id']); ?>
-			&nbsp;
-		</dd>
+
 		<dt><?php echo __('Usuario'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($alumnosAsignatura['Usuario']['nombre'].' '.$alumnosAsignatura['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $alumnosAsignatura['Usuario']['id'])); ?>

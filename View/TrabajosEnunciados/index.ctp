@@ -35,7 +35,7 @@
 		<td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['created'])); ?>&nbsp;</td>
 		<td><?php echo h($this->Time->format('d/m/Y',$trabajosEnunciado['TrabajosEnunciado']['fecha_tope'])); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver Detalle'), array('action' => 'view', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $trabajosEnunciado['TrabajosEnunciado']['id'])); ?>
             <?php
             $link = array('action' => 'downloadFile', $trabajosEnunciado['TrabajosEnunciado']['fichero_dir'], $trabajosEnunciado['TrabajosEnunciado']['fichero'], 'fichero');
@@ -68,7 +68,6 @@
     <?php if ($tipo==2) { ?>
         <div id='cssmenu'>
             <ul>
-                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'trabajos_enunciados', 'action' => 'index')); ?></li>
                 <li><?php echo $this->Html->link(__('Nuevo Trabajo'), array('controller' => 'trabajos_enunciados', 'action' => 'add')); ?></li>
                 <li class='last'><?php echo $this->Html->link(__('Volver'), array('controller' => 'asignaturas', 'action' => 'index')); ?></li>
             </ul>

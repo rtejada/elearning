@@ -1,11 +1,6 @@
 <div class="usuarios view">
 <h2><?php  echo __('Usuario'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($usuario['Usuario']['id']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Nombre'); ?></dt>
 		<dd>
 			<?php echo h($usuario['Usuario']['nombre']); ?>
@@ -87,7 +82,6 @@
         <div id='cssmenu'>
             <ul>
             <?php if ($tipo==2) { ?>
-                <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
                 <li><?php echo $this->Html->link(__('Nueva Asignatura'), array('controller' => 'asignaturas', 'action' => 'add')); ?></li>
 
             <?php } ?>

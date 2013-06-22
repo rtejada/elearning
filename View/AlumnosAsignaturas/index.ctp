@@ -51,7 +51,7 @@
 
 		<td><?php echo h($this->Time->format('d/m/Y',$alumnosAsignatura['AlumnosAsignatura']['created'])); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver Detalle'), array('action' => 'view', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
 			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $alumnosAsignatura['AlumnosAsignatura']['id']), null, __('¿Está seguro que desea eliminar el registro?', $alumnosAsignatura['AlumnosAsignatura']['id'])); ?>
 		</td>
@@ -80,7 +80,6 @@
     <?php if ($tipo==2) { ?>
     <div id='cssmenu'>
         <ul>
-            <li class='active'><?php echo $this->Html->link(__('Lista'), array('controller' => 'alumnos_asignaturas', 'action' => 'index')); ?></li>
             <li><?php echo $this->Html->link(__('Asignar Asignatura'), array('controller' => 'alumnos_asignaturas', 'action' => 'add')); ?></li>
         </ul>
     </div>

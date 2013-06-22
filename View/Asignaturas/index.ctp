@@ -35,7 +35,7 @@
 		<td><?php echo h($this->Time->format('d/m/Y',$asignatura['Asignatura']['created'])); ?>&nbsp;</td>
 
 		<td class="actions">
-			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $asignatura['Asignatura']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver Detalle'), array('action' => 'view', $asignatura['Asignatura']['id'])); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $asignatura['Asignatura']['id'])); ?>
 			<?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $asignatura['Asignatura']['id']), null, __('¿Está seguro de que desea eliminar la asignatura?', $asignatura['Asignatura']['id'])); ?>
 		</td>

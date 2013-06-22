@@ -1,11 +1,6 @@
 <div class="asignaturas view">
 <h2><?php  echo __('Asignatura'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($asignatura['Asignatura']['id']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Asignatura'); ?></dt>
 		<dd>
 			<?php echo h($asignatura['Asignatura']['dsc']); ?>
